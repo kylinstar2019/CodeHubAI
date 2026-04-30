@@ -651,6 +651,330 @@ export function ServersSettings() {
           )}
         </div>
       </SettingsCard>
+
+      {/* Claude Code API 配置 */}
+      <ClaudeCodeApiSettings />
+    </div>
+  )
+}
+
+// ============================================
+// Claude Code API 配置组件
+// ============================================
+
+function ClaudeCodeApiSettings() {
+  const { t } = useTranslation(['settings', 'common'])
+  const [providers, setProviders] = useState<Array<{
+    id: string
+    name: string
+    type: 'anthropic' | 'openai' | 'ollama'
+    url: string
+    apiKey: string
+    models: string[]
+  }>>([])
+  const [editing, setEditing] = useState<string | null>(null)
+  const [adding, setAdding] = useState(false)
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('codehubai-api-providers')
+      if (saved) setProviders(JSON.parse(saved))
+    } catch { /* ignore */ }
+  }, [])
+
+  const saveProviders = (list: typeof providers) => {
+    setProviders(list)
+    localStorage.setItem('codehubai-api-providers', JSON.stringify(list))
+  }
+
+  return (
+    <SettingsCard
+      title="Claude Code API 配置"
+      description="配置您的大模型 API，用于 Claude Code 编程助手"
+    >
+      <div className="space-y-3">
+        {providers.map(p => (
+          <div key={p.id} className="p-3 rounded-lg border border-border-200 bg-bg-050">
+            {editing === p.id ? (
+              <EditProviderForm
+                provider={p}
+                onSave={updates => {
+                  saveProviders(providers.map(x => x.id === p.id ? { ...x, ...updates } : x))
+                  setEditing(null)
+                }}
+                onCancel={() => setEditing(null)}
+              />
+            ) : (
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="text-[length:var(--fs-md)] font-medium text-text-100">{p.name}</div>
+                  <div className="text-[length:var(--fs-xs)] text-text-400">{p.url}</div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setEditing(p.id)}
+                    className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-border-200 text-text-300 hover:text-text-100 hover:bg-bg-100 transition-colors"
+                  >
+                    {t('common:edit')}
+                  </button>
+                  <button
+                    onClick={() => saveProviders(providers.filter(x => x.id !== p.id))}
+                    className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-danger-100/40 text-danger-100 hover:bg-danger-100/10 transition-colors"
+                  >
+                    {t('common:remove')}
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+
+        {adding && (
+          <AddProviderForm
+            onAdd={p => {
+              saveProviders([...providers, { ...p, id: `provider-${Date.now()}` }])
+              setAdding(false)
+            }}
+            onCancel={() => setAdding(false)}
+          />
+        )}
+
+        {!adding && providers.length === 0 && (
+          <div className="text-[length:var(--fs-sm)] text-text-400 text-center py-4">
+            暂未配置 API，点击下方按钮添加
+          </div>
+        )}
+
+        {!adding && (
+          <button
+            onClick={() => setAdding(true)}
+            className="w-full py-2 rounded-md border border-dashed border-border-300 text-text-400 hover:text-text-200 hover:border-accent-main-100/50 hover:bg-accent-main-100/5 transition-colors text-[length:var(--fs-sm)]"
+          >
+            + 添加 API 提供商
+          </button>
+        )}
+      </div>
+    </SettingsCard>
+  )
+}
+
+function AddProviderForm({
+  onAdd,
+  onCancel,
+}: {
+  onAdd: (p: { name: string; type: 'anthropic' | 'openai' | 'ollama'; url: string; apiKey: string; models: string[] }) => void
+  onCancel: () => void
+}) {
+  const [name, setName] = useState('')
+  const [type, setType] = useState<'anthropic' | 'openai' | 'ollama'>('openai')
+  const [url, setUrl] = useState('')
+  const [apiKey, setApiKey] = useState('')
+  const [models, setModels] = useState('')
+
+  const presets = [
+    { name: '腾讯云', type: 'anthropic' as const, url: 'https://api.lkeap.cloud.tencent.com/coding/anthropic' },
+    { name: 'DeepSeek', type: 'openai' as const, url: 'https://api.deepseek.com/v1' },
+    { name: 'Ollama 本地', type: 'ollama' as const, url: 'http://127.0.0.1:11434' },
+  ]
+
+  const inputCls =
+    'w-full h-8 px-3 text-[length:var(--fs-md)] bg-bg-000 border border-border-200 rounded-md focus:outline-none focus:border-accent-main-100/50 text-text-100 placeholder:text-text-400'
+
+  return (
+    <div className="p-3 rounded-lg border border-accent-main-100/30 bg-accent-main-100/[0.02] space-y-2.5">
+      <div className="flex flex-wrap gap-1.5">
+        {presets.map(p => (
+          <button
+            key={p.name}
+            onClick={() => {
+              setName(p.name)
+              setType(p.type)
+              setUrl(p.url)
+            }}
+            className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-border-200 text-text-300 hover:text-text-100 hover:bg-bg-100 transition-colors"
+          >
+            {p.name}
+          </button>
+        ))}
+      </div>
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">名称</label>
+        <input
+          type="text"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          placeholder="如：腾讯云、DeepSeek"
+          className={inputCls}
+        />
+      </div>
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">类型</label>
+        <select
+          value={type}
+          onChange={e => setType(e.target.value as typeof type)}
+          className={inputCls}
+        >
+          <option value="anthropic">Anthropic 兼容</option>
+          <option value="openai">OpenAI 兼容</option>
+          <option value="ollama">Ollama</option>
+        </select>
+      </div>
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API 地址</label>
+        <input
+          type="text"
+          value={url}
+          onChange={e => setUrl(e.target.value)}
+          placeholder="https://api.example.com/v1"
+          className={`${inputCls} font-mono`}
+        />
+      </div>
+
+      {type !== 'ollama' && (
+        <div>
+          <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API Key</label>
+          <input
+            type="password"
+            value={apiKey}
+            onChange={e => setApiKey(e.target.value)}
+            placeholder="sk-xxx"
+            className={`${inputCls} font-mono`}
+          />
+        </div>
+      )}
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">模型列表（逗号分隔）</label>
+        <input
+          type="text"
+          value={models}
+          onChange={e => setModels(e.target.value)}
+          placeholder="deepseek-chat, deepseek-coder"
+          className={inputCls}
+        />
+      </div>
+
+      <div className="flex justify-end gap-2 pt-1">
+        <Button size="sm" variant="ghost" onClick={onCancel}>
+          取消
+        </Button>
+        <Button
+          size="sm"
+          onClick={() => {
+            if (!name.trim() || !url.trim()) return
+            onAdd({
+              name: name.trim(),
+              type,
+              url: url.trim(),
+              apiKey: apiKey.trim(),
+              models: models.split(',').map(s => s.trim()).filter(Boolean),
+            })
+          }}
+        >
+          添加
+        </Button>
+      </div>
+    </div>
+  )
+}
+
+function EditProviderForm({
+  provider,
+  onSave,
+  onCancel,
+}: {
+  provider: { name: string; type: string; url: string; apiKey: string; models: string[] }
+  onSave: (updates: { name: string; type: 'anthropic' | 'openai' | 'ollama'; url: string; apiKey: string; models: string[] }) => void
+  onCancel: () => void
+}) {
+  const [name, setName] = useState(provider.name)
+  const [type, setType] = useState(provider.type as 'anthropic' | 'openai' | 'ollama')
+  const [url, setUrl] = useState(provider.url)
+  const [apiKey, setApiKey] = useState(provider.apiKey)
+  const [models, setModels] = useState(provider.models.join(', '))
+
+  const inputCls =
+    'w-full h-8 px-3 text-[length:var(--fs-md)] bg-bg-000 border border-border-200 rounded-md focus:outline-none focus:border-accent-main-100/50 text-text-100 placeholder:text-text-400'
+
+  return (
+    <div className="space-y-2.5">
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">名称</label>
+        <input
+          type="text"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          className={inputCls}
+        />
+      </div>
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">类型</label>
+        <select
+          value={type}
+          onChange={e => setType(e.target.value as typeof type)}
+          className={inputCls}
+        >
+          <option value="anthropic">Anthropic 兼容</option>
+          <option value="openai">OpenAI 兼容</option>
+          <option value="ollama">Ollama</option>
+        </select>
+      </div>
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API 地址</label>
+        <input
+          type="text"
+          value={url}
+          onChange={e => setUrl(e.target.value)}
+          className={`${inputCls} font-mono`}
+        />
+      </div>
+
+      {type !== 'ollama' && (
+        <div>
+          <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API Key</label>
+          <input
+            type="password"
+            value={apiKey}
+            onChange={e => setApiKey(e.target.value)}
+            className={`${inputCls} font-mono`}
+          />
+        </div>
+      )}
+
+      <div>
+        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">模型列表</label>
+        <input
+          type="text"
+          value={models}
+          onChange={e => setModels(e.target.value)}
+          className={inputCls}
+        />
+      </div>
+
+      <div className="flex justify-end gap-2 pt-1">
+        <Button size="sm" variant="ghost" onClick={onCancel}>
+          取消
+        </Button>
+        <Button
+          size="sm"
+          onClick={() => {
+            onSave({
+              name: name.trim(),
+              type,
+              url: url.trim(),
+              apiKey: apiKey.trim(),
+              models: models.split(',').map(s => s.trim()).filter(Boolean),
+            })
+          }}
+        >
+          保存
+        </Button>
+      </div>
     </div>
   )
 }
