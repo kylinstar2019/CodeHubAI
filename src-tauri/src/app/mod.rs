@@ -23,15 +23,24 @@ use std::sync::Arc;
 #[cfg(not(target_os = "android"))]
 use tauri::Emitter;
 
+/// 检查是否是 serve 子命令（用于阻止 single-instance 回调）
+#[cfg(not(target_os = "android"))]
+fn is_serve_command(args: &[String]) -> bool {
+    args.iter().any(|arg| arg == "serve")
+}
+
 /// 从命令行参数中提取目录路径
 #[cfg(not(target_os = "android"))]
 fn extract_directory_from_args(args: &[String]) -> Option<String> {
     for arg in args.iter().skip(1) {
         if arg.starts_with('-') {
-            continue;
+            continue
+        }
+        if arg == "serve" {
+            continue
         }
         if std::path::Path::new(arg).is_dir() {
-            return Some(arg.clone());
+            return Some(arg.clone())
         }
     }
     None
@@ -166,6 +175,11 @@ pub fn run() {
         builder
             .manage(OpenDirectoryState::default())
             .plugin(tauri_plugin_single_instance::init(|app, args, _cwd| {
+                // 如果是 serve 子命令，不创建窗口（避免无限循环）
+                if is_serve_command(&args) {
+                    log::info!("Single-instance: serve command detected, skipping window creation");
+                    return;
+                }
                 // 始终新建窗口（类似 VSCode：双击图标 = 新窗口）
                 let dir = extract_directory_from_args(&args);
                 log::info!("Single-instance: opening new window, directory: {:?}", dir);
