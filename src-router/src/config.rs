@@ -1,4 +1,4 @@
-use std::{collections::HashSet, env};
+﻿use std::{collections::HashSet, env};
 
 pub(crate) const ROUTES_FILE: &str = "/etc/caddy/routes.conf";
 pub(crate) const PREVIEW_FILE: &str = "/etc/caddy/preview.conf";
@@ -21,7 +21,7 @@ impl Config {
     pub fn from_env() -> Self {
         Self {
             target_container: env::var("TARGET_CONTAINER")
-                .unwrap_or_else(|_| "opencode-backend".to_string()),
+                .unwrap_or_else(|_| "CodeHubAI-backend".to_string()),
             router_state_file: env::var("ROUTER_STATE_FILE")
                 .unwrap_or_else(|_| "/data/routes.json".to_string()),
             public_base_url: env::var("PUBLIC_BASE_URL")

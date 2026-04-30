@@ -57,7 +57,7 @@ export function ServiceSettings() {
     try {
       const { invoke } = await import('@tauri-apps/api/core')
       serviceStore.setStarting(true)
-      const weStarted = await invoke<boolean>('start_opencode_service', {
+      const weStarted = await invoke<boolean>('start_CodeHubAI_service', {
         url: getServerUrl(),
         binaryPath: serviceStore.effectiveBinaryPath,
         envVars: serviceStore.envVarsRecord,
@@ -77,7 +77,7 @@ export function ServiceSettings() {
     setServiceError('')
     try {
       const { invoke } = await import('@tauri-apps/api/core')
-      await invoke('stop_opencode_service')
+      await invoke('stop_CodeHubAI_service')
       serviceStore.setStartedByUs(false)
       serviceStore.setRunning(false)
     } catch (e) {
@@ -88,7 +88,7 @@ export function ServiceSettings() {
   const handleCheckService = async () => {
     try {
       const { invoke } = await import('@tauri-apps/api/core')
-      const running = await invoke<boolean>('check_opencode_service', { url: getServerUrl() })
+      const running = await invoke<boolean>('check_CodeHubAI_service', { url: getServerUrl() })
       serviceStore.setRunning(running)
       if (running) {
         const byUs = await invoke<boolean>('get_service_started_by_us')

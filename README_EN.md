@@ -1,8 +1,8 @@
-# OpenCodeUI
+﻿# CodeHubAI
 
 [中文](./README.md) | English
 
-A third-party Web frontend for [OpenCode](https://github.com/anomalyco/opencode).
+A third-party Web frontend for [CodeHubAI](https://github.com/anomalyco/CodeHubAI).
 
 **This project is entirely built with AI-assisted programming (Vibe Coding)** — from the first line of code to the final release, all features were developed through conversations with AI.
 
@@ -43,23 +43,23 @@ A third-party Web frontend for [OpenCode](https://github.com/anomalyco/opencode)
 
 ## Quick Start
 
-No deployment needed — after starting the OpenCode backend locally, access the hosted frontend directly:
+No deployment needed — after starting the CodeHubAI backend locally, access the hosted frontend directly:
 
 ```bash
-opencode serve --cors "https://lehhair.github.io"
+CodeHubAI serve --cors "https://lehhair.github.io"
 ```
 
-Then open https://lehhair.github.io/OpenCodeUI/
+Then open https://lehhair.github.io/CodeHubAI/
 
 ## Docker Deployment (Frontend Only)
 
-For scenarios where `opencode serve` is already running, you only need a frontend UI container to connect to the existing backend.
+For scenarios where `CodeHubAI serve` is already running, you only need a frontend UI container to connect to the existing backend.
 
 ```bash
-git clone https://github.com/lehhair/OpenCodeUI.git
-cd OpenCodeUI
+git clone https://github.com/lehhair/CodeHubAI.git
+cd CodeHubAI
 
-# Start (connects to host's opencode serve :4096 by default)
+# Start (connects to host's CodeHubAI serve :4096 by default)
 docker compose -f docker-compose.standalone.yml up -d
 ```
 
@@ -73,7 +73,7 @@ BACKEND_URL=your-server.com:4096 PORT=8080 docker compose -f docker-compose.stan
 
 | Environment Variable | Default                     | Description                                      |
 | -------------------- | --------------------------- | ------------------------------------------------ |
-| `BACKEND_URL`        | `host.docker.internal:4096` | opencode serve address (without protocol prefix) |
+| `BACKEND_URL`        | `host.docker.internal:4096` | CodeHubAI serve address (without protocol prefix) |
 | `PORT`               | `3000`                      | Frontend listening port                          |
 
 ## Docker Deployment
@@ -87,7 +87,7 @@ The deployment consists of three services, unified through the Gateway:
 | Gateway  | 6658 (`GATEWAY_PORT`) | Unified entry point, reverse proxy for all requests |
 | Gateway  | 6659 (`PREVIEW_PORT`) | Dev service preview                                 |
 | Frontend | 3000 (internal)       | Static frontend                                     |
-| Backend  | 4096 (internal)       | OpenCode API                                        |
+| Backend  | 4096 (internal)       | CodeHubAI API                                        |
 | Router   | 7070 (internal)       | Dynamic port routing (built into Gateway)           |
 
 ### Gateway Routing Rules
@@ -96,7 +96,7 @@ Requests on port `6658` are forwarded according to these rules:
 
 | Path         | Target         | Description                    |
 | ------------ | -------------- | ------------------------------ |
-| `/api/*`     | Backend :4096  | OpenCode API, supports SSE     |
+| `/api/*`     | Backend :4096  | CodeHubAI API, supports SSE     |
 | `/routes`    | Router :7070   | Dynamic route management panel |
 | `/preview/*` | Router :7070   | Preview port switching API     |
 | Other        | Frontend :3000 | Frontend static assets         |
@@ -106,8 +106,8 @@ Port `6659` is used to access dev services inside the container. The Router auto
 ### Deployment Steps
 
 ```bash
-git clone https://github.com/lehhair/OpenCodeUI.git
-cd OpenCodeUI
+git clone https://github.com/lehhair/CodeHubAI.git
+cd CodeHubAI
 
 # Copy and edit environment variables, fill in at least one LLM API Key
 cp .env.example .env
@@ -120,17 +120,17 @@ Visit `http://localhost:6658`.
 
 ### Environment Persistence (Simplified)
 
-The backend now retains only one core persistent volume: `opencode-home` (mounted at `/root`).
+The backend now retains only one core persistent volume: `CodeHubAI-home` (mounted at `/root`).
 
-The backend entry script automatically verifies and supplements `opencode` / `mise` on startup to prevent toolchain loss after container rebuilds.
+The backend entry script automatically verifies and supplements `CodeHubAI` / `mise` on startup to prevent toolchain loss after container rebuilds.
 
-- OpenCode configuration and session cache
+- CodeHubAI configuration and session cache
 - npm / cargo / pip and other user-space caches
 - Node / Python multi-version runtimes installed via `mise`
 
 All of the above will be preserved after container rebuilds — no need to split into multiple small volumes.
 
-When upgrading from older versions, the original `opencode-data/opencode-config/opencode-cache/opencode-npm/opencode-cargo/opencode-local/opencode-opt` volumes become orphaned and can be manually cleaned up after confirming data has been migrated.
+When upgrading from older versions, the original `CodeHubAI-data/CodeHubAI-config/CodeHubAI-cache/CodeHubAI-npm/CodeHubAI-cargo/CodeHubAI-local/CodeHubAI-opt` volumes become orphaned and can be manually cleaned up after confirming data has been migrated.
 
 First time entering the backend container, you can install and persist runtime versions directly:
 
@@ -140,7 +140,7 @@ docker compose exec backend node -v
 docker compose exec backend python -V
 ```
 
-The `gateway` still retains a separate volume `opencode-router-data` for storing dynamic routing state.
+The `gateway` still retains a separate volume `CodeHubAI-router-data` for storing dynamic routing state.
 
 ### Environment Variables
 
@@ -159,8 +159,8 @@ PREVIEW_PORT=6659
 WORKSPACE=./workspace
 
 # Must be set for public deployment
-OPENCODE_SERVER_USERNAME=opencode
-OPENCODE_SERVER_PASSWORD=your-strong-password
+CodeHubAI_SERVER_USERNAME=CodeHubAI
+CodeHubAI_SERVER_PASSWORD=your-strong-password
 
 # Router service
 ROUTER_SCAN_INTERVAL=5
@@ -177,7 +177,7 @@ Docker listens on `127.0.0.1` by default; public deployment requires a reverse p
 ```nginx
 server {
     listen 443 ssl;
-    server_name opencode.example.com;
+    server_name CodeHubAI.example.com;
 
     ssl_certificate     /path/to/cert.pem;
     ssl_certificate_key /path/to/key.pem;
@@ -225,7 +225,7 @@ server {
 **Caddy:**
 
 ```caddyfile
-opencode.example.com {
+CodeHubAI.example.com {
     reverse_proxy 127.0.0.1:6658 {
         flush_interval -1
     }
@@ -240,14 +240,14 @@ preview.example.com {
 
 ## Local Development
 
-Requires a running [OpenCode](https://github.com/anomalyco/opencode) backend.
+Requires a running [CodeHubAI](https://github.com/anomalyco/CodeHubAI) backend.
 
 ```bash
-opencode serve
+CodeHubAI serve
 
 # In another terminal
-git clone https://github.com/lehhair/OpenCodeUI.git
-cd OpenCodeUI
+git clone https://github.com/lehhair/CodeHubAI.git
+cd CodeHubAI
 npm install
 npm run dev
 ```
@@ -284,7 +284,7 @@ After it finishes, follow the printed `git commit`, `git tag`, and `git push` st
 
 ## Desktop App
 
-Download the installer from [Releases](https://github.com/lehhair/OpenCodeUI/releases), or build locally:
+Download the installer from [Releases](https://github.com/lehhair/CodeHubAI/releases), or build locally:
 
 ```bash
 npm install
@@ -323,11 +323,11 @@ Some UI styles are inspired by the [Claude](https://claude.ai) interface design.
 
 ## Star History
 
-<a href="https://www.star-history.com/#lehhair/OpenCodeUI&Date">
+<a href="https://www.star-history.com/#lehhair/CodeHubAI&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date" />
  </picture>
 </a>
 

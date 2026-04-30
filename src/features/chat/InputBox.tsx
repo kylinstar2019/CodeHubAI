@@ -778,7 +778,7 @@ function InputBoxComponent({
       dragCounterRef.current++
       // 内部拖拽（FileExplorer）或原生文件拖拽都高亮
       if (
-        e.dataTransfer.types.includes('application/opencode-file') ||
+        e.dataTransfer.types.includes('application/CodeHubAI-file') ||
         (supportsAnyFile && e.dataTransfer.types.includes('Files'))
       ) {
         setIsDragging(true)
@@ -854,12 +854,12 @@ function InputBoxComponent({
       setIsDragging(false)
 
       // 来自 FileExplorer 的内部拖拽（自定义 data type）
-      const opencodeData = e.dataTransfer.getData('application/opencode-file')
-      if (opencodeData) {
+      const CodeHubAIData = e.dataTransfer.getData('application/CodeHubAI-file')
+      if (CodeHubAIData) {
         try {
-          insertDraggedFile(JSON.parse(opencodeData))
+          insertDraggedFile(JSON.parse(CodeHubAIData))
         } catch (err) {
-          console.warn('[InputBox] Failed to parse opencode-file drag data:', err)
+          console.warn('[InputBox] Failed to parse CodeHubAI-file drag data:', err)
         }
         return
       }

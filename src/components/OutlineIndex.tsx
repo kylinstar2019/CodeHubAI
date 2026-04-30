@@ -487,8 +487,8 @@ const TouchFisheye = memo(function TouchFisheye({ entries, onSelect, visual }: F
 
   const vibrate = useCallback(() => {
     try {
-      const bridge = (window as unknown as { __opencode_android?: { vibrate?: (ms: number) => void } })
-        .__opencode_android
+      const bridge = (window as unknown as { __CodeHubAI_android?: { vibrate?: (ms: number) => void } })
+        .__CodeHubAI_android
       if (bridge?.vibrate) {
         bridge.vibrate(8)
         return

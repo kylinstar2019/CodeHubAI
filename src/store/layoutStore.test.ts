@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { LayoutStore } from './layoutStore'
 
-const STORAGE_KEY_PANEL_LAYOUT = 'opencode-panel-layout'
+const STORAGE_KEY_PANEL_LAYOUT = 'CodeHubAI-panel-layout'
 
 describe('LayoutStore panel and terminal layout', () => {
   beforeEach(() => {
@@ -125,7 +125,7 @@ describe('LayoutStore panel and terminal layout', () => {
       cols: 80,
     })
 
-    const persisted = JSON.parse(localStorage.getItem('opencode-terminal-layout') ?? 'null')
+    const persisted = JSON.parse(localStorage.getItem('CodeHubAI-terminal-layout') ?? 'null')
     expect(persisted.directories['dir-a'].sessions['term-a1']).toMatchObject({
       buffer: 'pwd\r\n/workspace\r\n',
       scrollY: 2,

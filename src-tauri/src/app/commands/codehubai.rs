@@ -1,5 +1,5 @@
 // ============================================
-// OpenCode Service Management (desktop only)
+// CodeHubAI Service Management (desktop only)
 // Android 不支持子进程管理和 window.destroy()
 // ============================================
 
@@ -11,7 +11,7 @@ use std::{
 };
 use tauri::State;
 
-/// 检查 opencode 服务是否在运行（通过 health endpoint）
+/// 检查 CodeHubAI 服务是否在运行（通过 health endpoint）
 pub async fn is_service_running(url: &str) -> bool {
     let health_url = format!("{}/global/health", url.trim_end_matches('/'));
     match reqwest::Client::builder()
@@ -29,12 +29,12 @@ pub async fn is_service_running(url: &str) -> bool {
     }
 }
 
-/// 启动 opencode serve 进程
-fn spawn_opencode_serve(
+/// 启动 CodeHubAI serve 进程
+fn spawn_CodeHubAI_serve(
     binary_path: &str,
     env_vars: &std::collections::HashMap<String, String>,
 ) -> Result<std::process::Child, String> {
-    log::info!("Starting opencode serve with binary: {}", binary_path);
+    log::info!("Starting CodeHubAI serve with binary: {}", binary_path);
     if !env_vars.is_empty() {
         log::info!("Injecting {} environment variable(s)", env_vars.len());
     }
@@ -86,28 +86,28 @@ pub fn kill_process_by_pid(pid: u32) {
     }
 }
 
-/// 检查 opencode 服务是否在运行
+/// 检查 CodeHubAI 服务是否在运行
 #[tauri::command]
-pub async fn check_opencode_service(url: String) -> Result<bool, String> {
+pub async fn check_CodeHubAI_service(url: String) -> Result<bool, String> {
     Ok(is_service_running(&url).await)
 }
 
-/// 启动 opencode serve
+/// 启动 CodeHubAI serve
 #[tauri::command]
-pub async fn start_opencode_service(
+pub async fn start_CodeHubAI_service(
     state: State<'_, ServiceState>,
     url: String,
     binary_path: String,
     env_vars: std::collections::HashMap<String, String>,
 ) -> Result<bool, String> {
     if is_service_running(&url).await {
-        log::info!("opencode service already running at {}", url);
+        log::info!("CodeHubAI service already running at {}", url);
         return Ok(false);
     }
 
-    let child = spawn_opencode_serve(&binary_path, &env_vars)?;
+    let child = spawn_CodeHubAI_serve(&binary_path, &env_vars)?;
     let pid = child.id();
-    log::info!("Started opencode serve, PID: {}", pid);
+    log::info!("Started CodeHubAI serve, PID: {}", pid);
 
     state.child_pid.store(pid, Ordering::SeqCst);
     state.we_started.store(true, Ordering::SeqCst);
@@ -115,30 +115,30 @@ pub async fn start_opencode_service(
     for _ in 0..30 {
         tokio::time::sleep(Duration::from_millis(500)).await;
         if is_service_running(&url).await {
-            log::info!("opencode service is ready at {}", url);
+            log::info!("CodeHubAI service is ready at {}", url);
             return Ok(true);
         }
     }
 
-    log::warn!("opencode service started but health check not passing yet");
+    log::warn!("CodeHubAI service started but health check not passing yet");
     Ok(true)
 }
 
-/// 停止 opencode serve
+/// 停止 CodeHubAI serve
 #[tauri::command]
-pub async fn stop_opencode_service(state: State<'_, ServiceState>) -> Result<(), String> {
+pub async fn stop_CodeHubAI_service(state: State<'_, ServiceState>) -> Result<(), String> {
     let pid = state.child_pid.swap(0, Ordering::SeqCst);
     state.we_started.store(false, Ordering::SeqCst);
 
     if pid > 0 {
-        log::info!("Stopping opencode serve, PID: {}", pid);
+        log::info!("Stopping CodeHubAI serve, PID: {}", pid);
         kill_process_by_pid(pid);
     }
 
     Ok(())
 }
 
-/// 查询是否由我们启动了 opencode 服务
+/// 查询是否由我们启动了 CodeHubAI 服务
 #[tauri::command]
 pub async fn get_service_started_by_us(state: State<'_, ServiceState>) -> Result<bool, String> {
     Ok(state.we_started.load(Ordering::SeqCst))
@@ -154,12 +154,12 @@ pub async fn confirm_close_app(
     if stop_service {
         let pid = state.child_pid.swap(0, Ordering::SeqCst);
         if pid > 0 {
-            log::info!("Closing app and stopping opencode serve, PID: {}", pid);
+            log::info!("Closing app and stopping CodeHubAI serve, PID: {}", pid);
             kill_process_by_pid(pid);
         }
         state.we_started.store(false, Ordering::SeqCst);
     } else {
-        log::info!("Closing app, keeping opencode serve running");
+        log::info!("Closing app, keeping CodeHubAI serve running");
     }
 
     window.destroy().map_err(|e| e.to_string())

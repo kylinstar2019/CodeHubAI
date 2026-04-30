@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 ## [v0.5.19] - 2026-04-29
 
@@ -109,7 +109,7 @@
 
 ## [v0.5.6] - 2026-04-19
 
-- chore: sync Tauri app icons from web opencode.svg (f792218)
+- chore: sync Tauri app icons from web CodeHubAI.svg (f792218)
 - polish: slim desktop titlebar down to minimal app chrome (375e8d1)
 - feat: add platform-aware desktop titlebar foundation (43fa2da)
 - fix: prevent model selector from jumping to wrong provider on split (5b33360)
@@ -160,7 +160,7 @@
 - feat: show agent and model name in step finish info (closes #61) (7299319)
 - fix: restore line-height lost during font system migration (3d83f3b)
 - fix: split diff view losing syntax highlighting when word diff is active (9f281ec)
-- feat: tune default font sizes to match opencode official UI proportions (29c6f76)
+- feat: tune default font sizes to match CodeHubAI official UI proportions (29c6f76)
 - feat: unified typography system with CSS variables and per-axis font scale sliders (4533b15)
 
 ## [v0.5.0] - 2026-04-13
@@ -210,7 +210,7 @@
 - refactor: collapse API types onto sdk definitions (e5e7305)
 - refactor: replace API type wrappers with sdk aliases (89d42ac)
 - fix: finish sdk migration cleanup (a90d0aa)
-- fix: align API layer with official opencode sdk (ae4308c)
+- fix: align API layer with official CodeHubAI sdk (ae4308c)
 - fix: eliminate UI flicker, merge duplicate effects, avoid object mutation (a6e4cc1)
 - fix: stabilize git workspace recents and worktree actions (abd0ee5)
 
@@ -442,7 +442,7 @@
 - fix: resolve bugs introduced by Python-to-Rust router migration (335b82e)
 - refactor: migrate gateway router from Python to Rust (290087f)
 - Feature: Add ability for router to read config from environment variables (bddc46b)
-- refactor: create new Rust project opencodeui-router (dd96377)
+- refactor: create new Rust project CodeHubAI-router (dd96377)
 - Update image previews in README.md (be84586)
 - fix: 服务器编辑/删除按钮始终可见 (0037a17)
 
@@ -672,7 +672,7 @@ Patch release focused on chat input polish, session list consistency, and smooth
 
 ## [v0.1.0] - 2026-03-05
 
-First stable release of OpenCodeUI.
+First stable release of CodeHubAI.
 
 ### Features
 

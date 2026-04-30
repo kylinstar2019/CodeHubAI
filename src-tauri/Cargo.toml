@@ -1,7 +1,7 @@
 [package]
-name = "opencodeui"
+name = "codehubai"
 version = "0.5.19"
-description = "OpenCode UI - Tauri Mobile App"
+description = "CodeHubAI - Multi-backend AI coding assistant"
 authors = ["lehhair"]
 license = "GPL-3.0-only"
 repository = ""

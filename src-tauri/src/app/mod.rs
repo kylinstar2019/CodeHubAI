@@ -85,7 +85,7 @@ fn create_hidden_content_window(
         label,
         tauri::WebviewUrl::App("index.html".into()),
     ))
-    .title("OpenCode")
+    .title("CodeHubAI")
     .inner_size(800.0, 600.0);
 
     #[cfg(windows)]
@@ -250,11 +250,11 @@ pub fn run() {
             commands::utils::get_cli_directory,
             commands::utils::open_new_window,
             commands::utils::desktop_window_ready,
-            commands::opencode::check_opencode_service,
-            commands::opencode::start_opencode_service,
-            commands::opencode::stop_opencode_service,
-            commands::opencode::get_service_started_by_us,
-            commands::opencode::confirm_close_app,
+            commands::CodeHubAI::check_CodeHubAI_service,
+            commands::CodeHubAI::start_CodeHubAI_service,
+            commands::CodeHubAI::stop_CodeHubAI_service,
+            commands::CodeHubAI::get_service_started_by_us,
+            commands::CodeHubAI::confirm_close_app,
         ]);
 
     // Android: 注册 bridge commands

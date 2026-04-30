@@ -804,7 +804,7 @@ export function SidePanel({
         >
           <a href="/" className="flex items-center whitespace-nowrap">
             <span className="text-[length:var(--fs-heading-3)] font-semibold text-text-100 tracking-tight">
-              {t('header.openCode')}
+              {t('header.CodeHubAI')}
             </span>
           </a>
         </div>

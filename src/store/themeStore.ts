@@ -203,9 +203,9 @@ const STORAGE_KEY_MANUAL_TERMINAL_TITLES = 'manual-terminal-titles'
 // DOM Style Element IDs
 // ============================================
 
-const STYLE_ID_THEME = 'opencode-theme-vars'
-const STYLE_ID_FONT_SCALE = 'opencode-font-scale'
-const STYLE_ID_CUSTOM = 'opencode-custom-css'
+const STYLE_ID_THEME = 'CodeHubAI-theme-vars'
+const STYLE_ID_FONT_SCALE = 'CodeHubAI-font-scale'
+const STYLE_ID_CUSTOM = 'CodeHubAI-custom-css'
 
 function parseCustomCSSSnippets(raw: string | null): CustomCSSSnippet[] {
   if (!raw) return []
@@ -726,8 +726,8 @@ class ThemeStore {
       if (meta) meta.setAttribute('content', hex)
 
       const androidBridge = (
-        window as unknown as { __opencode_android?: { setSystemBars?: (mode: string, bg: string) => void } }
-      ).__opencode_android
+        window as unknown as { __CodeHubAI_android?: { setSystemBars?: (mode: string, bg: string) => void } }
+      ).__CodeHubAI_android
       if (androidBridge?.setSystemBars) {
         androidBridge.setSystemBars(resolvedMode, hex)
       }
