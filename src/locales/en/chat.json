@@ -8,7 +8,11 @@
     "closeBottomPanel": "Close bottom panel",
     "openBottomPanel": "Open bottom panel",
     "closePanel": "Close panel",
-    "openPanel": "Open panel"
+    "openPanel": "Open panel",
+    "assistantSwitched": "Assistant Switched",
+    "assistantSwitchedDesc": "Switched to {{name}}",
+    "needApiConfig": "Need API Configuration",
+    "needApiConfigDesc": "Please configure your model API in settings first"
   },
   "chatArea": {
     "loadingSession": "Loading session...",

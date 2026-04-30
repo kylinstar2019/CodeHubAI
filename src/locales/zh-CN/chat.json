@@ -8,7 +8,11 @@
     "closeBottomPanel": "关闭底部面板",
     "openBottomPanel": "打开底部面板",
     "closePanel": "关闭面板",
-    "openPanel": "打开面板"
+    "openPanel": "打开面板",
+    "assistantSwitched": "助手已切换",
+    "assistantSwitchedDesc": "已切换到 {{name}}",
+    "needApiConfig": "需要配置 API",
+    "needApiConfigDesc": "请先在设置中配置您的大模型 API"
   },
   "chatArea": {
     "loadingSession": "加载会话中...",

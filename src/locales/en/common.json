@@ -66,5 +66,10 @@
   "upDownSelect": "↑↓ select",
   "enterRun": "↵ run",
   "enterConfirmShort": "↵ confirm",
-  "escCancel": "esc cancel"
+  "escCancel": "esc cancel",
+  "assistant": {
+    "select": "Select assistant",
+    "needConfig": "Need config"
+  },
+  "active": "Active"
 }
