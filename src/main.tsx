@@ -97,7 +97,7 @@ if (isNativeTauri) {
   }
 
   // Auto-start CodeHubAI serve（如果设置开启）
-  if (!isNativeTauriMobile && serviceStore.autoStart) {
+  if (!isNativeTauriMobile && serviceStore.autoStart && !serviceStore.running && !serviceStore.starting) {
     const serverUrl = serverStore.getActiveServer()?.url || 'http://127.0.0.1:4096'
     const binaryPath = serviceStore.effectiveBinaryPath
     import('@tauri-apps/api/core').then(({ invoke }) => {
