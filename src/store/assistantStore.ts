@@ -7,6 +7,7 @@ import { DEFAULT_API_CONFIG } from '../types/assistant'
 
 const STORAGE_KEY_ASSISTANT = 'codehubai-assistant'
 const STORAGE_KEY_API_CONFIG = 'codehubai-api-config'
+const STORAGE_KEY_PROVIDERS = 'codehubai-api-providers'
 
 type Listener = () => void
 
@@ -33,8 +34,33 @@ class AssistantStore {
       this.state.assistant = savedAssistant
     }
 
+    // 从新的 providers 存储 加载
+    const savedProviders = localStorage.getItem(STORAGE_KEY_PROVIDERS)
+    if (savedProviders) {
+      try {
+        const providers = JSON.parse(savedProviders)
+        if (Array.isArray(providers) && providers.length > 0) {
+          this.state.apiConfig.providers = providers.map((p: any) => ({
+            id: p.id,
+            name: p.name,
+            type: p.type,
+            url: p.url,
+            apiKey: p.apiKey,
+            models: p.models || [],
+          }))
+          if (!this.state.apiConfig.activeProviderId) {
+            this.state.apiConfig.activeProviderId = providers[0].id
+            this.state.apiConfig.activeModel = providers[0].models?.[0]
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+
+    // 兼容旧的 apiConfig 存储
     const savedConfig = localStorage.getItem(STORAGE_KEY_API_CONFIG)
-    if (savedConfig) {
+    if (savedConfig && this.state.apiConfig.providers.length === 0) {
       try {
         const parsed = JSON.parse(savedConfig)
         if (parsed && typeof parsed === 'object' && Array.isArray(parsed.providers)) {
@@ -167,6 +193,12 @@ class AssistantStore {
     this.saveToStorage()
     this.notify()
     return true
+  }
+
+  // 重新加载配置（从 localStorage 同步）
+  reloadFromStorage(): void {
+    this.loadFromStorage()
+    this.notify()
   }
 }
 
