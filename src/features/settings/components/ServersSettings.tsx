@@ -311,11 +311,15 @@ function EditServerForm({
 // Add Server Form
 // ============================================
 
+type BackendType = 'opencode' | 'ollama' | 'anthropic' | 'openai'
+
 function AddServerForm({
   onAdd,
+  onAddThirdParty,
   onCancel,
 }: {
   onAdd: (name: string, url: string, username?: string, password?: string) => void
+  onAddThirdParty: (name: string, url: string, backendType: BackendType, apiKey?: string, authType?: 'bearer' | 'x-api-key') => void
   onCancel: () => void
 }) {
   const { t } = useTranslation(['settings', 'common'])
@@ -324,6 +328,9 @@ function AddServerForm({
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [showAuth, setShowAuth] = useState(false)
+  const [backendType, setBackendType] = useState<BackendType>('opencode')
+  const [apiKey, setApiKey] = useState('')
+  const [authType, setAuthType] = useState<'bearer' | 'x-api-key'>('bearer')
   const [error, setError] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -343,12 +350,22 @@ function AddServerForm({
       return
     }
 
-    onAdd(
-      name.trim(),
-      url.trim(),
-      password.trim() ? username.trim() || 'opencode' : undefined,
-      password.trim() || undefined,
-    )
+    if (backendType === 'opencode') {
+      onAdd(
+        name.trim(),
+        url.trim(),
+        password.trim() ? username.trim() || 'opencode' : undefined,
+        password.trim() || undefined,
+      )
+    } else {
+      onAddThirdParty(
+        name.trim(),
+        url.trim(),
+        backendType,
+        apiKey.trim() || undefined,
+        apiKey.trim() ? authType : undefined,
+      )
+    }
   }
 
   const isCrossOrigin = (() => {
@@ -366,6 +383,22 @@ function AddServerForm({
 
   return (
     <form onSubmit={handleSubmit} className="p-3 rounded-lg border border-border-200 bg-bg-050 space-y-2.5">
+      <div>
+        <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">Backend Type</label>
+        <select
+          value={backendType}
+          onChange={e => {
+            setBackendType(e.target.value as BackendType)
+            setError('')
+          }}
+          className={inputCls}
+        >
+          <option value="opencode">OpenCode Server</option>
+          <option value="ollama">Ollama</option>
+          <option value="anthropic">Anthropic (Claude)</option>
+          <option value="openai">OpenAI Compatible</option>
+        </select>
+      </div>
       <div>
         <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.name')}</label>
         <input
@@ -394,59 +427,90 @@ function AddServerForm({
         />
       </div>
 
-      <button
-        type="button"
-        onClick={() => setShowAuth(!showAuth)}
-        className="flex items-center gap-1.5 text-[length:var(--fs-xs)] text-accent-main-100 hover:text-accent-main-200 transition-colors"
-      >
-        <KeyIcon size={10} />
-        {showAuth ? t('servers.hideAuth') : t('servers.addAuth')}
-      </button>
+      {backendType === 'opencode' ? (
+        <>
+          <button
+            type="button"
+            onClick={() => setShowAuth(!showAuth)}
+            className="flex items-center gap-1.5 text-[length:var(--fs-xs)] text-accent-main-100 hover:text-accent-main-200 transition-colors"
+          >
+            <KeyIcon size={10} />
+            {showAuth ? t('servers.hideAuth') : t('servers.addAuth')}
+          </button>
 
-      {showAuth && (
+          {showAuth && (
+            <>
+              <div>
+                <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.username')}</label>
+                <input
+                  type="text"
+                  value={username}
+                  onChange={e => {
+                    setUsername(e.target.value)
+                    setError('')
+                  }}
+                  placeholder={t('servers.usernamePlaceholder')}
+                  className={inputCls}
+                />
+              </div>
+              <div>
+                <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.password')}</label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={e => {
+                    setPassword(e.target.value)
+                    setError('')
+                  }}
+                  placeholder={t('servers.passwordPlaceholder')}
+                  className={inputCls}
+                />
+              </div>
+
+              {isCrossOrigin && password.trim() && (
+                <div className="text-[length:var(--fs-xs)] text-warning-100 bg-warning-bg border border-warning-100/20 rounded-md px-2.5 py-2 leading-relaxed">
+                  {t('servers.crossOriginWarning')}{' '}
+                  <a
+                    href="https://github.com/anomalyco/opencode/issues/10047"
+                    target="_blank"
+                    rel="noopener"
+                    className="underline hover:no-underline"
+                  >
+                    #10047
+                  </a>
+                </div>
+              )}
+
+              <div className="text-[length:var(--fs-xs)] text-text-400 leading-relaxed">{t('servers.credentialsStorage')}</div>
+            </>
+          )}
+        </>
+      ) : (
         <>
           <div>
-            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.username')}</label>
+            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">API Key</label>
             <input
-              type="text"
-              value={username}
+              type="password"
+              value={apiKey}
               onChange={e => {
-                setUsername(e.target.value)
+                setApiKey(e.target.value)
                 setError('')
               }}
-              placeholder={t('servers.usernamePlaceholder')}
+              placeholder="Enter API key..."
               className={inputCls}
             />
           </div>
           <div>
-            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.password')}</label>
-            <input
-              type="password"
-              value={password}
-              onChange={e => {
-                setPassword(e.target.value)
-                setError('')
-              }}
-              placeholder={t('servers.passwordPlaceholder')}
+            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">Auth Type</label>
+            <select
+              value={authType}
+              onChange={e => setAuthType(e.target.value as 'bearer' | 'x-api-key')}
               className={inputCls}
-            />
+            >
+              <option value="bearer">Bearer Token</option>
+              <option value="x-api-key">x-api-key Header</option>
+            </select>
           </div>
-
-          {isCrossOrigin && password.trim() && (
-            <div className="text-[length:var(--fs-xs)] text-warning-100 bg-warning-bg border border-warning-100/20 rounded-md px-2.5 py-2 leading-relaxed">
-              {t('servers.crossOriginWarning')}{' '}
-              <a
-                href="https://github.com/anomalyco/opencode/issues/10047"
-                target="_blank"
-                rel="noopener"
-                className="underline hover:no-underline"
-              >
-                #10047
-              </a>
-            </div>
-          )}
-
-          <div className="text-[length:var(--fs-xs)] text-text-400 leading-relaxed">{t('servers.credentialsStorage')}</div>
         </>
       )}
 
@@ -474,6 +538,7 @@ export function ServersSettings() {
     servers,
     activeServer,
     addServer,
+    addThirdPartyServer,
     removeServer,
     updateServer,
     setActiveServer,
@@ -558,6 +623,22 @@ export function ServersSettings() {
               onAdd={(n, u, user, pass) => {
                 const auth = pass ? { username: user || 'opencode', password: pass } : undefined
                 const s = addServer({ name: n, url: u, auth })
+                setAddingServer(false)
+                checkHealth(s.id)
+              }}
+              onAddThirdParty={(n, u, backendType, apiKey, authType) => {
+                const typeMap: Record<string, 'ollama' | 'anthropic' | 'openai' | 'claude-code'> = {
+                  ollama: 'ollama',
+                  anthropic: 'anthropic',
+                  openai: 'openai',
+                }
+                const s = addThirdPartyServer({
+                  name: n,
+                  url: u,
+                  backendType: typeMap[backendType] || 'openai',
+                  apiKey,
+                  authType: authType as 'bearer' | 'x-api-key',
+                })
                 setAddingServer(false)
                 checkHealth(s.id)
               }}
