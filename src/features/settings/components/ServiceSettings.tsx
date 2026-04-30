@@ -53,6 +53,9 @@ export function ServiceSettings() {
   const getServerUrl = () => activeServer?.url || 'http://127.0.0.1:4096'
 
   const handleStartService = async () => {
+    // 防止重复点击
+    if (serviceStarting || serviceRunning) return
+
     setServiceError('')
     try {
       const { invoke } = await import('@tauri-apps/api/core')
@@ -68,6 +71,7 @@ export function ServiceSettings() {
       const msg = String(e)
       apiErrorHandler('start service', msg)
       setServiceError(msg)
+      serviceStore.setRunning(false)
     } finally {
       serviceStore.setStarting(false)
     }
@@ -163,15 +167,23 @@ export function ServiceSettings() {
                   {t('common:start')}
                 </Button>
               )}
+              {serviceStarting && (
+                <Button size="sm" variant="ghost" disabled>
+                  <SpinnerIcon size={12} className="animate-spin mr-1" />
+                  {t('service.starting')}
+                </Button>
+              )}
               {!serviceStarting && serviceRunning && startedByUs && (
                 <Button size="sm" variant="ghost" onClick={handleStopService}>
                   <StopIcon size={12} className="mr-1" />
                   {t('common:stop')}
                 </Button>
               )}
-              <Button size="sm" variant="ghost" onClick={handleCheckService} disabled={serviceStarting}>
-                {t('common:refresh')}
-              </Button>
+              {!serviceStarting && (
+                <Button size="sm" variant="ghost" onClick={handleCheckService}>
+                  {t('common:refresh')}
+                </Button>
+              )}
             </div>
           </SettingRow>
         </div>

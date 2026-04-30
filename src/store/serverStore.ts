@@ -110,7 +110,7 @@ class ServerStore {
         this.servers = [
           {
             id: this.DEFAULT_SERVER_ID,
-            name: 'Local',
+            name: 'OpenCode',
             url: API_BASE_URL,
             isDefault: true,
           },
@@ -132,7 +132,7 @@ class ServerStore {
       this.servers = [
         {
           id: this.DEFAULT_SERVER_ID,
-          name: 'Local',
+          name: 'OpenCode',
           url: API_BASE_URL,
           isDefault: true,
         },
@@ -550,7 +550,7 @@ function normalizeServerBackup(raw: unknown): ServerSettingsBackup {
     : [
         {
           id: 'local',
-          name: 'Local',
+          name: 'OpenCode',
           url: API_BASE_URL,
           isDefault: true,
         },
