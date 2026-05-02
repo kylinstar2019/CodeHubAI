@@ -1,14 +1,14 @@
 // ============================================
-// Service Store - CodeHubAI serve 进程管理
+// Service Store - opencode serve 进程管理
 // 管理自动启动设置 + 可执行文件路径 + 环境变量 + 进程生命周期
 // 仅在 Tauri 桌面端有效
 // ============================================
 
 import { useSyncExternalStore } from 'react'
 
-const STORAGE_KEY_AUTO_START = 'CodeHubAI-auto-start-service'
-const STORAGE_KEY_BINARY_PATH = 'CodeHubAI-binary-path'
-const STORAGE_KEY_ENV_VARS = 'CodeHubAI-service-env-vars'
+const STORAGE_KEY_AUTO_START = 'opencode-auto-start-service'
+const STORAGE_KEY_BINARY_PATH = 'opencode-binary-path'
+const STORAGE_KEY_ENV_VARS = 'opencode-service-env-vars'
 
 /** 环境变量键值对 */
 export interface EnvVar {
@@ -24,7 +24,7 @@ export interface ServiceSettingsBackup {
 
 interface ServiceStoreSnapshot {
   autoStart: boolean
-  /** CodeHubAI 可执行文件路径，空字符串表示使用默认 "CodeHubAI" */
+  /** opencode 可执行文件路径，空字符串表示使用默认 "opencode" */
   binaryPath: string
   /** 传给子进程的额外环境变量 */
   envVars: EnvVar[]
@@ -89,7 +89,7 @@ class ServiceStore {
 
   /** 返回实际要用的可执行文件路径，空则回退默认值 */
   get effectiveBinaryPath() {
-    return this._binaryPath.trim() || 'CodeHubAI'
+    return this._binaryPath.trim() || 'opencode'
   }
 
   /** 将 envVars 转为 Record<string, string>，方便传给 Rust */

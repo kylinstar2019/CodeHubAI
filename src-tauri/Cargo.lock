@@ -593,31 +593,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "codehubai"
-version = "0.5.19"
-dependencies = [
- "futures-util",
- "log",
- "papaya",
- "rapidhash",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-decorum",
- "tauri-plugin-dialog",
- "tauri-plugin-fs",
- "tauri-plugin-http",
- "tauri-plugin-log",
- "tauri-plugin-notification",
- "tauri-plugin-opener",
- "tauri-plugin-single-instance",
- "tokio",
- "tokio-tungstenite",
-]
-
-[[package]]
 name = "combine"
 version = "4.6.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2746,6 +2721,31 @@ dependencies = [
  "is-wsl",
  "libc",
  "pathdiff",
+]
+
+[[package]]
+name = "opencodeui"
+version = "0.5.20"
+dependencies = [
+ "futures-util",
+ "log",
+ "papaya",
+ "rapidhash",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-decorum",
+ "tauri-plugin-dialog",
+ "tauri-plugin-fs",
+ "tauri-plugin-http",
+ "tauri-plugin-log",
+ "tauri-plugin-notification",
+ "tauri-plugin-opener",
+ "tauri-plugin-single-instance",
+ "tokio",
+ "tokio-tungstenite",
 ]
 
 [[package]]

@@ -1,8 +1,8 @@
-﻿# CodeHubAI
+# OpenCodeUI
 
 中文 | [English](./README_EN.md)
 
-一个为 [CodeHubAI](https://github.com/anomalyco/CodeHubAI) 打造的第三方 Web 前端界面。
+一个为 [OpenCode](https://github.com/anomalyco/opencode) 打造的第三方 Web 前端界面。
 
 **本项目完全由 AI 辅助编程（Vibe Coding）完成**——从第一行代码到最终发布，所有功能均通过与 AI 对话驱动开发。
 
@@ -43,23 +43,23 @@
 
 ## 快速体验
 
-无需部署，在本地启动 CodeHubAI 后端后直接访问托管版前端：
+无需部署，在本地启动 OpenCode 后端后直接访问托管版前端：
 
 ```bash
-CodeHubAI serve --cors "https://lehhair.github.io"
+opencode serve --cors "https://lehhair.github.io"
 ```
 
-然后打开 https://lehhair.github.io/CodeHubAI/
+然后打开 https://lehhair.github.io/OpenCodeUI/
 
 ## Docker 部署（纯前端）
 
-适用于已有 `CodeHubAI serve` 在运行的场景，只需一个前端 UI 容器连接到现有后端。
+适用于已有 `opencode serve` 在运行的场景，只需一个前端 UI 容器连接到现有后端。
 
 ```bash
-git clone https://github.com/lehhair/CodeHubAI.git
-cd CodeHubAI
+git clone https://github.com/lehhair/OpenCodeUI.git
+cd OpenCodeUI
 
-# 启动（默认连接宿主机的 CodeHubAI serve :4096）
+# 启动（默认连接宿主机的 opencode serve :4096）
 docker compose -f docker-compose.standalone.yml up -d
 ```
 
@@ -73,7 +73,7 @@ BACKEND_URL=your-server.com:4096 PORT=8080 docker compose -f docker-compose.stan
 
 | 环境变量      | 默认值                      | 说明                                |
 | ------------- | --------------------------- | ----------------------------------- |
-| `BACKEND_URL` | `host.docker.internal:4096` | CodeHubAI serve 地址（不含协议前缀） |
+| `BACKEND_URL` | `host.docker.internal:4096` | opencode serve 地址（不含协议前缀） |
 | `PORT`        | `3000`                      | 前端监听端口                        |
 
 ## Docker 部署
@@ -87,7 +87,7 @@ BACKEND_URL=your-server.com:4096 PORT=8080 docker compose -f docker-compose.stan
 | Gateway  | 6658（`GATEWAY_PORT`） | 统一入口，反代所有请求         |
 | Gateway  | 6659（`PREVIEW_PORT`） | 开发服务预览专用               |
 | Frontend | 3000（内部）           | 静态前端                       |
-| Backend  | 4096（内部）           | CodeHubAI API                   |
+| Backend  | 4096（内部）           | OpenCode API                   |
 | Router   | 7070（内部）           | 动态端口路由（内置于 Gateway） |
 
 ### Gateway 路由规则
@@ -96,7 +96,7 @@ BACKEND_URL=your-server.com:4096 PORT=8080 docker compose -f docker-compose.stan
 
 | 路径         | 转发目标       | 说明                   |
 | ------------ | -------------- | ---------------------- |
-| `/api/*`     | Backend :4096  | CodeHubAI API，支持 SSE |
+| `/api/*`     | Backend :4096  | OpenCode API，支持 SSE |
 | `/routes`    | Router :7070   | 动态路由管理面板       |
 | `/preview/*` | Router :7070   | 预览端口切换 API       |
 | 其他         | Frontend :3000 | 前端静态资源           |
@@ -106,8 +106,8 @@ BACKEND_URL=your-server.com:4096 PORT=8080 docker compose -f docker-compose.stan
 ### 部署步骤
 
 ```bash
-git clone https://github.com/lehhair/CodeHubAI.git
-cd CodeHubAI
+git clone https://github.com/lehhair/OpenCodeUI.git
+cd OpenCodeUI
 
 # 复制并编辑环境变量，至少填写一个 LLM API Key
 cp .env.example .env
@@ -120,17 +120,17 @@ docker compose up -d
 
 ### 环境持久化（简化版）
 
-现在后端只保留一个核心持久化卷：`CodeHubAI-home`（挂载到 `/root`）。
+现在后端只保留一个核心持久化卷：`opencode-home`（挂载到 `/root`）。
 
-后端入口脚本会在启动时自动校验并补齐 `CodeHubAI` / `mise`，避免容器重建后工具链丢失。
+后端入口脚本会在启动时自动校验并补齐 `opencode` / `mise`，避免容器重建后工具链丢失。
 
-- CodeHubAI 配置与会话缓存
+- OpenCode 配置与会话缓存
 - npm / cargo / pip 等用户态缓存
 - 通过 `mise` 安装的 Node / Python 多版本运行时
 
 容器重建后，上述内容都会保留，不需要再拆成多个小卷。
 
-从旧版本升级时，原来的 `CodeHubAI-data/CodeHubAI-config/CodeHubAI-cache/CodeHubAI-npm/CodeHubAI-cargo/CodeHubAI-local/CodeHubAI-opt` 会变成孤立卷，可在确认数据已迁移后手动清理。
+从旧版本升级时，原来的 `opencode-data/opencode-config/opencode-cache/opencode-npm/opencode-cargo/opencode-local/opencode-opt` 会变成孤立卷，可在确认数据已迁移后手动清理。
 
 首次进入后端容器可直接安装并固化运行时版本：
 
@@ -140,7 +140,7 @@ docker compose exec backend node -v
 docker compose exec backend python -V
 ```
 
-`gateway` 仍保留单独卷 `CodeHubAI-router-data`，用于存放动态路由状态。
+`gateway` 仍保留单独卷 `opencode-router-data`，用于存放动态路由状态。
 
 ### 环境变量
 
@@ -159,8 +159,8 @@ PREVIEW_PORT=6659
 WORKSPACE=./workspace
 
 # 公网部署务必设置
-CodeHubAI_SERVER_USERNAME=CodeHubAI
-CodeHubAI_SERVER_PASSWORD=your-strong-password
+OPENCODE_SERVER_USERNAME=opencode
+OPENCODE_SERVER_PASSWORD=your-strong-password
 
 # 路由服务
 ROUTER_SCAN_INTERVAL=5
@@ -177,7 +177,7 @@ Docker 默认监听 `127.0.0.1`，公网部署需在前面加反向代理。
 ```nginx
 server {
     listen 443 ssl;
-    server_name CodeHubAI.example.com;
+    server_name opencode.example.com;
 
     ssl_certificate     /path/to/cert.pem;
     ssl_certificate_key /path/to/key.pem;
@@ -225,7 +225,7 @@ server {
 **Caddy：**
 
 ```caddyfile
-CodeHubAI.example.com {
+opencode.example.com {
     reverse_proxy 127.0.0.1:6658 {
         flush_interval -1
     }
@@ -240,14 +240,14 @@ preview.example.com {
 
 ## 本地开发
 
-需要一个运行中的 [CodeHubAI](https://github.com/anomalyco/CodeHubAI) 后端。
+需要一个运行中的 [OpenCode](https://github.com/anomalyco/opencode) 后端。
 
 ```bash
-CodeHubAI serve
+opencode serve
 
 # 另一个终端
-git clone https://github.com/lehhair/CodeHubAI.git
-cd CodeHubAI
+git clone https://github.com/lehhair/OpenCodeUI.git
+cd OpenCodeUI
 npm install
 npm run dev
 ```
@@ -284,7 +284,7 @@ npm run release:prepare -- 0.2.0
 
 ## 桌面应用
 
-从 [Releases](https://github.com/lehhair/CodeHubAI/releases) 下载安装包，或本地构建：
+从 [Releases](https://github.com/lehhair/OpenCodeUI/releases) 下载安装包，或本地构建：
 
 ```bash
 npm install
@@ -323,11 +323,11 @@ docker/                  # Docker 配置（Gateway / Frontend / Backend）
 
 ## Star History
 
-<a href="https://www.star-history.com/#lehhair/CodeHubAI&Date">
+<a href="https://www.star-history.com/#lehhair/OpenCodeUI&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lehhair/CodeHubAI&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=lehhair/OpenCodeUI&type=Date" />
  </picture>
 </a>
 

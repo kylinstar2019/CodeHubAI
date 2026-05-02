@@ -108,15 +108,15 @@ interface LayoutState {
 
 type Subscriber = () => void
 
-const STORAGE_KEY_WAKE_LOCK = 'CodeHubAI-wake-lock'
-const STORAGE_KEY_SIDEBAR = 'CodeHubAI-sidebar-expanded'
-const STORAGE_KEY_SIDEBAR_FOLDER_RECENTS = 'CodeHubAI-sidebar-folder-recents'
-const STORAGE_KEY_SIDEBAR_FOLDER_RECENTS_SHOW_DIFF = 'CodeHubAI-sidebar-folder-recents-show-diff'
-const STORAGE_KEY_SIDEBAR_SHOW_CHILD_SESSIONS = 'CodeHubAI-sidebar-show-child-sessions'
-const STORAGE_KEY_PANEL_LAYOUT = 'CodeHubAI-panel-layout'
-const STORAGE_KEY_TERMINAL_LAYOUT = 'CodeHubAI-terminal-layout'
-const STORAGE_KEY_RIGHT_PANEL_WIDTH = 'CodeHubAI-right-panel-width'
-const STORAGE_KEY_BOTTOM_PANEL_HEIGHT = 'CodeHubAI-bottom-panel-height'
+const STORAGE_KEY_WAKE_LOCK = 'opencode-wake-lock'
+const STORAGE_KEY_SIDEBAR = 'opencode-sidebar-expanded'
+const STORAGE_KEY_SIDEBAR_FOLDER_RECENTS = 'opencode-sidebar-folder-recents'
+const STORAGE_KEY_SIDEBAR_FOLDER_RECENTS_SHOW_DIFF = 'opencode-sidebar-folder-recents-show-diff'
+const STORAGE_KEY_SIDEBAR_SHOW_CHILD_SESSIONS = 'opencode-sidebar-show-child-sessions'
+const STORAGE_KEY_PANEL_LAYOUT = 'opencode-panel-layout'
+const STORAGE_KEY_TERMINAL_LAYOUT = 'opencode-terminal-layout'
+const STORAGE_KEY_RIGHT_PANEL_WIDTH = 'opencode-right-panel-width'
+const STORAGE_KEY_BOTTOM_PANEL_HEIGHT = 'opencode-bottom-panel-height'
 const STORAGE_KEY_VIEWPORT_SIDEBAR_WIDTH = 'sidebar-width'
 
 interface PersistedPanelTab {
@@ -882,7 +882,7 @@ export class LayoutStore {
   setBottomPanelHeight(height: number) {
     this.state.bottomPanelHeight = height
     try {
-      localStorage.setItem('CodeHubAI-bottom-panel-height', height.toString())
+      localStorage.setItem('opencode-bottom-panel-height', height.toString())
     } catch {
       // ignore
     }

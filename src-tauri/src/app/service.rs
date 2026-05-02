@@ -1,6 +1,6 @@
 use std::sync::atomic::{AtomicBool, AtomicU32};
 
-/// 跟踪我们是否启动了 CodeHubAI serve 进程
+/// 跟踪我们是否启动了 opencode serve 进程
 pub struct ServiceState {
     /// 我们启动的子进程 PID
     pub child_pid: AtomicU32,

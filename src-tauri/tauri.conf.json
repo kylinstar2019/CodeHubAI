@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "CodeHubAI",
-  "version": "0.5.19",
-  "identifier": "com.codehubai.app",
+  "productName": "OpenCode",
+  "version": "0.5.20",
+  "identifier": "com.opencodeui.app",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -15,7 +15,7 @@
       {
         "label": "main",
         "create": false,
-        "title": "CodeHubAI",
+        "title": "OpenCode",
         "width": 800,
         "height": 600,
         "titleBarStyle": "Overlay",
@@ -39,7 +39,7 @@
   "bundle": {
     "active": true,
     "targets": ["nsis", "dmg", "deb"],
-    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png"],
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
     "windows": {
       "nsis": {
         "installerHooks": "./windows/hooks.nsi"

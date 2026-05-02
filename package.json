@@ -1,7 +1,7 @@
 {
-  "name": "codehubai",
-  "version": "0.5.19",
-  "description": "CodeHubAI - A multi-backend AI coding assistant",
+  "name": "opencodeui",
+  "version": "0.5.20",
+  "description": "A third-party web frontend for OpenCode",
   "license": "GPL-3.0-only",
   "type": "module",
   "scripts": {

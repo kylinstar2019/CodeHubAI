@@ -15,7 +15,7 @@ export interface NotificationEventSettingsBackup {
 
 type Subscriber = () => void
 
-const STORAGE_KEY = 'CodeHubAI:notification-event-settings'
+const STORAGE_KEY = 'opencode:notification-event-settings'
 
 function createDefaultSettings(): NotificationEventSettings {
   return {

@@ -46,7 +46,7 @@ class AutoApproveStore {
 
   // 功能开关（存 localStorage，持久化）
   private _enabled: boolean = false
-  private readonly STORAGE_KEY = 'CodeHubAI-auto-approve-enabled'
+  private readonly STORAGE_KEY = 'opencode-auto-approve-enabled'
 
   // Full Auto 模式（纯内存，不持久化，刷新即关）
   // off: 不自动放行

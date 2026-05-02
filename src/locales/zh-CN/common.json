@@ -66,10 +66,5 @@
   "upDownSelect": "↑↓ 选择",
   "enterRun": "↵ 执行",
   "enterConfirmShort": "↵ 确认",
-  "escCancel": "Esc 取消",
-  "assistant": {
-    "select": "选择助手",
-    "needConfig": "需配置"
-  },
-  "active": "当前"
+  "escCancel": "Esc 取消"
 }

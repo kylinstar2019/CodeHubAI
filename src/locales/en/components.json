@@ -155,8 +155,8 @@
     "selectFile": "Select a file to view changes"
   },
   "closeService": {
-    "title": "Close CodeHubAI",
-    "description": "The CodeHubAI service was started by this app. Do you want to stop it as well?",
+    "title": "Close OpenCode",
+    "description": "The opencode service was started by this app. Do you want to stop it as well?",
     "closeAndStop": "Close and stop service",
     "closeKeepRunning": "Close, keep service running"
   },

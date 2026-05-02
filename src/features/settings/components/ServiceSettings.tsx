@@ -53,14 +53,11 @@ export function ServiceSettings() {
   const getServerUrl = () => activeServer?.url || 'http://127.0.0.1:4096'
 
   const handleStartService = async () => {
-    // 防止重复点击
-    if (serviceStarting || serviceRunning) return
-
     setServiceError('')
     try {
       const { invoke } = await import('@tauri-apps/api/core')
       serviceStore.setStarting(true)
-      const weStarted = await invoke<boolean>('start_CodeHubAI_service', {
+      const weStarted = await invoke<boolean>('start_opencode_service', {
         url: getServerUrl(),
         binaryPath: serviceStore.effectiveBinaryPath,
         envVars: serviceStore.envVarsRecord,
@@ -71,7 +68,6 @@ export function ServiceSettings() {
       const msg = String(e)
       apiErrorHandler('start service', msg)
       setServiceError(msg)
-      serviceStore.setRunning(false)
     } finally {
       serviceStore.setStarting(false)
     }
@@ -81,7 +77,7 @@ export function ServiceSettings() {
     setServiceError('')
     try {
       const { invoke } = await import('@tauri-apps/api/core')
-      await invoke('stop_CodeHubAI_service')
+      await invoke('stop_opencode_service')
       serviceStore.setStartedByUs(false)
       serviceStore.setRunning(false)
     } catch (e) {
@@ -92,7 +88,7 @@ export function ServiceSettings() {
   const handleCheckService = async () => {
     try {
       const { invoke } = await import('@tauri-apps/api/core')
-      const running = await invoke<boolean>('check_CodeHubAI_service', { url: getServerUrl() })
+      const running = await invoke<boolean>('check_opencode_service', { url: getServerUrl() })
       serviceStore.setRunning(running)
       if (running) {
         const byUs = await invoke<boolean>('get_service_started_by_us')
@@ -167,23 +163,15 @@ export function ServiceSettings() {
                   {t('common:start')}
                 </Button>
               )}
-              {serviceStarting && (
-                <Button size="sm" variant="ghost" disabled>
-                  <SpinnerIcon size={12} className="animate-spin mr-1" />
-                  {t('service.starting')}
-                </Button>
-              )}
               {!serviceStarting && serviceRunning && startedByUs && (
                 <Button size="sm" variant="ghost" onClick={handleStopService}>
                   <StopIcon size={12} className="mr-1" />
                   {t('common:stop')}
                 </Button>
               )}
-              {!serviceStarting && (
-                <Button size="sm" variant="ghost" onClick={handleCheckService}>
-                  {t('common:refresh')}
-                </Button>
-              )}
+              <Button size="sm" variant="ghost" onClick={handleCheckService} disabled={serviceStarting}>
+                {t('common:refresh')}
+              </Button>
             </div>
           </SettingRow>
         </div>

@@ -162,7 +162,7 @@ export function useChatSession({
       const session = sessions.find(s => s.id === sessionId)
       if (session?.title) return session.title
       if (sessionId) return `Session ${sessionId.slice(0, 6)}`
-      return 'CodeHubAI'
+      return 'OpenCode'
     },
     [sessions],
   )

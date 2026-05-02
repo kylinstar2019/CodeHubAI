@@ -1,6 +1,6 @@
 {
   "header": {
-    "CodeHubAI": "CodeHubAI",
+    "openCode": "OpenCode",
     "newChat": "新对话",
     "openSidebar": "打开侧边栏",
     "clickToRename": "点击重命名",
@@ -8,11 +8,7 @@
     "closeBottomPanel": "关闭底部面板",
     "openBottomPanel": "打开底部面板",
     "closePanel": "关闭面板",
-    "openPanel": "打开面板",
-    "assistantSwitched": "助手已切换",
-    "assistantSwitchedDesc": "已切换到 {{name}}",
-    "needApiConfig": "需要配置 API",
-    "needApiConfigDesc": "请先在设置中配置您的大模型 API"
+    "openPanel": "打开面板"
   },
   "chatArea": {
     "loadingSession": "加载会话中...",
@@ -122,7 +118,7 @@
   "sidebar": {
     "allProjects": "全部项目",
     "global": "全局",
-    "globalProjectHint": "非 Git 项目，通常是 CodeHubAI 启动目录",
+    "globalProjectHint": "非 Git 项目，通常是 opencode 启动目录",
     "collapseSidebar": "收起侧边栏",
     "expandSidebar": "展开侧边栏",
     "newChat": "新对话",

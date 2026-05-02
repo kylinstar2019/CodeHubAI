@@ -14,14 +14,12 @@ import { isTauri } from '../utils/tauri'
 // Tauri fetch 缓存
 let _tauriFetch: typeof globalThis.fetch | null = null
 let _tauriFetchLoading: Promise<typeof globalThis.fetch> | null = null
-let _tauriFetchReady = false
 
 async function getTauriFetch(): Promise<typeof globalThis.fetch> {
   if (_tauriFetch) return _tauriFetch
   if (_tauriFetchLoading) return _tauriFetchLoading
   _tauriFetchLoading = import('@tauri-apps/plugin-http').then(mod => {
     _tauriFetch = mod.fetch as unknown as typeof globalThis.fetch
-    _tauriFetchReady = true
     return _tauriFetch
   })
   return _tauriFetchLoading
@@ -48,22 +46,8 @@ function buildHeaders(): Record<string, string> {
 }
 
 /**
- * 创建一个自动使用 Tauri fetch 的 wrapper
- * 在 Tauri 环境中，如果 tauri fetch 还未加载，会等待加载完成
- */
-function createTauriAwareFetch(): typeof fetch {
-  return async (input, init) => {
-    if (isTauri()) {
-      const tauriFetch = await getTauriFetch()
-      return tauriFetch(input, init)
-    }
-    return globalThis.fetch(input, init)
-  }
-}
-
-/**
- * 同步获取 SDK client
- * 在 Tauri 环境中使用 tauri-aware fetch wrapper（内部会异步等待 tauri fetch 加载）
+ * 同步获取 SDK client（浏览器环境 or tauri fetch 已加载）
+ * 如果 tauri fetch 还没加载完，先用原生 fetch
  */
 export function getSDKClient(): OpencodeClient {
   const key = buildCacheKey()
@@ -77,8 +61,8 @@ export function getSDKClient(): OpencodeClient {
   _cachedClient = createOpencodeClient({
     baseUrl,
     headers,
-    // 在 Tauri 环境中使用 wrapper，它会自动处理 tauri fetch 的异步加载
-    ...(isTauri() ? { fetch: createTauriAwareFetch() } : {}),
+    // 如果 tauri fetch 已经加载了就用它，否则不传（用默认 fetch）
+    ...(isTauri() && _tauriFetch ? { fetch: _tauriFetch as typeof fetch } : {}),
   })
   _cachedKey = key
   return _cachedClient
@@ -86,20 +70,16 @@ export function getSDKClient(): OpencodeClient {
 
 /**
  * 异步获取 SDK client（确保 tauri fetch 已加载）
- * 在应用初始化时应该先调一次这个，预加载 tauri fetch
+ * 在应用初始化时应该先调一次这个
  */
 export async function getSDKClientAsync(): Promise<OpencodeClient> {
   if (isTauri()) {
     await getTauriFetch()
   }
+  // 使 cache 失效以便用新的 tauri fetch 重建
+  _cachedClient = null
+  _cachedKey = ''
   return getSDKClient()
-}
-
-/**
- * 检查 SDK client 是否已准备好（Tauri fetch 已加载）
- */
-export function isSDKClientReady(): boolean {
-  return !isTauri() || _tauriFetchReady
 }
 
 /**

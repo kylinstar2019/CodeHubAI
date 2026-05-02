@@ -11,8 +11,8 @@ import { serverStore } from '../store/serverStore'
 import { isTauri } from '../utils/tauri'
 import { DirectoryContext, type DirectoryContextValue, type SavedDirectory } from './DirectoryContext.shared'
 
-const STORAGE_KEY_SAVED = 'CodeHubAI-saved-directories'
-const STORAGE_KEY_RECENT = 'CodeHubAI-recent-projects'
+const STORAGE_KEY_SAVED = 'opencode-saved-directories'
+const STORAGE_KEY_RECENT = 'opencode-recent-projects'
 
 // 最近使用记录: { [path]: lastUsedAt }
 type RecentProjects = Record<string, number>

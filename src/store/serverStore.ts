@@ -4,7 +4,6 @@
 
 import { API_BASE_URL } from '../constants'
 import { isTauri } from '../utils/tauri'
-import type { ExtendedServerConfig } from '../types/backend'
 
 // Tauri plugin-http fetch 缓存（避免重复 dynamic import）
 let _tauriFetch: typeof globalThis.fetch | null = null
@@ -110,7 +109,7 @@ class ServerStore {
         this.servers = [
           {
             id: this.DEFAULT_SERVER_ID,
-            name: 'OpenCode',
+            name: 'Local',
             url: API_BASE_URL,
             isDefault: true,
           },
@@ -132,7 +131,7 @@ class ServerStore {
       this.servers = [
         {
           id: this.DEFAULT_SERVER_ID,
-          name: 'OpenCode',
+          name: 'Local',
           url: API_BASE_URL,
           isDefault: true,
         },
@@ -357,35 +356,21 @@ class ServerStore {
   // Health Check
   // ============================================
 
-/**
- * 检查服务器健康状态
- */
-async checkHealth(serverId: string): Promise<ServerHealth> {
-  const server = this.servers.find(s => s.id === serverId)
-  if (!server) {
-    return { status: 'error', error: 'Server not found' }
-  }
-
-  // 如果是第三方后端，使用新的健康检查
-  if ((server as any).backendType && (server as any).backendType !== 'opencode') {
-    return this.checkThirdPartyHealth(server as any, Date.now())
-  }
-
-  return this.checkOpenCodeHealth(server, Date.now())
-  }
-
   /**
-   * 检查所有服务器健康状态
+   * 检查服务器健康状态
    */
-  async checkAllHealth(): Promise<void> {
-    await Promise.all(this.servers.map(s => this.checkHealth(s.id)))
-  }
+  async checkHealth(serverId: string): Promise<ServerHealth> {
+    const server = this.servers.find(s => s.id === serverId)
+    if (!server) {
+      return { status: 'error', error: 'Server not found' }
+    }
 
-  // ============================================
-  // Third-party Backend Support
-  // ============================================
+    // 标记为检查中
+    this.healthMap.set(serverId, { status: 'checking' })
+    this.notify()
 
-  private async checkOpenCodeHealth(server: ServerConfig, startTime: number): Promise<ServerHealth> {
+    const startTime = Date.now()
+
     try {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 5000)
@@ -407,111 +392,63 @@ async checkHealth(serverId: string): Promise<ServerHealth> {
       const latency = Date.now() - startTime
 
       if (response.ok) {
+        // 解析返回的健康信息
         let version: string | undefined
         try {
           const data = await response.json()
           version = data.version
-        } catch { /* ignore */ }
+        } catch {
+          // ignore parse error
+        }
 
-        const health: ServerHealth = { status: 'online', latency, lastCheck: Date.now(), version }
-        this.healthMap.set(server.id, health)
+        const health: ServerHealth = {
+          status: 'online',
+          latency,
+          lastCheck: Date.now(),
+          version,
+        }
+        this.healthMap.set(serverId, health)
         this.notify()
         return health
       } else if (response.status === 401) {
-        const health: ServerHealth = { status: 'unauthorized', latency, lastCheck: Date.now(), error: 'Invalid credentials' }
-        this.healthMap.set(server.id, health)
+        // 认证失败
+        const health: ServerHealth = {
+          status: 'unauthorized',
+          latency,
+          lastCheck: Date.now(),
+          error: 'Invalid credentials',
+        }
+        this.healthMap.set(serverId, health)
         this.notify()
         return health
       } else {
-        const health: ServerHealth = { status: 'error', latency, lastCheck: Date.now(), error: `HTTP ${response.status}` }
-        this.healthMap.set(server.id, health)
+        const health: ServerHealth = {
+          status: 'error',
+          latency,
+          lastCheck: Date.now(),
+          error: `HTTP ${response.status}`,
+        }
+        this.healthMap.set(serverId, health)
         this.notify()
         return health
       }
     } catch (err) {
-      const health: ServerHealth = { status: 'offline', lastCheck: Date.now(), error: err instanceof Error ? err.message : 'Connection failed' }
-      this.healthMap.set(server.id, health)
-      this.notify()
-      return health
-    }
-  }
-
-  private async checkThirdPartyHealth(server: ExtendedServerConfig, _startTime: number): Promise<ServerHealth> {
-    const { checkBackendHealth } = await import('../api/backends')
-
-    this.healthMap.set(server.id, { status: 'checking' })
-    this.notify()
-
-    try {
-      const status = await checkBackendHealth(server)
       const health: ServerHealth = {
-        status: status.connection === 'connected' ? 'online' : 'offline',
-        latency: status.latency,
+        status: 'offline',
         lastCheck: Date.now(),
-        version: status.version,
-        error: status.error,
+        error: err instanceof Error ? err.message : 'Connection failed',
       }
-      this.healthMap.set(server.id, health)
-      this.notify()
-      return health
-    } catch (err) {
-      const health: ServerHealth = { status: 'offline', lastCheck: Date.now(), error: String(err) }
-      this.healthMap.set(server.id, health)
+      this.healthMap.set(serverId, health)
       this.notify()
       return health
     }
   }
 
   /**
-   * 添加第三方后端服务器
+   * 检查所有服务器健康状态
    */
-  addThirdPartyServer(config: {
-    name: string
-    url: string
-    backendType: 'ollama' | 'anthropic' | 'openai' | 'claude-code'
-    apiKey?: string
-    authType?: 'none' | 'bearer' | 'x-api-key' | 'basic'
-  }): ExtendedServerConfig {
-    const server: ExtendedServerConfig = {
-      id: `server-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      name: config.name,
-      url: config.url.replace(/\/+$/, ''),
-      backendType: config.backendType,
-      apiKey: config.apiKey,
-      authType: config.authType,
-      models: [],
-      mcpServers: [],
-      skills: [],
-      status: { connection: 'disconnected', lastChecked: Date.now() },
-      createdAt: Date.now(),
-      updatedAt: Date.now(),
-    }
-
-    this.servers.push(server as ServerConfig)
-    this.saveToStorage()
-    this.notify()
-    return server
-  }
-
-  /**
-   * 刷新第三方后端模型列表
-   */
-  async refreshThirdPartyModels(serverId: string): Promise<void> {
-    const server = this.servers.find(s => s.id === serverId) as ExtendedServerConfig | undefined
-    if (!server || !server.backendType || server.backendType === 'opencode') return
-
-    const { listBackendModels } = await import('../api/backends')
-    try {
-      const models = await listBackendModels(server)
-      const index = this.servers.findIndex(s => s.id === serverId)
-      if (index !== -1) {
-        (this.servers[index] as ExtendedServerConfig).models = models
-        this.saveToStorage()
-        this.notify()
-      }
-    } catch (err) {
-      console.error('Failed to refresh models:', err)
-    }
+  async checkAllHealth(): Promise<void> {
+    await Promise.all(this.servers.map(s => this.checkHealth(s.id)))
   }
 }
 
@@ -550,7 +487,7 @@ function normalizeServerBackup(raw: unknown): ServerSettingsBackup {
     : [
         {
           id: 'local',
-          name: 'OpenCode',
+          name: 'Local',
           url: API_BASE_URL,
           isDefault: true,
         },

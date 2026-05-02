@@ -4,7 +4,6 @@
 
 import { useSyncExternalStore, useCallback } from 'react'
 import { serverStore, type ServerConfig, type ServerHealth } from '../store/serverStore'
-import type { ExtendedServerConfig } from '../types/backend'
 export type { ServerConfig, ServerHealth }
 
 /**
@@ -31,16 +30,6 @@ export function useServerStore() {
 
   const addServer = useCallback((config: Omit<ServerConfig, 'id'>) => {
     return serverStore.addServer(config)
-  }, [])
-
-  const addThirdPartyServer = useCallback((config: {
-    name: string
-    url: string
-    backendType: 'ollama' | 'anthropic' | 'openai' | 'claude-code'
-    apiKey?: string
-    authType?: 'none' | 'bearer' | 'x-api-key' | 'basic'
-  }): ExtendedServerConfig => {
-    return serverStore.addThirdPartyServer(config)
   }, [])
 
   const updateServer = useCallback((id: string, updates: Partial<Omit<ServerConfig, 'id'>>) => {
@@ -75,7 +64,6 @@ export function useServerStore() {
     activeServer,
     healthMap,
     addServer,
-    addThirdPartyServer,
     updateServer,
     removeServer,
     setActiveServer,

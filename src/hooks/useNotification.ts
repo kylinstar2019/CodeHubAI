@@ -196,8 +196,8 @@ export function useNotification() {
 
     const notificationOptions: NotificationOptions = {
       body,
-      icon: '/CodeHubAI.svg',
-      tag: data?.sessionId || 'CodeHubAI',
+      icon: '/opencode.svg',
+      tag: data?.sessionId || 'opencode',
       data,
     }
 

@@ -1,12 +1,12 @@
 {
   "openapi": "3.1.1",
-  "info": { "title": "CodeHubAI", "description": "CodeHubAI api", "version": "0.0.3" },
+  "info": { "title": "opencode", "description": "opencode api", "version": "0.0.3" },
   "paths": {
     "/global/health": {
       "get": {
         "operationId": "global.health",
         "summary": "Get health",
-        "description": "Get health information about the CodeHubAI server.",
+        "description": "Get health information about the OpenCode server.",
         "responses": {
           "200": {
             "description": "Health information",
@@ -27,7 +27,7 @@
       "get": {
         "operationId": "global.event",
         "summary": "Get global events",
-        "description": "Subscribe to global events from the CodeHubAI system using server-sent events.",
+        "description": "Subscribe to global events from the OpenCode system using server-sent events.",
         "responses": {
           "200": {
             "description": "Event stream",
@@ -40,7 +40,7 @@
       "get": {
         "operationId": "global.config.get",
         "summary": "Get global configuration",
-        "description": "Retrieve the current global CodeHubAI configuration settings and preferences.",
+        "description": "Retrieve the current global OpenCode configuration settings and preferences.",
         "responses": {
           "200": {
             "description": "Get global config info",
@@ -51,7 +51,7 @@
       "patch": {
         "operationId": "global.config.update",
         "summary": "Update global configuration",
-        "description": "Update global CodeHubAI configuration settings and preferences.",
+        "description": "Update global OpenCode configuration settings and preferences.",
         "responses": {
           "200": {
             "description": "Successfully updated global config",
@@ -69,7 +69,7 @@
       "post": {
         "operationId": "global.dispose",
         "summary": "Dispose instance",
-        "description": "Clean up and dispose all CodeHubAI instances, releasing all resources.",
+        "description": "Clean up and dispose all OpenCode instances, releasing all resources.",
         "responses": {
           "200": {
             "description": "Global disposed",
@@ -118,7 +118,7 @@
         "operationId": "project.list",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "List all projects",
-        "description": "Get a list of projects that have been opened with CodeHubAI.",
+        "description": "Get a list of projects that have been opened with OpenCode.",
         "responses": {
           "200": {
             "description": "List of projects",
@@ -134,7 +134,7 @@
         "operationId": "project.current",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Get current project",
-        "description": "Retrieve the currently active project that CodeHubAI is working with.",
+        "description": "Retrieve the currently active project that OpenCode is working with.",
         "responses": {
           "200": {
             "description": "Current project information",
@@ -202,7 +202,7 @@
         "operationId": "pty.list",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "List PTY sessions",
-        "description": "Get a list of all active pseudo-terminal (PTY) sessions managed by CodeHubAI.",
+        "description": "Get a list of all active pseudo-terminal (PTY) sessions managed by OpenCode.",
         "responses": {
           "200": {
             "description": "List of sessions",
@@ -351,7 +351,7 @@
         "operationId": "config.get",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Get configuration",
-        "description": "Retrieve the current CodeHubAI configuration settings and preferences.",
+        "description": "Retrieve the current OpenCode configuration settings and preferences.",
         "responses": {
           "200": {
             "description": "Get config info",
@@ -363,7 +363,7 @@
         "operationId": "config.update",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Update configuration",
-        "description": "Update CodeHubAI configuration settings and preferences.",
+        "description": "Update OpenCode configuration settings and preferences.",
         "responses": {
           "200": {
             "description": "Successfully updated config",
@@ -577,7 +577,7 @@
           }
         ],
         "summary": "List sessions",
-        "description": "Get a list of all CodeHubAI sessions, sorted by most recently updated.",
+        "description": "Get a list of all OpenCode sessions, sorted by most recently updated.",
         "responses": {
           "200": {
             "description": "List of sessions",
@@ -591,7 +591,7 @@
         "operationId": "session.create",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Create session",
-        "description": "Create a new CodeHubAI session for interacting with AI assistants and managing conversations.",
+        "description": "Create a new OpenCode session for interacting with AI assistants and managing conversations.",
         "responses": {
           "200": {
             "description": "Successfully created session",
@@ -652,7 +652,7 @@
           { "in": "path", "name": "sessionID", "schema": { "type": "string", "pattern": "^ses.*" }, "required": true }
         ],
         "summary": "Get session",
-        "description": "Retrieve detailed information about a specific CodeHubAI session.",
+        "description": "Retrieve detailed information about a specific OpenCode session.",
         "tags": ["Session"],
         "responses": {
           "200": {
@@ -2592,7 +2592,7 @@
         "operationId": "instance.dispose",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Dispose instance",
-        "description": "Clean up and dispose the current CodeHubAI instance, releasing all resources.",
+        "description": "Clean up and dispose the current OpenCode instance, releasing all resources.",
         "responses": {
           "200": {
             "description": "Instance disposed",
@@ -2606,7 +2606,7 @@
         "operationId": "path.get",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "Get paths",
-        "description": "Retrieve the current working directory and related path information for the CodeHubAI instance.",
+        "description": "Retrieve the current working directory and related path information for the OpenCode instance.",
         "responses": {
           "200": {
             "description": "Path",
@@ -2634,7 +2634,7 @@
         "operationId": "command.list",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "List commands",
-        "description": "Get a list of all available commands in the CodeHubAI system.",
+        "description": "Get a list of all available commands in the OpenCode system.",
         "responses": {
           "200": {
             "description": "List of commands",
@@ -2689,7 +2689,7 @@
         "operationId": "app.agents",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "List agents",
-        "description": "Get a list of all available AI agents in the CodeHubAI system.",
+        "description": "Get a list of all available AI agents in the OpenCode system.",
         "responses": {
           "200": {
             "description": "List of agents",
@@ -2705,7 +2705,7 @@
         "operationId": "app.skills",
         "parameters": [{ "in": "query", "name": "directory", "schema": { "type": "string" } }],
         "summary": "List skills",
-        "description": "Get a list of all available skills in the CodeHubAI system.",
+        "description": "Get a list of all available skills in the OpenCode system.",
         "responses": {
           "200": {
             "description": "List of skills",
@@ -4296,7 +4296,7 @@
       },
       "LogLevel": { "description": "Log level", "type": "string", "enum": ["DEBUG", "INFO", "WARN", "ERROR"] },
       "ServerConfig": {
-        "description": "Server configuration for CodeHubAI serve and web commands",
+        "description": "Server configuration for opencode serve and web commands",
         "type": "object",
         "properties": {
           "port": {
@@ -4629,7 +4629,7 @@
           },
           "server": { "$ref": "#/components/schemas/ServerConfig" },
           "command": {
-            "description": "Command configuration, see https://CodeHubAI.ai/docs/commands",
+            "description": "Command configuration, see https://opencode.ai/docs/commands",
             "type": "object",
             "propertyNames": { "type": "string" },
             "additionalProperties": {
@@ -4710,7 +4710,7 @@
             "additionalProperties": { "$ref": "#/components/schemas/AgentConfig" }
           },
           "agent": {
-            "description": "Agent configuration, see https://CodeHubAI.ai/docs/agents",
+            "description": "Agent configuration, see https://opencode.ai/docs/agents",
             "type": "object",
             "properties": {
               "plan": { "$ref": "#/components/schemas/AgentConfig" },

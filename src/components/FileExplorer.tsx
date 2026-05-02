@@ -302,7 +302,7 @@ const FileTreeItem = memo(function FileTreeItem({
         absolute: node.absolute, // 绝对路径
         name: node.name,
       }
-      e.dataTransfer.setData('application/CodeHubAI-file', JSON.stringify(fileData))
+      e.dataTransfer.setData('application/opencode-file', JSON.stringify(fileData))
       e.dataTransfer.effectAllowed = 'copy'
     },
     [node.path, node.absolute, node.name, isDirectory],

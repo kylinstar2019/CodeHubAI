@@ -63,7 +63,7 @@ export interface ParsedKeybinding {
 
 type Listener = () => void
 
-const STORAGE_KEY = 'CodeHubAI-keybindings'
+const STORAGE_KEY = 'opencode-keybindings'
 
 /**
  * 默认快捷键配置

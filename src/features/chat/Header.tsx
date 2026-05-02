@@ -11,9 +11,8 @@ import {
 } from '../../components/Icons'
 import { IconButton } from '../../components/ui'
 import { ModelSelector, type ModelSelectorHandle } from './ModelSelector'
-import { AssistantSelector } from '../../components/AssistantSelector'
 import { ShareDialog } from './ShareDialog'
-import { messageStore, useMessageStore, notificationStore } from '../../store'
+import { messageStore, useMessageStore } from '../../store'
 import { useLayoutStore, layoutStore } from '../../store/layoutStore'
 import { useSessionContext } from '../../contexts/useSessionContext'
 import { updateSession } from '../../api'
@@ -138,9 +137,9 @@ export function Header({
   const isCompact = presentation.isCompact
 
   useEffect(() => {
-    document.title = currentSessionTitle ? `${currentSessionTitle} - CodeHubAI` : 'CodeHubAI'
+    document.title = currentSessionTitle ? `${currentSessionTitle} - OpenCode` : 'OpenCode'
     return () => {
-      document.title = 'CodeHubAI'
+      document.title = 'OpenCode'
     }
   }, [currentSessionTitle])
 
@@ -210,34 +209,13 @@ export function Header({
         )}
 
         {!isCompact && (
-          <>
-            <AssistantSelector
-              onSwitch={(assistant) => {
-                const assistantName = assistant === 'opencode' ? 'OpenCode' : 'Claude Code'
-                notificationStore.push(
-                  'completed',
-                  t('header.assistantSwitched'),
-                  t('header.assistantSwitchedDesc', { name: assistantName }),
-                  sessionId || ''
-                )
-              }}
-              onNeedConfig={() => {
-                notificationStore.push(
-                  'error',
-                  t('header.needApiConfig'),
-                  t('header.needApiConfigDesc'),
-                  sessionId || ''
-                )
-              }}
-            />
-            <ModelSelector
-              ref={modelSelectorRef}
-              models={models}
-              selectedModelKey={selectedModelKey}
-              onSelect={onModelChange}
-              isLoading={modelsLoading}
-            />
-          </>
+          <ModelSelector
+            ref={modelSelectorRef}
+            models={models}
+            selectedModelKey={selectedModelKey}
+            onSelect={onModelChange}
+            isLoading={modelsLoading}
+          />
         )}
 
         {isCompact && <div className="min-w-0">{titleControl}</div>}

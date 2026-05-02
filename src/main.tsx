@@ -96,26 +96,26 @@ if (isNativeTauri) {
     }
   }
 
-  // Auto-start CodeHubAI serve（如果设置开启）
-  if (!isNativeTauriMobile && serviceStore.autoStart && !serviceStore.running && !serviceStore.starting) {
+  // Auto-start opencode serve（如果设置开启）
+  if (!isNativeTauriMobile && serviceStore.autoStart) {
     const serverUrl = serverStore.getActiveServer()?.url || 'http://127.0.0.1:4096'
     const binaryPath = serviceStore.effectiveBinaryPath
     import('@tauri-apps/api/core').then(({ invoke }) => {
       serviceStore.setStarting(true)
-      invoke<boolean>('start_CodeHubAI_service', { url: serverUrl, binaryPath, envVars: serviceStore.envVarsRecord })
+      invoke<boolean>('start_opencode_service', { url: serverUrl, binaryPath, envVars: serviceStore.envVarsRecord })
         .then(weStarted => {
           serviceStore.setStartedByUs(weStarted)
           serviceStore.setRunning(true)
           serviceStore.setStarting(false)
           if (weStarted) {
-            console.info('[Service] CodeHubAI serve started by app')
+            console.info('[Service] opencode serve started by app')
           } else {
-            console.info('[Service] CodeHubAI serve already running')
+            console.info('[Service] opencode serve already running')
           }
         })
         .catch(err => {
           serviceStore.setStarting(false)
-          apiErrorHandler('auto-start CodeHubAI serve', err)
+          apiErrorHandler('auto-start opencode serve', err)
         })
     })
   }

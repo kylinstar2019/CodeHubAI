@@ -23,24 +23,15 @@ use std::sync::Arc;
 #[cfg(not(target_os = "android"))]
 use tauri::Emitter;
 
-/// 检查是否是 serve 子命令（用于阻止 single-instance 回调）
-#[cfg(not(target_os = "android"))]
-fn is_serve_command(args: &[String]) -> bool {
-    args.iter().any(|arg| arg == "serve")
-}
-
 /// 从命令行参数中提取目录路径
 #[cfg(not(target_os = "android"))]
 fn extract_directory_from_args(args: &[String]) -> Option<String> {
     for arg in args.iter().skip(1) {
         if arg.starts_with('-') {
-            continue
-        }
-        if arg == "serve" {
-            continue
+            continue;
         }
         if std::path::Path::new(arg).is_dir() {
-            return Some(arg.clone())
+            return Some(arg.clone());
         }
     }
     None
@@ -94,7 +85,7 @@ fn create_hidden_content_window(
         label,
         tauri::WebviewUrl::App("index.html".into()),
     ))
-    .title("CodeHubAI")
+    .title("OpenCode")
     .inner_size(800.0, 600.0);
 
     #[cfg(windows)]
@@ -175,11 +166,6 @@ pub fn run() {
         builder
             .manage(OpenDirectoryState::default())
             .plugin(tauri_plugin_single_instance::init(|app, args, _cwd| {
-                // 如果是 serve 子命令，不创建窗口（避免无限循环）
-                if is_serve_command(&args) {
-                    log::info!("Single-instance: serve command detected, skipping window creation");
-                    return;
-                }
                 // 始终新建窗口（类似 VSCode：双击图标 = 新窗口）
                 let dir = extract_directory_from_args(&args);
                 log::info!("Single-instance: opening new window, directory: {:?}", dir);
@@ -264,11 +250,11 @@ pub fn run() {
             commands::utils::get_cli_directory,
             commands::utils::open_new_window,
             commands::utils::desktop_window_ready,
-            commands::CodeHubAI::check_CodeHubAI_service,
-            commands::CodeHubAI::start_CodeHubAI_service,
-            commands::CodeHubAI::stop_CodeHubAI_service,
-            commands::CodeHubAI::get_service_started_by_us,
-            commands::CodeHubAI::confirm_close_app,
+            commands::opencode::check_opencode_service,
+            commands::opencode::start_opencode_service,
+            commands::opencode::stop_opencode_service,
+            commands::opencode::get_service_started_by_us,
+            commands::opencode::confirm_close_app,
         ]);
 
     // Android: 注册 bridge commands

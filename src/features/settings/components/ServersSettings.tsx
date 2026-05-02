@@ -311,15 +311,11 @@ function EditServerForm({
 // Add Server Form
 // ============================================
 
-type BackendType = 'opencode' | 'ollama' | 'anthropic' | 'openai'
-
 function AddServerForm({
   onAdd,
-  onAddThirdParty,
   onCancel,
 }: {
   onAdd: (name: string, url: string, username?: string, password?: string) => void
-  onAddThirdParty: (name: string, url: string, backendType: BackendType, apiKey?: string, authType?: 'bearer' | 'x-api-key') => void
   onCancel: () => void
 }) {
   const { t } = useTranslation(['settings', 'common'])
@@ -328,9 +324,6 @@ function AddServerForm({
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [showAuth, setShowAuth] = useState(false)
-  const [backendType, setBackendType] = useState<BackendType>('opencode')
-  const [apiKey, setApiKey] = useState('')
-  const [authType, setAuthType] = useState<'bearer' | 'x-api-key'>('bearer')
   const [error, setError] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -350,22 +343,12 @@ function AddServerForm({
       return
     }
 
-    if (backendType === 'opencode') {
-      onAdd(
-        name.trim(),
-        url.trim(),
-        password.trim() ? username.trim() || 'opencode' : undefined,
-        password.trim() || undefined,
-      )
-    } else {
-      onAddThirdParty(
-        name.trim(),
-        url.trim(),
-        backendType,
-        apiKey.trim() || undefined,
-        apiKey.trim() ? authType : undefined,
-      )
-    }
+    onAdd(
+      name.trim(),
+      url.trim(),
+      password.trim() ? username.trim() || 'opencode' : undefined,
+      password.trim() || undefined,
+    )
   }
 
   const isCrossOrigin = (() => {
@@ -383,22 +366,6 @@ function AddServerForm({
 
   return (
     <form onSubmit={handleSubmit} className="p-3 rounded-lg border border-border-200 bg-bg-050 space-y-2.5">
-      <div>
-        <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">Backend Type</label>
-        <select
-          value={backendType}
-          onChange={e => {
-            setBackendType(e.target.value as BackendType)
-            setError('')
-          }}
-          className={inputCls}
-        >
-          <option value="opencode">OpenCode Server</option>
-          <option value="ollama">Ollama</option>
-          <option value="anthropic">Anthropic (Claude)</option>
-          <option value="openai">OpenAI Compatible</option>
-        </select>
-      </div>
       <div>
         <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.name')}</label>
         <input
@@ -427,90 +394,59 @@ function AddServerForm({
         />
       </div>
 
-      {backendType === 'opencode' ? (
-        <>
-          <button
-            type="button"
-            onClick={() => setShowAuth(!showAuth)}
-            className="flex items-center gap-1.5 text-[length:var(--fs-xs)] text-accent-main-100 hover:text-accent-main-200 transition-colors"
-          >
-            <KeyIcon size={10} />
-            {showAuth ? t('servers.hideAuth') : t('servers.addAuth')}
-          </button>
+      <button
+        type="button"
+        onClick={() => setShowAuth(!showAuth)}
+        className="flex items-center gap-1.5 text-[length:var(--fs-xs)] text-accent-main-100 hover:text-accent-main-200 transition-colors"
+      >
+        <KeyIcon size={10} />
+        {showAuth ? t('servers.hideAuth') : t('servers.addAuth')}
+      </button>
 
-          {showAuth && (
-            <>
-              <div>
-                <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.username')}</label>
-                <input
-                  type="text"
-                  value={username}
-                  onChange={e => {
-                    setUsername(e.target.value)
-                    setError('')
-                  }}
-                  placeholder={t('servers.usernamePlaceholder')}
-                  className={inputCls}
-                />
-              </div>
-              <div>
-                <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.password')}</label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={e => {
-                    setPassword(e.target.value)
-                    setError('')
-                  }}
-                  placeholder={t('servers.passwordPlaceholder')}
-                  className={inputCls}
-                />
-              </div>
-
-              {isCrossOrigin && password.trim() && (
-                <div className="text-[length:var(--fs-xs)] text-warning-100 bg-warning-bg border border-warning-100/20 rounded-md px-2.5 py-2 leading-relaxed">
-                  {t('servers.crossOriginWarning')}{' '}
-                  <a
-                    href="https://github.com/anomalyco/opencode/issues/10047"
-                    target="_blank"
-                    rel="noopener"
-                    className="underline hover:no-underline"
-                  >
-                    #10047
-                  </a>
-                </div>
-              )}
-
-              <div className="text-[length:var(--fs-xs)] text-text-400 leading-relaxed">{t('servers.credentialsStorage')}</div>
-            </>
-          )}
-        </>
-      ) : (
+      {showAuth && (
         <>
           <div>
-            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">API Key</label>
+            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.username')}</label>
             <input
-              type="password"
-              value={apiKey}
+              type="text"
+              value={username}
               onChange={e => {
-                setApiKey(e.target.value)
+                setUsername(e.target.value)
                 setError('')
               }}
-              placeholder="Enter API key..."
+              placeholder={t('servers.usernamePlaceholder')}
               className={inputCls}
             />
           </div>
           <div>
-            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">Auth Type</label>
-            <select
-              value={authType}
-              onChange={e => setAuthType(e.target.value as 'bearer' | 'x-api-key')}
+            <label className="block text-[length:var(--fs-xs)] font-medium text-text-300 mb-1">{t('servers.password')}</label>
+            <input
+              type="password"
+              value={password}
+              onChange={e => {
+                setPassword(e.target.value)
+                setError('')
+              }}
+              placeholder={t('servers.passwordPlaceholder')}
               className={inputCls}
-            >
-              <option value="bearer">Bearer Token</option>
-              <option value="x-api-key">x-api-key Header</option>
-            </select>
+            />
           </div>
+
+          {isCrossOrigin && password.trim() && (
+            <div className="text-[length:var(--fs-xs)] text-warning-100 bg-warning-bg border border-warning-100/20 rounded-md px-2.5 py-2 leading-relaxed">
+              {t('servers.crossOriginWarning')}{' '}
+              <a
+                href="https://github.com/anomalyco/opencode/issues/10047"
+                target="_blank"
+                rel="noopener"
+                className="underline hover:no-underline"
+              >
+                #10047
+              </a>
+            </div>
+          )}
+
+          <div className="text-[length:var(--fs-xs)] text-text-400 leading-relaxed">{t('servers.credentialsStorage')}</div>
         </>
       )}
 
@@ -538,7 +474,6 @@ export function ServersSettings() {
     servers,
     activeServer,
     addServer,
-    addThirdPartyServer,
     removeServer,
     updateServer,
     setActiveServer,
@@ -626,22 +561,6 @@ export function ServersSettings() {
                 setAddingServer(false)
                 checkHealth(s.id)
               }}
-              onAddThirdParty={(n, u, backendType, apiKey, authType) => {
-                const typeMap: Record<string, 'ollama' | 'anthropic' | 'openai' | 'claude-code'> = {
-                  ollama: 'ollama',
-                  anthropic: 'anthropic',
-                  openai: 'openai',
-                }
-                const s = addThirdPartyServer({
-                  name: n,
-                  url: u,
-                  backendType: typeMap[backendType] || 'openai',
-                  apiKey,
-                  authType: authType as 'bearer' | 'x-api-key',
-                })
-                setAddingServer(false)
-                checkHealth(s.id)
-              }}
               onCancel={() => setAddingServer(false)}
             />
           )}
@@ -651,330 +570,6 @@ export function ServersSettings() {
           )}
         </div>
       </SettingsCard>
-
-      {/* Claude Code API 配置 */}
-      <ClaudeCodeApiSettings />
-    </div>
-  )
-}
-
-// ============================================
-// Claude Code API 配置组件
-// ============================================
-
-function ClaudeCodeApiSettings() {
-  const { t } = useTranslation(['settings', 'common'])
-  const [providers, setProviders] = useState<Array<{
-    id: string
-    name: string
-    type: 'anthropic' | 'openai' | 'ollama'
-    url: string
-    apiKey: string
-    models: string[]
-  }>>([])
-  const [editing, setEditing] = useState<string | null>(null)
-  const [adding, setAdding] = useState(false)
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem('codehubai-api-providers')
-      if (saved) setProviders(JSON.parse(saved))
-    } catch { /* ignore */ }
-  }, [])
-
-  const saveProviders = (list: typeof providers) => {
-    setProviders(list)
-    localStorage.setItem('codehubai-api-providers', JSON.stringify(list))
-  }
-
-  return (
-    <SettingsCard
-      title="Claude Code API 配置"
-      description="配置您的大模型 API，用于 Claude Code 编程助手"
-    >
-      <div className="space-y-3">
-        {providers.map(p => (
-          <div key={p.id} className="p-3 rounded-lg border border-border-200 bg-bg-050">
-            {editing === p.id ? (
-              <EditProviderForm
-                provider={p}
-                onSave={updates => {
-                  saveProviders(providers.map(x => x.id === p.id ? { ...x, ...updates } : x))
-                  setEditing(null)
-                }}
-                onCancel={() => setEditing(null)}
-              />
-            ) : (
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-[length:var(--fs-md)] font-medium text-text-100">{p.name}</div>
-                  <div className="text-[length:var(--fs-xs)] text-text-400">{p.url}</div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => setEditing(p.id)}
-                    className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-border-200 text-text-300 hover:text-text-100 hover:bg-bg-100 transition-colors"
-                  >
-                    {t('common:edit')}
-                  </button>
-                  <button
-                    onClick={() => saveProviders(providers.filter(x => x.id !== p.id))}
-                    className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-danger-100/40 text-danger-100 hover:bg-danger-100/10 transition-colors"
-                  >
-                    {t('common:remove')}
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-
-        {adding && (
-          <AddProviderForm
-            onAdd={p => {
-              saveProviders([...providers, { ...p, id: `provider-${Date.now()}` }])
-              setAdding(false)
-            }}
-            onCancel={() => setAdding(false)}
-          />
-        )}
-
-        {!adding && providers.length === 0 && (
-          <div className="text-[length:var(--fs-sm)] text-text-400 text-center py-4">
-            暂未配置 API，点击下方按钮添加
-          </div>
-        )}
-
-        {!adding && (
-          <button
-            onClick={() => setAdding(true)}
-            className="w-full py-2 rounded-md border border-dashed border-border-300 text-text-400 hover:text-text-200 hover:border-accent-main-100/50 hover:bg-accent-main-100/5 transition-colors text-[length:var(--fs-sm)]"
-          >
-            + 添加 API 提供商
-          </button>
-        )}
-      </div>
-    </SettingsCard>
-  )
-}
-
-function AddProviderForm({
-  onAdd,
-  onCancel,
-}: {
-  onAdd: (p: { name: string; type: 'anthropic' | 'openai' | 'ollama'; url: string; apiKey: string; models: string[] }) => void
-  onCancel: () => void
-}) {
-  const [name, setName] = useState('')
-  const [type, setType] = useState<'anthropic' | 'openai' | 'ollama'>('openai')
-  const [url, setUrl] = useState('')
-  const [apiKey, setApiKey] = useState('')
-  const [models, setModels] = useState('')
-
-  const presets = [
-    { name: '腾讯云', type: 'anthropic' as const, url: 'https://api.lkeap.cloud.tencent.com/coding/anthropic' },
-    { name: 'DeepSeek', type: 'openai' as const, url: 'https://api.deepseek.com/v1' },
-    { name: 'Ollama 本地', type: 'ollama' as const, url: 'http://127.0.0.1:11434' },
-  ]
-
-  const inputCls =
-    'w-full h-8 px-3 text-[length:var(--fs-md)] bg-bg-000 border border-border-200 rounded-md focus:outline-none focus:border-accent-main-100/50 text-text-100 placeholder:text-text-400'
-
-  return (
-    <div className="p-3 rounded-lg border border-accent-main-100/30 bg-accent-main-100/[0.02] space-y-2.5">
-      <div className="flex flex-wrap gap-1.5">
-        {presets.map(p => (
-          <button
-            key={p.name}
-            onClick={() => {
-              setName(p.name)
-              setType(p.type)
-              setUrl(p.url)
-            }}
-            className="text-[length:var(--fs-xs)] px-2 py-1 rounded border border-border-200 text-text-300 hover:text-text-100 hover:bg-bg-100 transition-colors"
-          >
-            {p.name}
-          </button>
-        ))}
-      </div>
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">名称</label>
-        <input
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          placeholder="如：腾讯云、DeepSeek"
-          className={inputCls}
-        />
-      </div>
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">类型</label>
-        <select
-          value={type}
-          onChange={e => setType(e.target.value as typeof type)}
-          className={inputCls}
-        >
-          <option value="anthropic">Anthropic 兼容</option>
-          <option value="openai">OpenAI 兼容</option>
-          <option value="ollama">Ollama</option>
-        </select>
-      </div>
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API 地址</label>
-        <input
-          type="text"
-          value={url}
-          onChange={e => setUrl(e.target.value)}
-          placeholder="https://api.example.com/v1"
-          className={`${inputCls} font-mono`}
-        />
-      </div>
-
-      {type !== 'ollama' && (
-        <div>
-          <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API Key</label>
-          <input
-            type="password"
-            value={apiKey}
-            onChange={e => setApiKey(e.target.value)}
-            placeholder="sk-xxx"
-            className={`${inputCls} font-mono`}
-          />
-        </div>
-      )}
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">模型列表（逗号分隔）</label>
-        <input
-          type="text"
-          value={models}
-          onChange={e => setModels(e.target.value)}
-          placeholder="deepseek-chat, deepseek-coder"
-          className={inputCls}
-        />
-      </div>
-
-      <div className="flex justify-end gap-2 pt-1">
-        <Button size="sm" variant="ghost" onClick={onCancel}>
-          取消
-        </Button>
-        <Button
-          size="sm"
-          onClick={() => {
-            if (!name.trim() || !url.trim()) return
-            onAdd({
-              name: name.trim(),
-              type,
-              url: url.trim(),
-              apiKey: apiKey.trim(),
-              models: models.split(',').map(s => s.trim()).filter(Boolean),
-            })
-          }}
-        >
-          添加
-        </Button>
-      </div>
-    </div>
-  )
-}
-
-function EditProviderForm({
-  provider,
-  onSave,
-  onCancel,
-}: {
-  provider: { name: string; type: string; url: string; apiKey: string; models: string[] }
-  onSave: (updates: { name: string; type: 'anthropic' | 'openai' | 'ollama'; url: string; apiKey: string; models: string[] }) => void
-  onCancel: () => void
-}) {
-  const [name, setName] = useState(provider.name)
-  const [type, setType] = useState(provider.type as 'anthropic' | 'openai' | 'ollama')
-  const [url, setUrl] = useState(provider.url)
-  const [apiKey, setApiKey] = useState(provider.apiKey)
-  const [models, setModels] = useState(provider.models.join(', '))
-
-  const inputCls =
-    'w-full h-8 px-3 text-[length:var(--fs-md)] bg-bg-000 border border-border-200 rounded-md focus:outline-none focus:border-accent-main-100/50 text-text-100 placeholder:text-text-400'
-
-  return (
-    <div className="space-y-2.5">
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">名称</label>
-        <input
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          className={inputCls}
-        />
-      </div>
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">类型</label>
-        <select
-          value={type}
-          onChange={e => setType(e.target.value as typeof type)}
-          className={inputCls}
-        >
-          <option value="anthropic">Anthropic 兼容</option>
-          <option value="openai">OpenAI 兼容</option>
-          <option value="ollama">Ollama</option>
-        </select>
-      </div>
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API 地址</label>
-        <input
-          type="text"
-          value={url}
-          onChange={e => setUrl(e.target.value)}
-          className={`${inputCls} font-mono`}
-        />
-      </div>
-
-      {type !== 'ollama' && (
-        <div>
-          <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">API Key</label>
-          <input
-            type="password"
-            value={apiKey}
-            onChange={e => setApiKey(e.target.value)}
-            className={`${inputCls} font-mono`}
-          />
-        </div>
-      )}
-
-      <div>
-        <label className="block text-[length:var(--fs-xs)] text-text-300 mb-1">模型列表</label>
-        <input
-          type="text"
-          value={models}
-          onChange={e => setModels(e.target.value)}
-          className={inputCls}
-        />
-      </div>
-
-      <div className="flex justify-end gap-2 pt-1">
-        <Button size="sm" variant="ghost" onClick={onCancel}>
-          取消
-        </Button>
-        <Button
-          size="sm"
-          onClick={() => {
-            onSave({
-              name: name.trim(),
-              type,
-              url: url.trim(),
-              apiKey: apiKey.trim(),
-              models: models.split(',').map(s => s.trim()).filter(Boolean),
-            })
-          }}
-        >
-          保存
-        </Button>
-      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 {
-  "name": "CodeHubAI",
-  "short_name": "CodeHubAI",
+  "name": "OpenCode",
+  "short_name": "OpenCode",
   "description": "AI Coding Assistant",
   "start_url": "/",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "theme_color": "#262524",
   "icons": [
     {
-      "src": "/CodeHubAI.svg",
+      "src": "/opencode.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

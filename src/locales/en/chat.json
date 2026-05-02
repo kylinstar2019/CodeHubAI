@@ -1,6 +1,6 @@
 {
   "header": {
-    "CodeHubAI": "CodeHubAI",
+    "openCode": "OpenCode",
     "newChat": "New Chat",
     "openSidebar": "Open sidebar",
     "clickToRename": "Click to rename",
@@ -8,11 +8,7 @@
     "closeBottomPanel": "Close bottom panel",
     "openBottomPanel": "Open bottom panel",
     "closePanel": "Close panel",
-    "openPanel": "Open panel",
-    "assistantSwitched": "Assistant Switched",
-    "assistantSwitchedDesc": "Switched to {{name}}",
-    "needApiConfig": "Need API Configuration",
-    "needApiConfigDesc": "Please configure your model API in settings first"
+    "openPanel": "Open panel"
   },
   "chatArea": {
     "loadingSession": "Loading session...",
@@ -122,7 +118,7 @@
   "sidebar": {
     "allProjects": "All projects",
     "global": "Global",
-    "globalProjectHint": "Non-Git workspace, usually where CodeHubAI started",
+    "globalProjectHint": "Non-Git workspace, usually where opencode started",
     "collapseSidebar": "Collapse sidebar",
     "expandSidebar": "Expand sidebar",
     "newChat": "New chat",
