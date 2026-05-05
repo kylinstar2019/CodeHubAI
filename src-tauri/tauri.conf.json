@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "OpenCode",
+  "productName": "CodeHubAI",
   "version": "0.5.20",
-  "identifier": "com.opencodeui.app",
+  "identifier": "com.codehubai.app",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -15,7 +15,7 @@
       {
         "label": "main",
         "create": false,
-        "title": "OpenCode",
+        "title": "CodeHubAI",
         "width": 800,
         "height": 600,
         "titleBarStyle": "Overlay",

@@ -1,0 +1,2054 @@
+{
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\eslint.config.js": {
+    "mtime": 1777724407.1606028,
+    "hash": "6570f16ddd5f3c9c850eb76ccbc6aed0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\vite.config.ts": {
+    "mtime": 1777724408.9058576,
+    "hash": "940c9e179b9bbffc7b874634d18cd789"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\vitest.config.ts": {
+    "mtime": 1777724408.9088717,
+    "hash": "059deaf30b9ceccbc28cc859a65f6d18"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\notification-sw.js": {
+    "mtime": 1777724407.1955998,
+    "hash": "971c41c4a4f78e08d9b10e5153e3474a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\scripts\\bump-version.mjs": {
+    "mtime": 1777724407.2075968,
+    "hash": "5a70c247cdfff8415fb647ecbed7f10f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\scripts\\copy-material-icons.mjs": {
+    "mtime": 1777724407.2105966,
+    "hash": "87bd5ae8be6a6b5f894df8fcc2a98683"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\scripts\\prepare-release.mjs": {
+    "mtime": 1777724407.2166393,
+    "hash": "6f08c3c4300c06adfa6299d647bbb411"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\App.tsx": {
+    "mtime": 1777724407.6080897,
+    "hash": "3cb6d7469c5b6cf252446b9c1c92b055"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\i18n.ts": {
+    "mtime": 1777724408.57254,
+    "hash": "67b59691663ef9d14cdff3d4ab230819"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\main.tsx": {
+    "mtime": 1777724408.627555,
+    "hash": "42493916ac32706e750eeda196044ec8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\vite-env.d.ts": {
+    "mtime": 1777724408.8958783,
+    "hash": "baed90355525121b50b64e9e44d58b28"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\agent.ts": {
+    "mtime": 1777724407.613083,
+    "hash": "d77709c78e2f30a238844a9258df18d3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\client.ts": {
+    "mtime": 1777724407.6160781,
+    "hash": "e214542baf57e46e8fe8de9e2a82093e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\command.test.ts": {
+    "mtime": 1777724407.6190808,
+    "hash": "4f3f82c2356c3f2540785ae5982ff313"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\command.ts": {
+    "mtime": 1777724407.6210804,
+    "hash": "d7249b0265d2bb6acae4c85fa82415ad"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\config.ts": {
+    "mtime": 1777724407.623079,
+    "hash": "82ae3a741054490c490cbe28cf63c71a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\events.test.ts": {
+    "mtime": 1777724407.626086,
+    "hash": "de1c433fde3b137c984f0c1da492511a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\events.ts": {
+    "mtime": 1777724407.629032,
+    "hash": "cc99f9a4403c49a6b8cac6c624bdc817"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\file.ts": {
+    "mtime": 1777724407.6320825,
+    "hash": "25f9574c22a026fe5f47a847dec657fc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\global.ts": {
+    "mtime": 1777724407.6340778,
+    "hash": "e73bb0437e039476bfab70d5a993344c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\http.test.ts": {
+    "mtime": 1777724407.6360767,
+    "hash": "ab8aff3a6b5b3b377a930226b39080b8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\http.ts": {
+    "mtime": 1777724407.6420794,
+    "hash": "d7ff786ae77ce44e0a04c1bbdf1b4387"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\index.ts": {
+    "mtime": 1777724407.6486871,
+    "hash": "04ef52be3ce4d316bb6e03dc489f01f4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\lsp.ts": {
+    "mtime": 1777724407.6545577,
+    "hash": "3c6a63518d79a33f7142e2e8e3af0b48"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\mcp.ts": {
+    "mtime": 1777724407.659561,
+    "hash": "44c0543623a282f646ec1aa000b44a85"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\message.ts": {
+    "mtime": 1777724407.662556,
+    "hash": "0c04f7fd7de3e9df6c841c83dd16b066"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\permission.ts": {
+    "mtime": 1777724407.6645608,
+    "hash": "fdd5c084f7496087278cb55e1970cfe9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\pty.ts": {
+    "mtime": 1777724407.6675634,
+    "hash": "adf4a57042a783484b39e219a3ce9c0e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\ptyBridge.ts": {
+    "mtime": 1777724407.6695583,
+    "hash": "b93da973c2b7dc0d2769a15eb65ba15f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\sdk.ts": {
+    "mtime": 1777724407.6725423,
+    "hash": "a72cce347d71de14b64c97f3bce4d4b7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\session.ts": {
+    "mtime": 1777724407.6745415,
+    "hash": "cb9ef2b55e65c5f1c0d856afb146f9f7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\skill.ts": {
+    "mtime": 1777724407.6775382,
+    "hash": "500002964b9ec954e1cb68cc174f9531"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\sse.test.ts": {
+    "mtime": 1777724407.6795356,
+    "hash": "3d4b7383b2dff41d7bcd7a74f2085e13"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\sse.ts": {
+    "mtime": 1777724407.6825,
+    "hash": "0030badaca1ca24e0daa5a5b672eb383"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\todo.ts": {
+    "mtime": 1777724407.6845388,
+    "hash": "fbe8c0f360043e1d79948c1c1631b8ae"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\tool.ts": {
+    "mtime": 1777724407.6875,
+    "hash": "ad2e209165440bebb01a43cf6235641a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\types.ts": {
+    "mtime": 1777724407.690546,
+    "hash": "e093a2577be9ee18d684d3e4ae719c4b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\vcs.ts": {
+    "mtime": 1777724407.6925354,
+    "hash": "3aecc2b176282627e199aab233656644"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\api\\worktree.ts": {
+    "mtime": 1777724407.6955674,
+    "hash": "db7c5cabadb7bf93375202d44fb8707d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\BottomPanel.tsx": {
+    "mtime": 1777724407.893562,
+    "hash": "3d737508d6f58ebc5ec86c6347151b88"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CircularProgress.tsx": {
+    "mtime": 1777724407.8965516,
+    "hash": "e74a0cb7a6c927b15abfc3e9fb4571fe"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CloseServiceDialog.tsx": {
+    "mtime": 1777724407.8995566,
+    "hash": "e7b66ca623244f8ffbdfc5f2de64088b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CodeBlock.test.tsx": {
+    "mtime": 1777724407.9025817,
+    "hash": "1ce1f8cabf382152d4f039b47ee9d225"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CodeBlock.tsx": {
+    "mtime": 1777724407.905557,
+    "hash": "81c365cb7646624a86c72b8556d51cea"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CodePreview.test.tsx": {
+    "mtime": 1777724407.9095504,
+    "hash": "79168902e51ab4ed6b63defc7f08db55"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CodePreview.tsx": {
+    "mtime": 1777724407.9125407,
+    "hash": "e6b7233abdd66603e65ad47466ff5a45"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CommandPalette.test.tsx": {
+    "mtime": 1777724407.9145381,
+    "hash": "cc9142ede66275acb5b6133dcaf95a80"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\CommandPalette.tsx": {
+    "mtime": 1777724407.9175587,
+    "hash": "f3d23e8800aa08d91107f61b5bf65fe7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ContentBlock.tsx": {
+    "mtime": 1777724407.9205396,
+    "hash": "5240fc1fb6afe78b8d801330fa28e7e4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DesktopTitlebar.test.tsx": {
+    "mtime": 1777724407.9225376,
+    "hash": "d7cf874466a43c59f72f125bcedaef30"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DesktopTitlebar.tsx": {
+    "mtime": 1777724407.9255397,
+    "hash": "41b8d91b5bfd5fc3fb6b8064289fb689"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DiffView.test.tsx": {
+    "mtime": 1777724407.9275367,
+    "hash": "e7a9f1461e5a91bc236fa323cdc83a40"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DiffView.tsx": {
+    "mtime": 1777724407.930538,
+    "hash": "fbc66b43a7baab54496d9b379882bb1f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DiffViewer.test.tsx": {
+    "mtime": 1777724407.9325535,
+    "hash": "7e0bc4158b1476f8fad50021f8911afd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\DiffViewer.tsx": {
+    "mtime": 1777724407.9355352,
+    "hash": "31e66fa8523c953d04c29b7d2d4dcad5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\FileExplorer.tsx": {
+    "mtime": 1777724407.9385376,
+    "hash": "0548d6c2ee4a216bcc38a081901f2cff"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\FullscreenViewer.test.tsx": {
+    "mtime": 1777724407.9405458,
+    "hash": "272529078ef5bdc22cce97d5c9e6b6cb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\FullscreenViewer.tsx": {
+    "mtime": 1777724407.9435377,
+    "hash": "feff5fad84bc8498db0458e21e7ec7c0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\Icons.tsx": {
+    "mtime": 1777724407.9465554,
+    "hash": "59b07efa16878e7af118711aa1ebdb48"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\index.ts": {
+    "mtime": 1777724407.9955356,
+    "hash": "64313ab5a39a2f8f08ae908a27ff5571"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\MarkdownRenderer.test.tsx": {
+    "mtime": 1777724407.948549,
+    "hash": "d060eb315eea1c5abc1c396141e7f82c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\MarkdownRenderer.tsx": {
+    "mtime": 1777724407.951538,
+    "hash": "45822348510ca614b6339b3df2231aa0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\McpPanel.tsx": {
+    "mtime": 1777724407.954556,
+    "hash": "6ac373a7b51e2c5a66a1288fa950ae38"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\OutlineIndex.tsx": {
+    "mtime": 1777724407.9565346,
+    "hash": "f85640324fdb61304a97996c1096bd72"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\PanelContainer.tsx": {
+    "mtime": 1777724407.959538,
+    "hash": "52cd72a1540f7a867a412fd38de29213"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\PreviewTabsBar.tsx": {
+    "mtime": 1777724407.9625356,
+    "hash": "c42ed0d20163cabcb94c49e031a8efd4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\RightPanel.tsx": {
+    "mtime": 1777724407.9645352,
+    "hash": "a4fff4f73c4566d72c766f5332e26646"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\SessionChangesPanel.test.tsx": {
+    "mtime": 1777724407.967539,
+    "hash": "2d52f72f7cb5adeb4f298c750212f5ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\SessionChangesPanel.tsx": {
+    "mtime": 1777724407.9695375,
+    "hash": "63f98a869862e2011b8126bfdf46b868"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\SkillPanel.test.tsx": {
+    "mtime": 1777724407.9725504,
+    "hash": "e4b91b4564ffc57b8b5143d7260d9687"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\SkillPanel.tsx": {
+    "mtime": 1777724407.9745364,
+    "hash": "2b288a7fa32ce65d952956880eaa6029"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\Terminal.tsx": {
+    "mtime": 1777724407.9815388,
+    "hash": "a6ceecf282f1529b755efe928e89b93a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ToastContainer.tsx": {
+    "mtime": 1777724407.9875605,
+    "hash": "dd0b0327e17620b4c14e4ccf71306e12"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\WorktreePanel.tsx": {
+    "mtime": 1777724407.9935412,
+    "hash": "b163f1796a05872e723e591aba50687c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\AnimatedPresence.tsx": {
+    "mtime": 1777724407.9995754,
+    "hash": "164c22cd918cc6c2ea7a138823208085"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\Button.tsx": {
+    "mtime": 1777724408.0025535,
+    "hash": "7aac2e8868e21dd6ddfbe5eca31de21d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\ConfirmDialog.tsx": {
+    "mtime": 1777724408.0045536,
+    "hash": "1b06dc058d4fcbd41b651645845ccc13"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\CopyButton.tsx": {
+    "mtime": 1777724408.0075421,
+    "hash": "4c2167ccd505013e4231dc176232924d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\Dialog.test.tsx": {
+    "mtime": 1777724408.009538,
+    "hash": "b612abe43de9d515fc64b35875a519fc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\Dialog.tsx": {
+    "mtime": 1777724408.0115557,
+    "hash": "01f1385b53e057df489041d58011efed"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\DropdownMenu.test.tsx": {
+    "mtime": 1777724408.0155604,
+    "hash": "2b71ffe3cac875b63c279ae10a141ad0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\DropdownMenu.tsx": {
+    "mtime": 1777724408.0185382,
+    "hash": "c93394e7059f39ffd1c0e0b8b82fd2e7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\IconButton.tsx": {
+    "mtime": 1777724408.022512,
+    "hash": "5ee18b6fc0925eed96d72f6433e65eff"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\index.ts": {
+    "mtime": 1777724408.0415573,
+    "hash": "516130ffb97094851327619eac41ccfb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\MenuItem.tsx": {
+    "mtime": 1777724408.0254982,
+    "hash": "c578734761697b130838e2b3f25d5be8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\ModalShell.tsx": {
+    "mtime": 1777724408.028499,
+    "hash": "037babe2663679b03b6b6efc9a27c5af"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\ResizablePanel.tsx": {
+    "mtime": 1777724408.0325093,
+    "hash": "01ac32fc9dddc8ebf40790f2d16aec01"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\ScrollArea.tsx": {
+    "mtime": 1777724408.035498,
+    "hash": "6451281fe89d2c9b4d615bfa1c95def7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\components\\ui\\SmoothHeight.tsx": {
+    "mtime": 1777724408.0384974,
+    "hash": "5b05e3b17b55d09cca21f2991bf2ee30"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\animation.ts": {
+    "mtime": 1777724408.0455532,
+    "hash": "6d292a95ec0db4d8557008bd291f7760"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\api.ts": {
+    "mtime": 1777724408.0475533,
+    "hash": "77a672544fe794bfb89aa7000f2cfbaf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\desktopWindow.ts": {
+    "mtime": 1777724408.0505545,
+    "hash": "39447970632b076adb8fc48c9c71ea48"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\index.ts": {
+    "mtime": 1777724408.0525553,
+    "hash": "f1dd236379ab303a97e85e37050b07a0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\pagination.ts": {
+    "mtime": 1777724408.0555649,
+    "hash": "03c349b598718c2ff403f1542b423098"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\storage.ts": {
+    "mtime": 1777724408.0575385,
+    "hash": "70519f37acc17ec54af617c6ba962f59"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\time.ts": {
+    "mtime": 1777724408.060539,
+    "hash": "6dc61a612db67d02eb4d29e697224292"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\constants\\ui.ts": {
+    "mtime": 1777724408.0645607,
+    "hash": "9b5ab024b5d8446590dfdb6ac71d91e6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\DirectoryContext.shared.ts": {
+    "mtime": 1777724408.0685537,
+    "hash": "fb45bb482a232adfa096c7c9390f8767"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\DirectoryContext.tsx": {
+    "mtime": 1777724408.0715792,
+    "hash": "1966a3516bb95cddedd0e801e13968ca"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\index.ts": {
+    "mtime": 1777724408.0855367,
+    "hash": "f59bd44f0fba67f95898a6a069370c94"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\SessionContext.shared.ts": {
+    "mtime": 1777724408.073538,
+    "hash": "7f432ed1467b9dc263af4453f44222da"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\SessionContext.test.tsx": {
+    "mtime": 1777724408.0775704,
+    "hash": "71cde160f8bc487b1de0ee3812235360"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\SessionContext.tsx": {
+    "mtime": 1777724408.0795534,
+    "hash": "116bb84c53e293a93e80cd5af51c2e32"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\SessionNavigationContext.tsx": {
+    "mtime": 1777724408.0825584,
+    "hash": "bcd4810e647d68ded61bf3fc430464b3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\useDirectory.ts": {
+    "mtime": 1777724408.0885541,
+    "hash": "e6dae323924619c24e0882675bdcd297"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\contexts\\useSessionContext.ts": {
+    "mtime": 1777724408.0905576,
+    "hash": "822a9a804954c8e2c9998e0ca8973c9c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\AttachmentDetailModal.test.tsx": {
+    "mtime": 1777724408.1005566,
+    "hash": "db4a20016055fef395072e59c4ef1b08"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\AttachmentDetailModal.tsx": {
+    "mtime": 1777724408.1065586,
+    "hash": "47d8b6318cca5958c1e1b0ecf870abc0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\AttachmentItem.tsx": {
+    "mtime": 1777724408.113557,
+    "hash": "0d57d563677a1cf0934db0295cecb916"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\AttachmentPreview.tsx": {
+    "mtime": 1777724408.1155546,
+    "hash": "ee76d010134b34a7a0c1d4541ce74af4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\index.ts": {
+    "mtime": 1777724408.1185386,
+    "hash": "896158efc451817644ab2eccf797607e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\types.ts": {
+    "mtime": 1777724408.121535,
+    "hash": "a4b7d97b475498bb32c51cd95a52521a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\attachment\\utils.ts": {
+    "mtime": 1777724408.1235535,
+    "hash": "6c79907274bb39b111f526376cb3474c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ChatArea.test.ts": {
+    "mtime": 1777724408.1275666,
+    "hash": "7416ea040968c2c7c3b0984d31572d49"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ChatArea.tsx": {
+    "mtime": 1777724408.130558,
+    "hash": "f0d180f332bb5a24a91a282534602cce"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\chatAreaVisibility.ts": {
+    "mtime": 1777724408.1915567,
+    "hash": "0d85a52855598b1e550a04aa62f4bad8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ChatPane.tsx": {
+    "mtime": 1777724408.1335804,
+    "hash": "1110c18aa134315e7a99b56922eadc11"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\chatViewport.tsx": {
+    "mtime": 1777724408.194557,
+    "hash": "825914d47facd0685c3a27a48fbaf235"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\EmptyState.tsx": {
+    "mtime": 1777724408.1355352,
+    "hash": "a3096c53033bf624c08cd88c3b0ee6b1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\Header.tsx": {
+    "mtime": 1777724408.1385589,
+    "hash": "6e3ca812776c42b4b8c444a13ebc19d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\index.ts": {
+    "mtime": 1777724408.1975534,
+    "hash": "6944f987b3e1b61bfcde50ae387b79c3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InlinePermission.tsx": {
+    "mtime": 1777724408.1415386,
+    "hash": "d3666e0bedc9c7766ce592d88dc82060"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InlineQuestion.tsx": {
+    "mtime": 1777724408.144535,
+    "hash": "e3149a0e85fcdafab71c5a17215dba1a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InlineToolRequestContext.tsx": {
+    "mtime": 1777724408.1475408,
+    "hash": "1912e66433cd4044aa5e81adc7ee4591"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InputBox.test.tsx": {
+    "mtime": 1777724408.150558,
+    "hash": "3abb47ecac2904272cc3729e1e9116f1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InputBox.tsx": {
+    "mtime": 1777724408.1535623,
+    "hash": "c1c906f141014fd82ac569e1722aa9f3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InputBoxAttachments.test.tsx": {
+    "mtime": 1777724408.1565533,
+    "hash": "02afd1c5ce8dc85da5a1226cbc26d392"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ModelSelector.test.tsx": {
+    "mtime": 1777724408.158555,
+    "hash": "bec745d4abf3448b23de48672103350f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ModelSelector.tsx": {
+    "mtime": 1777724408.1615622,
+    "hash": "dc442427d10d7fa26825391921599c75"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\PaneDropOverlay.tsx": {
+    "mtime": 1777724408.1645565,
+    "hash": "f3dc0ba9957e8082765f6092efa9764b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\PaneHeader.tsx": {
+    "mtime": 1777724408.166559,
+    "hash": "3eaa55628e2f91c508499221d6a5d0ea"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\PermissionDialog.tsx": {
+    "mtime": 1777724408.1695611,
+    "hash": "5f944bb9a9b7e3decf4435274594f2a0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ProjectDialog.test.tsx": {
+    "mtime": 1777724408.1725576,
+    "hash": "3ca0b6efa2d56d3447cbc81841088e0a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ProjectDialog.tsx": {
+    "mtime": 1777724408.1765718,
+    "hash": "5cd0dd931a575ba54f357e5f9f650673"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\QuestionDialog.tsx": {
+    "mtime": 1777724408.1795576,
+    "hash": "0ee8603ebb7dd10b25bcc2dd21638182"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\RetryStatusInline.tsx": {
+    "mtime": 1777724408.1815588,
+    "hash": "255a71531cb68bec86e282b2d72d966a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ShareDialog.tsx": {
+    "mtime": 1777724408.1835575,
+    "hash": "72617861d1ac16def86f1435154fce9d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\Sidebar.tsx": {
+    "mtime": 1777724408.1865616,
+    "hash": "b136a5ea4cb31a7b64826429b59c47dc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\SplitContainer.tsx": {
+    "mtime": 1777724408.1895685,
+    "hash": "0bfed6f07de1edcebe17280785eb92b9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\InputActions.tsx": {
+    "mtime": 1777724408.1995559,
+    "hash": "536f8fd86d33f4328dfcc4fc5814064e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\InputFooter.tsx": {
+    "mtime": 1777724408.202559,
+    "hash": "e2203073d8adc82cbdb91d59ba4607cb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\InputToolbar.test.tsx": {
+    "mtime": 1777724408.2055554,
+    "hash": "db82d590946d1a9fda1eb4f8226a2647"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\InputToolbar.tsx": {
+    "mtime": 1777724408.2075531,
+    "hash": "bb073fcadd5578bd81f9b404161b6646"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\inputUtils.ts": {
+    "mtime": 1777724408.2125618,
+    "hash": "72e1850067cb268b9c67a5a4726745ec"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\UndoStatus.tsx": {
+    "mtime": 1777724408.2105913,
+    "hash": "74e3c3859af34689c195cdd1e38be919"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\useAttachmentRail.ts": {
+    "mtime": 1777724408.2155647,
+    "hash": "7b2d87b5eb142e7ede28234d0f7dfc9b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\useInputHistory.ts": {
+    "mtime": 1777724408.2185583,
+    "hash": "2847525af1e5beb9ff543a10a3d7e4f1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\useMobileCollapse.ts": {
+    "mtime": 1777724408.2205577,
+    "hash": "f883137baaa13f37d95dbe75ba394fcb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\ActiveSessionItem.tsx": {
+    "mtime": 1777724408.2255564,
+    "hash": "d30539ff0be373cc12581626f4653488"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\activeSessionTree.test.ts": {
+    "mtime": 1777724408.2475607,
+    "hash": "25474eaec4a28a80d9485022636f2a85"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\activeSessionTree.ts": {
+    "mtime": 1777724408.250567,
+    "hash": "5c68e798aed335d319676b993ac79694"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\ContextDetailsDialog.tsx": {
+    "mtime": 1777724408.228593,
+    "hash": "0fd6bf7a8800bdd53f878304709343c9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\FolderRecentList.tsx": {
+    "mtime": 1777724408.2315533,
+    "hash": "d5e17b4f8895e1c0496a7bff7230c953"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\NotificationItem.test.tsx": {
+    "mtime": 1777724408.2335563,
+    "hash": "7edeb5dbc206597b1a20247322fc7add"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\NotificationItem.tsx": {
+    "mtime": 1777724408.2365584,
+    "hash": "00a87c0a35aaff7fc15f0203afd039b6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\projectGrouping.test.ts": {
+    "mtime": 1777724408.252563,
+    "hash": "9b3cb2bcffe641ce7a43b30e43865db4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\projectGrouping.ts": {
+    "mtime": 1777724408.2555573,
+    "hash": "d4dff9f1d9b8637c61193db3f06bdfd7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\SessionChildrenSlot.tsx": {
+    "mtime": 1777724408.2395575,
+    "hash": "19b71576774621ab559552c4d87405ea"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\SidebarFooter.tsx": {
+    "mtime": 1777724408.2455602,
+    "hash": "d4b5543babf8d67af9b9679b1f30c579"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\sidebarUtils.ts": {
+    "mtime": 1777724408.2585564,
+    "hash": "76d8df76c1a225ec2f3852965b55dc2f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\sidebar\\SidePanel.tsx": {
+    "mtime": 1777724408.241559,
+    "hash": "dcbec19a1687a1585cc6ea52e80f9caf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\createMentionElement.ts": {
+    "mtime": 1777724408.2705612,
+    "hash": "b7e9a26ca2d44f726bcf19b8f682e983"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\index.ts": {
+    "mtime": 1777724408.2735643,
+    "hash": "147e489c353147d8fb28692195ecfed9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\MentionMenu.test.tsx": {
+    "mtime": 1777724408.2635622,
+    "hash": "64bf7c3436ac5da8a511c61468a9e88a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\MentionMenu.tsx": {
+    "mtime": 1777724408.265559,
+    "hash": "9298ff3d4aa9cdf8b534f0b6ada9bc6d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\MentionTag.tsx": {
+    "mtime": 1777724408.2685542,
+    "hash": "cdff8e2b38c68fabaf39243c07a329aa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\types.ts": {
+    "mtime": 1777724408.27657,
+    "hash": "1a1ec528350e13ed652ce1c38b506320"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\useMention.ts": {
+    "mtime": 1777724408.2795575,
+    "hash": "98b09d9e54a4e42387a3c15c6984cc0f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\utils.test.ts": {
+    "mtime": 1777724408.281557,
+    "hash": "cda8dac66443c53b0545c5f4f6d14ff5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\mention\\utils.ts": {
+    "mtime": 1777724408.2845595,
+    "hash": "93538834f66f58ed4eaa1d345cbb8ae3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\index.ts": {
+    "mtime": 1777724408.295553,
+    "hash": "b14d0d7ca778053dd5b16ad700bb2a5f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\MessageRenderer.test.tsx": {
+    "mtime": 1777724408.2895558,
+    "hash": "6dcb1430e8da5b3c434a0ebf58d03280"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\MessageRenderer.tsx": {
+    "mtime": 1777724408.2925675,
+    "hash": "940e140e29cb143e661d5b7d29bf3308"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\AttachmentPartViews.tsx": {
+    "mtime": 1777724408.3005838,
+    "hash": "063c441a8684b7dc0c4bc069c255901c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\index.ts": {
+    "mtime": 1777724408.3295531,
+    "hash": "9aea57274e06315cf0faea96fda2c085"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\MessageErrorView.tsx": {
+    "mtime": 1777724408.3025687,
+    "hash": "f47be2be9433fcc1c326d65b599016f7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\ReasoningPartView.test.tsx": {
+    "mtime": 1777724408.305557,
+    "hash": "2186cd8cc3e551638b4a665a0a4ca22c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\ReasoningPartView.tsx": {
+    "mtime": 1777724408.3075683,
+    "hash": "b551b730181d7a8feb67565de26b10a3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\StepFinishPartView.tsx": {
+    "mtime": 1777724408.3105676,
+    "hash": "100834f0152bc240ef15185e9ce534e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\SubtaskPartView.tsx": {
+    "mtime": 1777724408.3135574,
+    "hash": "fae68b36ddfdc86dbb70d07279a370b3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\SystemPartViews.test.tsx": {
+    "mtime": 1777724408.3165584,
+    "hash": "953a323b31cebc889a040cfe39544cfe"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\SystemPartViews.tsx": {
+    "mtime": 1777724408.318558,
+    "hash": "83172f04588e97802fd20ae658753af5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\TextPartView.tsx": {
+    "mtime": 1777724408.321556,
+    "hash": "1834933cc5315ef7c8b599de77e5e43e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\ToolPartView.test.tsx": {
+    "mtime": 1777724408.3235536,
+    "hash": "254e20abb081e1ba9c4bd416f70f2f7d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\parts\\ToolPartView.tsx": {
+    "mtime": 1777724408.3265884,
+    "hash": "886b27a78cbb1912d8974754e6969f48"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\icons.tsx": {
+    "mtime": 1777724408.3325703,
+    "hash": "5bebef92e51ad08ad4965355ad8aa55c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\index.ts": {
+    "mtime": 1777724408.3365567,
+    "hash": "85f7e08c3e0bac8f969c95f41eb70ee5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\registry.test.ts": {
+    "mtime": 1777724408.338564,
+    "hash": "f9596145e1829d463737efedc6b61815"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\registry.tsx": {
+    "mtime": 1777724408.341556,
+    "hash": "5fdd30e9b7e4e2698958de9467e916bf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\types.ts": {
+    "mtime": 1777724408.3655565,
+    "hash": "0dbb1a81a28a3c14b6bf99df358166a1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\BashRenderer.tsx": {
+    "mtime": 1777724408.3455536,
+    "hash": "f204c58fe6442f3476db984fe55cd013"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\DefaultRenderer.tsx": {
+    "mtime": 1777724408.3485527,
+    "hash": "59e7ab263e11f3af8d0b8c1a7ad7cbb2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\index.ts": {
+    "mtime": 1777724408.3605719,
+    "hash": "5ab65ba11ec64240d27b9c5d6df8d885"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\QuestionRenderer.tsx": {
+    "mtime": 1777724408.3515573,
+    "hash": "c3c352405db355f5a9e3e0d5e589e1be"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\TaskRenderer.tsx": {
+    "mtime": 1777724408.3545585,
+    "hash": "11f9fb6080ee760df94115787bbed315"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\TodoRenderer.tsx": {
+    "mtime": 1777724408.357553,
+    "hash": "36c342ab600e9ed33219f96c666b35e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\message\\tools\\renderers\\todoUtils.ts": {
+    "mtime": 1777724408.3635209,
+    "hash": "fd657a83c268d94920872ecbdd4cb4cb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\sessions\\index.ts": {
+    "mtime": 1777724408.3795555,
+    "hash": "be36d2ed801a6b360f3a136aa70fea57"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\sessions\\ProjectSelector.test.tsx": {
+    "mtime": 1777724408.3694992,
+    "hash": "f8e6049a7056920844b5a477b4e6e09d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\sessions\\ProjectSelector.tsx": {
+    "mtime": 1777724408.372556,
+    "hash": "26b159d2cb23bedefe8cc242f362c710"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\sessions\\SessionList.test.tsx": {
+    "mtime": 1777724408.3745074,
+    "hash": "9024492f17f14894bf234f01d95544fb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\sessions\\SessionList.tsx": {
+    "mtime": 1777724408.3775063,
+    "hash": "180cece749931eb74c856f64f8cbe8a9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\KeybindingsSection.tsx": {
+    "mtime": 1777724408.3845572,
+    "hash": "c659cb46a90210a0abc0443f54d104ca"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\SettingsDialog.tsx": {
+    "mtime": 1777724408.3865552,
+    "hash": "6a6494f1159ff6991f3c70c171263306"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\AboutSettings.tsx": {
+    "mtime": 1777724408.3915348,
+    "hash": "9dd6614ec632e7e7444eb735026f49c9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\AgentSettings.tsx": {
+    "mtime": 1777724408.3945358,
+    "hash": "0e4bb4b1d12df7d93e6351786d41daee"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\AppearanceSettings.tsx": {
+    "mtime": 1777724408.3975,
+    "hash": "af262b81a699d3d33fa20375b4153dc1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ChatSettings.tsx": {
+    "mtime": 1777724408.3995476,
+    "hash": "66e7db1623504706ba3078bd395d1d75"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ModelsSettings.test.tsx": {
+    "mtime": 1777724408.4025404,
+    "hash": "3a60a8e5350b0cece7dbd3d05fa47e81"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ModelsSettings.tsx": {
+    "mtime": 1777724408.4055364,
+    "hash": "f2f8fbbf2de6659e23966a68bff0ecd7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\NotificationSettings.tsx": {
+    "mtime": 1777724408.4075532,
+    "hash": "cc5748c73dbed77b5e7194e494e7f52e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ServersSettings.tsx": {
+    "mtime": 1777724408.4104953,
+    "hash": "56658f28e13b6da7f4ca0c4ac22ccf83"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ServiceSettings.tsx": {
+    "mtime": 1777724408.4135349,
+    "hash": "23a8c38e5f3411f39239a40f1e85395e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\SettingsUI.tsx": {
+    "mtime": 1777724408.4165578,
+    "hash": "09f8a9418c575530b2eec366ad472393"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\WorkspaceSettings.tsx": {
+    "mtime": 1777724408.4195395,
+    "hash": "88cff592aa1bbe741c8c57209e45ce27"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\slash-command\\index.ts": {
+    "mtime": 1777724408.429535,
+    "hash": "aec72b42ba69503922ec0aee5f0de04a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\slash-command\\SlashCommandMenu.test.tsx": {
+    "mtime": 1777724408.4235506,
+    "hash": "14c675c9d61ceded928d54df3949a9f3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\slash-command\\SlashCommandMenu.tsx": {
+    "mtime": 1777724408.4275389,
+    "hash": "ccaa3e004a8b96c7ca39b929400fe106"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\index.ts": {
+    "mtime": 1777724408.4335535,
+    "hash": "48306088b8bb67dcea64985154a633df"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\sessionStatsUtils.ts": {
+    "mtime": 1777724408.4355366,
+    "hash": "4de79fcd332bb322a09a53ed326ed4f6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useCancelHint.ts": {
+    "mtime": 1777724408.4385579,
+    "hash": "3478e38a8bd638fd08cad83558f79b2a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useChatSession.test.tsx": {
+    "mtime": 1777724408.4415653,
+    "hash": "4e554850d7ad9a5a2150e9c4d56fbb17"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useChatSession.ts": {
+    "mtime": 1777724408.4445758,
+    "hash": "e67710657d0ce4aa1d97124ea1ca232d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useClickOutside.ts": {
+    "mtime": 1777724408.4475067,
+    "hash": "983089da7ff4940d3429e398d411452a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useCloseServiceDialog.ts": {
+    "mtime": 1777724408.4495597,
+    "hash": "c5ec82018db34a44d44b9949a76671b9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useDelayedRender.test.tsx": {
+    "mtime": 1777724408.4525545,
+    "hash": "aee065d8b1b05fa24d5facb186df1fc6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useDelayedRender.ts": {
+    "mtime": 1777724408.455557,
+    "hash": "b7358f7d1539ee7c86a469d73764b6e8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useDropdown.ts": {
+    "mtime": 1777724408.4575548,
+    "hash": "e598e989a11a489a2652bdfa6756fb95"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useDynamicVirtualScroll.ts": {
+    "mtime": 1777724408.4605665,
+    "hash": "601a504c613f30a1f94c836b39a1c16b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useFileExplorer.test.tsx": {
+    "mtime": 1777724408.4625561,
+    "hash": "ecda7a6e06d0f8387ae587e75dfa9c52"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useFileExplorer.ts": {
+    "mtime": 1777724408.4655645,
+    "hash": "cfd3b50bc0be6cca886cccba7142c350"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useGitWorkspaceCatalog.ts": {
+    "mtime": 1777724408.4675546,
+    "hash": "6366ad98af216dfadc8248a4ce4cdb57"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useGlobalEvents.test.tsx": {
+    "mtime": 1777724408.4695573,
+    "hash": "2deec42a39c98ad8c8053a0b5b3c5662"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useGlobalEvents.ts": {
+    "mtime": 1777724408.4725692,
+    "hash": "489290dc2f3a571c77a8958131616506"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useInputCapabilities.ts": {
+    "mtime": 1777724408.48056,
+    "hash": "5ae767de5cad922e3b29145376b8b7b4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useInView.test.tsx": {
+    "mtime": 1777724408.475553,
+    "hash": "7c4da2cdfd9678f1f6d953a28d5c0bdf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useInView.ts": {
+    "mtime": 1777724408.477553,
+    "hash": "d2a7d295394117fdd1fa2cb8f24b3ab6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useIsMobile.ts": {
+    "mtime": 1777724408.4825554,
+    "hash": "7b453edc70b79483c2e285719c8d1769"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useKeybindings.ts": {
+    "mtime": 1777724408.4855585,
+    "hash": "754161bd6f8b95381a4a66c794207d7c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useMessageAnimation.ts": {
+    "mtime": 1777724408.4885569,
+    "hash": "cf0bd115516d9a24491ebff71aaacd39"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useModalAnimation.ts": {
+    "mtime": 1777724408.4905548,
+    "hash": "7e0ead91ee8cfeae8722838be7afdae4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useModels.ts": {
+    "mtime": 1777724408.4985535,
+    "hash": "2eeee56ffc42010455dced64af732159"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useModelSelection.test.tsx": {
+    "mtime": 1777724408.4935696,
+    "hash": "854ae98063cb6c7784dec27ef6ed4a70"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useModelSelection.ts": {
+    "mtime": 1777724408.4965577,
+    "hash": "aa265bfeaccec870b5425411a07f9e57"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useNotification.ts": {
+    "mtime": 1777724408.5015714,
+    "hash": "eea3b1159bb3568dbdeba2526f4a3b23"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useNow.ts": {
+    "mtime": 1777724408.5045621,
+    "hash": "10fd4d1b579c8628d9154adb887506b8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\usePathMode.ts": {
+    "mtime": 1777724408.507567,
+    "hash": "9d5d66fa3cf113368e4a7ee9e92f7948"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\usePermissionHandler.ts": {
+    "mtime": 1777724408.5115576,
+    "hash": "c1d741beacd60652bd1a7537bd90bf2e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\usePermissions.ts": {
+    "mtime": 1777724408.5145655,
+    "hash": "1e07c3353912d5151c202457aa94a91b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\usePresence.ts": {
+    "mtime": 1777724408.5185583,
+    "hash": "4bf3490c4b2ebc0fc90cec9154429251"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useProject.ts": {
+    "mtime": 1777724408.5225577,
+    "hash": "04db7c2ebc5b3bd39ab8a03e18402767"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useResponsiveMaxHeight.ts": {
+    "mtime": 1777724408.5245569,
+    "hash": "c008477f8990ac7a3e2a194e3c9da962"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useRevertState.ts": {
+    "mtime": 1777724408.528586,
+    "hash": "d651c2d0ee96acab27ca79d9fb82fddc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useRouter.ts": {
+    "mtime": 1777724408.53056,
+    "hash": "4ff4ff392fbe9808198b2062856d6766"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useServerStore.ts": {
+    "mtime": 1777724408.5335534,
+    "hash": "a9cd743f146df9873e7c3d9d29c8ead3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessionManager.ts": {
+    "mtime": 1777724408.5365777,
+    "hash": "fe4af6d2c3c63ce398dd4b84f676fa28"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessions.test.tsx": {
+    "mtime": 1777724408.548564,
+    "hash": "f82a4feba3b832d1e00a1afc744ee376"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessions.ts": {
+    "mtime": 1777724408.5515592,
+    "hash": "7aacda4e257f1498e480bc02f5934978"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessionStats.test.ts": {
+    "mtime": 1777724408.5395567,
+    "hash": "63abe5d9c6d4fc63dc74a3ef00019fd7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessionStats.test.tsx": {
+    "mtime": 1777724408.5425785,
+    "hash": "b370661a216b9e5c59afd72a32a27aed"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSessionStats.ts": {
+    "mtime": 1777724408.5455134,
+    "hash": "83635d7e0b70e22e2e85dcaa3aacf417"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useSyntaxHighlight.ts": {
+    "mtime": 1777724408.5555165,
+    "hash": "e25d97b26b97d272209a018a1830ecdb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useTheme.ts": {
+    "mtime": 1777724408.5585682,
+    "hash": "c848012a6c908217253fdb9a6f9b406e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useVcsInfo.ts": {
+    "mtime": 1777724408.5625033,
+    "hash": "0c2f82a1a213dc47435c1c69c6ec2035"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useVerticalSplitResize.ts": {
+    "mtime": 1777724408.5645032,
+    "hash": "1abaf1fa1bec35c958aa4433a4893e94"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useViewportHeight.ts": {
+    "mtime": 1777724408.5675037,
+    "hash": "5e1d436cc0af0029b969f1bb848f23e9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\hooks\\useWakeLock.ts": {
+    "mtime": 1777724408.5695057,
+    "hash": "85969deab118ccfb9d30e7655bd3da94"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\lib\\overlayScrollbar.ts": {
+    "mtime": 1777724408.5804973,
+    "hash": "c06cc5559946a3f9339f7c4e16b448b5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\lib\\shiki.ts": {
+    "mtime": 1777724408.5835655,
+    "hash": "ff52c9ce7f9aeab3ec93991a8a26e232"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\activeSessionStore.ts": {
+    "mtime": 1777724408.6335676,
+    "hash": "61217ee31b21ee8c1dee005dcdefe223"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\autoApproveStore.ts": {
+    "mtime": 1777724408.6355574,
+    "hash": "57cccbbdf5f06c7315cc7bbf2747a7ae"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\changeScopeStore.ts": {
+    "mtime": 1777724408.638562,
+    "hash": "c117cb7c17e6d7f2e9f87f0c67170224"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\childSessionStore.ts": {
+    "mtime": 1777724408.6415558,
+    "hash": "c722deaa433eb064bb9bc6807714e3f2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\followupQueueStore.ts": {
+    "mtime": 1777724408.6455803,
+    "hash": "2442792ae1701b8bd50b8f1fbb3a2a0c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\index.ts": {
+    "mtime": 1777724408.6485593,
+    "hash": "867dc05439b79fb6a53e8ddfd6cad18b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\keybindingStore.ts": {
+    "mtime": 1777724408.650556,
+    "hash": "995352265bf569bcd39ffff66de0ad82"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\layoutStore.test.ts": {
+    "mtime": 1777724408.6668787,
+    "hash": "84b3d7aad6267735309eef314a0b0881"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\layoutStore.ts": {
+    "mtime": 1777724408.6698847,
+    "hash": "afd5335909ac49593383d1bc503ac7d0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\messageStore.test.ts": {
+    "mtime": 1777724408.6718783,
+    "hash": "cd3ae27dcda876b882b2eec4399fd643"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\messageStore.ts": {
+    "mtime": 1777724408.6748905,
+    "hash": "ff56a7259399e71cc01f23057b52389e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\messageStoreHooks.test.tsx": {
+    "mtime": 1777724408.676879,
+    "hash": "e5870676c29c59d219e0649874b8692e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\messageStoreHooks.ts": {
+    "mtime": 1777724408.67988,
+    "hash": "fa397cf86b3dd1e688c54ed38dd5c12e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\messageStoreTypes.ts": {
+    "mtime": 1777724408.682879,
+    "hash": "7f9d688eeab7a0330986464e86d757cc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\modelVisibilityStore.ts": {
+    "mtime": 1777724408.6889043,
+    "hash": "b51b65924cbd07db80176aa5ff6c7d3a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\notificationEventSettingsStore.test.ts": {
+    "mtime": 1777724408.691879,
+    "hash": "1f5d1073483aed7b88cb249f2807f0ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\notificationEventSettingsStore.ts": {
+    "mtime": 1777724408.6958776,
+    "hash": "3cb31b9be4e635dfbb6ee6eb314ec14a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\notificationStore.ts": {
+    "mtime": 1777724408.6998792,
+    "hash": "e1ce2c17c45ec6152020af7a7630307d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\paneControllerStore.ts": {
+    "mtime": 1777724408.702878,
+    "hash": "c6706c5a48a5ff54e1dd2e8eb2a6fe26"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\paneLayoutStore.test.ts": {
+    "mtime": 1777724408.704878,
+    "hash": "d2f3b23282fbffa4bf2c0beedce4dfa0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\paneLayoutStore.ts": {
+    "mtime": 1777724408.7078793,
+    "hash": "7cd6b6dc2b907a486a205191aba08b8b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\serverStore.test.ts": {
+    "mtime": 1777724408.7108977,
+    "hash": "b2317fa25cc5821fb05c69944a8c52f5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\serverStore.ts": {
+    "mtime": 1777724408.7128766,
+    "hash": "ec3ce94c16678ec162506d8e710ca6d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\serviceStore.ts": {
+    "mtime": 1777724408.715875,
+    "hash": "257b857bf9b3ff71f5d0d652b16d275a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\soundStore.ts": {
+    "mtime": 1777724408.7188754,
+    "hash": "162adbdded789392d173a81fe68c6e54"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\themeStore.ts": {
+    "mtime": 1777724408.7208772,
+    "hash": "0b6a1fbc5a05e6ef9827e0f41139cf4e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\todoStore.ts": {
+    "mtime": 1777724408.7238998,
+    "hash": "385036d68a95530a1f0987894084d7c0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\updateStore.test.ts": {
+    "mtime": 1777724408.7268791,
+    "hash": "42e8d4b79fa71af2074befa70a2f013f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\store\\updateStore.ts": {
+    "mtime": 1777724408.7298777,
+    "hash": "ba3dbb41115565833878cd65d7de1c5c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\test\\setup.ts": {
+    "mtime": 1777724408.7338736,
+    "hash": "09ff116f9a84794397f9465b19b98a3a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\themes\\index.ts": {
+    "mtime": 1777724408.7388809,
+    "hash": "7e80ca83f60ba9633e157263c704eb80"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\chat.ts": {
+    "mtime": 1777724408.787881,
+    "hash": "ef1d04b2549909c3a9768c48039931c4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\index.ts": {
+    "mtime": 1777724408.7908788,
+    "hash": "3705cb71d8c8bac93c4ff9e68da26d93"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\message.ts": {
+    "mtime": 1777724408.7938874,
+    "hash": "2e3fa86db6534f0915452ecc56bd0997"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\ui.ts": {
+    "mtime": 1777724408.7958758,
+    "hash": "1508e17090ccf4a7d55b5f74d01bf7ec"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\view-transitions.d.ts": {
+    "mtime": 1777724408.7988849,
+    "hash": "d44b98c05e04b9f61cf6b1e9bedc2c45"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\agent.ts": {
+    "mtime": 1777724408.7448795,
+    "hash": "83a47bd7d1fc29c00e599e4af5f02fa3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\common.ts": {
+    "mtime": 1777724408.7468753,
+    "hash": "404d08a1d50601af09f46330960cb489"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\config.ts": {
+    "mtime": 1777724408.749897,
+    "hash": "385c86003759134966cddd43d1549ea8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\event.ts": {
+    "mtime": 1777724408.752879,
+    "hash": "7ff7a3bb41d0c10d557c8e88dba5524f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\file.ts": {
+    "mtime": 1777724408.7548761,
+    "hash": "9ab785d88b68a9e5bb0213690f6a8a8a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\index.ts": {
+    "mtime": 1777724408.7568777,
+    "hash": "366e73f33aff54f1858b271817a1f9e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\mcp.ts": {
+    "mtime": 1777724408.7608788,
+    "hash": "6580d50e1743be6b9ec4000a104c69bc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\message.ts": {
+    "mtime": 1777724408.7628884,
+    "hash": "fe2e0445313e082fb268a8fd2f16f483"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\model.ts": {
+    "mtime": 1777724408.7658825,
+    "hash": "c8de02f6a81fcfc528a951bc56a1437a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\permission.ts": {
+    "mtime": 1777724408.7678802,
+    "hash": "d83a1112668aaf2a517e83e5b6d90a8f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\project.ts": {
+    "mtime": 1777724408.770886,
+    "hash": "a61b4cbd37408168943dea8c76fb6224"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\pty.ts": {
+    "mtime": 1777724408.7728865,
+    "hash": "83859cc146bf4601fab4b8052b017cad"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\session.ts": {
+    "mtime": 1777724408.775881,
+    "hash": "cc90d9711c89ed3ff32488249532186d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\skill.ts": {
+    "mtime": 1777724408.778888,
+    "hash": "7b5716a2353624f51962bea873ec3d4e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\tool.ts": {
+    "mtime": 1777724408.7808754,
+    "hash": "ed177ece0ce29517990ae126aa0b1a3c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\vcs.ts": {
+    "mtime": 1777724408.7828777,
+    "hash": "cea4948d11403ba265a4a5042ad38b0c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\types\\api\\worktree.ts": {
+    "mtime": 1777724408.7858822,
+    "hash": "545c1db56aeb439529dba1efe6104026"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\activeScope.test.ts": {
+    "mtime": 1777724408.8028817,
+    "hash": "19765e99477300bde2841da9ea233895"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\activeScope.ts": {
+    "mtime": 1777724408.8059082,
+    "hash": "c9a4869084b76ea8db3493ac18202fd8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\ansiUtils.ts": {
+    "mtime": 1777724408.808904,
+    "hash": "16356f8a7bc0b8ce7709333811a27253"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\clipboard.test.ts": {
+    "mtime": 1777724408.8118956,
+    "hash": "88d463fd287450ed37f1332655a91a6e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\clipboard.ts": {
+    "mtime": 1777724408.814878,
+    "hash": "11aaaa292cadcfa3c3ca5596c5f9adbd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\dateUtils.ts": {
+    "mtime": 1777724408.8168817,
+    "hash": "f83d458317e94efa070f540214043882"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\diffUtils.ts": {
+    "mtime": 1777724408.8188808,
+    "hash": "0a0d5a8ae10c72e57e441af84f763421"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\directoryUtils.ts": {
+    "mtime": 1777724408.82188,
+    "hash": "753bbb3c3346a1f0498e18bb725aeef9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\downloadUtils.ts": {
+    "mtime": 1777724408.82388,
+    "hash": "3929c373357e6afbe14906180ea00d2f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\errorHandling.ts": {
+    "mtime": 1777724408.827892,
+    "hash": "7eed08d4aa655c0e0a936e4a7b0f776f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\formatUtils.test.ts": {
+    "mtime": 1777724408.8298793,
+    "hash": "39b4e961fe9e70c4728d3a84aa875b16"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\formatUtils.ts": {
+    "mtime": 1777724408.832893,
+    "hash": "4cc6b8cbd5d98d39457b1b282d877d44"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\index.ts": {
+    "mtime": 1777724408.8348947,
+    "hash": "827a8cf15bec2681e97ff362b4ce5e88"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\languageUtils.ts": {
+    "mtime": 1777724408.8368924,
+    "hash": "309a0edfdd150bfd6b1cfa4fadf9b012"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\logger.ts": {
+    "mtime": 1777724408.8408828,
+    "hash": "2a5a5e0da582c2699c9ab7b674af133e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\materialIcons.ts": {
+    "mtime": 1777724408.8438807,
+    "hash": "265f1ec151d129ff31b0f8efbe09284c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\messageConversion.ts": {
+    "mtime": 1777724408.846883,
+    "hash": "a18c08ebac202a6303cc033051b6e5bb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\mimeUtils.ts": {
+    "mtime": 1777724408.8498747,
+    "hash": "b82fa9b5c692c222e404f5d4e6c2d6d8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\modelUtils.ts": {
+    "mtime": 1777724408.8518777,
+    "hash": "28850d6bc644cc546fd257330c5408e7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\notificationSoundBridge.ts": {
+    "mtime": 1777724408.8548925,
+    "hash": "dd46c282632a456e25fea0aac27974d3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\perServerStorage.ts": {
+    "mtime": 1777724408.856881,
+    "hash": "4cdadc05888c71dee093cd3cf453ad4a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\ptyProtocol.test.ts": {
+    "mtime": 1777724408.859893,
+    "hash": "e1c33e03fd363ca97b9fd486fd10c547"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\ptyProtocol.ts": {
+    "mtime": 1777724408.862884,
+    "hash": "7eee804c01127482f7fcd18b9497b45b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\sessionHelpers.ts": {
+    "mtime": 1777724408.8648767,
+    "hash": "6ba64f74accfde23066f4491be0811e7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\settingsBackup.test.ts": {
+    "mtime": 1777724408.8678813,
+    "hash": "a731cc89ac082c0d4c547064ddb40c99"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\settingsBackup.ts": {
+    "mtime": 1777724408.8738883,
+    "hash": "58acde37c75f9c10c7e72ad17d2606e4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\soundPlayer.ts": {
+    "mtime": 1777724408.879887,
+    "hash": "b4a0c6660b91becc6b88f66b83bf1819"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\stringUtils.ts": {
+    "mtime": 1777724408.8858788,
+    "hash": "f67d26618bb1b32cab346b2e2cfd4371"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\tauri.test.ts": {
+    "mtime": 1777724408.8918781,
+    "hash": "f74a2d65afed573733e39694a450df6d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\utils\\tauri.ts": {
+    "mtime": 1777724408.8938768,
+    "hash": "17123e88ee30a43a7fb56d073f280937"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\caddy.rs": {
+    "mtime": 1777724407.2315955,
+    "hash": "700b3ca0422f4cf35ed782b472135ef1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\config.rs": {
+    "mtime": 1777724407.2345936,
+    "hash": "390c899c157333281a6f3dcb8e037ca1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\main.rs": {
+    "mtime": 1777724407.2376146,
+    "hash": "021c16188fec53142754a8c2da4e7f12"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\router.rs": {
+    "mtime": 1777724407.2436,
+    "hash": "3dcc3917ac55cba90acf6effb2103b4e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\scanner.rs": {
+    "mtime": 1777724407.245598,
+    "hash": "c99bde16a59919f9d2b097766e053386"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\state.rs": {
+    "mtime": 1777724407.2485979,
+    "hash": "2f917ebce22e8af7aebda5e6a8fb4f24"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\build.rs": {
+    "mtime": 1777724407.2655976,
+    "hash": "9e949d967099bcc42cfa6f8765a6c938"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\build.gradle.kts": {
+    "mtime": 1777724407.412598,
+    "hash": "34b5dd707d61fa7f4a197eee123722b2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\gradlew": {
+    "mtime": 1777724407.4487588,
+    "hash": "02c16663c6f0aa37f98d94d698c22b8c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\build.gradle.kts": {
+    "mtime": 1777724407.2885993,
+    "hash": "ff5e484f5f86c03ed1c7bb8e7f699add"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\java\\com\\opencodeui\\app\\MainActivity.kt": {
+    "mtime": 1777724407.3076,
+    "hash": "844b53d230fa103a4e8e03757de5ab8b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\buildSrc\\build.gradle.kts": {
+    "mtime": 1777724407.4176004,
+    "hash": "0814415b6e7b2c6e126521dfe9960081"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\buildSrc\\src\\main\\java\\com\\opencodeui\\app\\kotlin\\BuildTask.kt": {
+    "mtime": 1777724407.4326012,
+    "hash": "15bad6983ebaf1ade25e168fa9c899a0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\buildSrc\\src\\main\\java\\com\\opencodeui\\app\\kotlin\\RustPlugin.kt": {
+    "mtime": 1777724407.4346,
+    "hash": "27e9945f16c83be3c3e69f6b860bc9b5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\lib.rs": {
+    "mtime": 1777724407.5971055,
+    "hash": "910d938924946bcdaccc7e9d12a265fe"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\main.rs": {
+    "mtime": 1777724407.5990777,
+    "hash": "8ace9ec8581eee324dbc4f9feca99ac7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\dir_state.rs": {
+    "mtime": 1777724407.5890787,
+    "hash": "acaac6d4aee82ae442980b372a22fce1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\mod.rs": {
+    "mtime": 1777724407.5910785,
+    "hash": "c55b65b68b444da57d50eb7932d1a444"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\service.rs": {
+    "mtime": 1777724407.594077,
+    "hash": "d24f85ae11e652f2d1258f818ebde9ce"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\bridge\\args.rs": {
+    "mtime": 1777724407.5670795,
+    "hash": "8a05bc4967adbd87f7c2023f798c3e1b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\bridge\\event.rs": {
+    "mtime": 1777724407.5700827,
+    "hash": "f232226d7791fe17644402aaa720915d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\bridge\\mod.rs": {
+    "mtime": 1777724407.57206,
+    "hash": "0388a3b3c88dc4a9ad3712643bbd264b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\bridge\\state.rs": {
+    "mtime": 1777724407.5740576,
+    "hash": "14333743549baf4e49d94b755763f704"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\commands\\bridge.rs": {
+    "mtime": 1777724407.5790772,
+    "hash": "1082ad37544994848f834ffb2f8ee6a6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\commands\\mod.rs": {
+    "mtime": 1777724407.5820825,
+    "hash": "6dbd5600d6f667ce57ee024f2117d1db"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\commands\\opencode.rs": {
+    "mtime": 1777724407.5850787,
+    "hash": "46e6a50a46f660496a33deb648051998"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\src\\app\\commands\\utils.rs": {
+    "mtime": 1777724407.5870757,
+    "hash": "6c81f5c2a984e53b51f94b720a9d0b3d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\CHANGELOG.md": {
+    "mtime": 1777724407.1036234,
+    "hash": "bc553f78801453c33be7c9ae577d5bc2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\docker-compose.build.yml": {
+    "mtime": 1777724407.1246474,
+    "hash": "6cde480ad8b58b43e7345ada87191ec9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\docker-compose.standalone.yml": {
+    "mtime": 1777724407.1266203,
+    "hash": "6e56d716fd7b7296b199622a2477c327"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\docker-compose.yml": {
+    "mtime": 1777724407.1286201,
+    "hash": "043b26f3d557a9a1369800f9e13d4cbf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\index.html": {
+    "mtime": 1777724407.1635988,
+    "hash": "459c44160dedec1c509db44970d80ca7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\README.md": {
+    "mtime": 1777724407.1095872,
+    "hash": "6d5be07b4ad8423c075ac58f17989333"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\README_EN.md": {
+    "mtime": 1777724407.111623,
+    "hash": "985646b61f3784c9c4e13507987d6aa7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\404.html": {
+    "mtime": 1777724407.1885996,
+    "hash": "6e2329ef3fd50cba7f7a003204b414dc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-router\\src\\router.html": {
+    "mtime": 1777724407.2405996,
+    "hash": "bb922c79dc7fbb9106bce74bb643e74b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\assets\\app-icons\\app-icon-android-background.svg": {
+    "mtime": 1777724407.1176236,
+    "hash": "9ea99c0820f50c37a9801d970710c050"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\assets\\app-icons\\app-icon-android-foreground.svg": {
+    "mtime": 1777724407.1196306,
+    "hash": "c60961f7a57fb1eec34499377ccbaac2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\assets\\app-icons\\app-icon.svg": {
+    "mtime": 1777724407.121619,
+    "hash": "7487e282c777c4a2974aede7a12f3e58"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\opencode.svg": {
+    "mtime": 1777724407.1985943,
+    "hash": "41eea4d8ff3c6139495e3555d0221e3f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\vite.svg": {
+    "mtime": 1777724407.2015977,
+    "hash": "8e3a10e157f75ada21ab742c022d5430"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\react.svg": {
+    "mtime": 1777724407.8895395,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\agent.svg": {
+    "mtime": 1777724407.699554,
+    "hash": "9fd7a08c0af5b57711a1b9b8bdd71fad"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\alert-circle.svg": {
+    "mtime": 1777724407.7025554,
+    "hash": "399ebeb7834610060ec3d1ab72845090"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\arrow-up.svg": {
+    "mtime": 1777724407.704554,
+    "hash": "d07e1b79bf1a89371d148a6094a07283"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\at.svg": {
+    "mtime": 1777724407.7065372,
+    "hash": "f55c42877523d9994d04048ec12f3572"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\bolt.svg": {
+    "mtime": 1777724407.70951,
+    "hash": "7bd403130901004a0faa9bc00aa29aa0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\check.svg": {
+    "mtime": 1777724407.7115347,
+    "hash": "4de7ffe5a1c9767563a9fa6e16e14dce"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\checklist.svg": {
+    "mtime": 1777724407.7145016,
+    "hash": "9e277194ee4e516cfee4ca08562d3d2c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\chevron-down.svg": {
+    "mtime": 1777724407.7165568,
+    "hash": "4042d996956c90717969dfc02f7c82c2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\chevron-right.svg": {
+    "mtime": 1777724407.7195373,
+    "hash": "2e32c96ec78a5b47c5a979c8057fac4e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\circle.svg": {
+    "mtime": 1777724407.721554,
+    "hash": "921201c5f40d65b52e461febabb887fc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\clipboard-list.svg": {
+    "mtime": 1777724407.7245672,
+    "hash": "8af74643d7883d1160d66555f2002196"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\clock.svg": {
+    "mtime": 1777724407.7265618,
+    "hash": "86faa9b85e4fb43cc37d5ae9d6918baa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\close.svg": {
+    "mtime": 1777724407.7295713,
+    "hash": "6c0b99ed6d85b5057e26ba9bf7ba3229"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\compact.svg": {
+    "mtime": 1777724407.731555,
+    "hash": "167e6d671c29edfa27327103a9249673"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\copy.svg": {
+    "mtime": 1777724407.7335532,
+    "hash": "1726e2661343eef30bf7148fe8ed3b0b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\cpu.svg": {
+    "mtime": 1777724407.7365634,
+    "hash": "0ec4a43abad2043f4b44a89418039fc9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\dollar-sign.svg": {
+    "mtime": 1777724407.7395391,
+    "hash": "6d3ecfae674f820d96f609c6aca308b7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\download.svg": {
+    "mtime": 1777724407.7415404,
+    "hash": "c330a2d91814b8a4fd44a6d5646fead6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\expand.svg": {
+    "mtime": 1777724407.7445376,
+    "hash": "1749a80e0108d80382760f96f36a4a3a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\external-link.svg": {
+    "mtime": 1777724407.7465537,
+    "hash": "068dd8f71afc8ed723e434b123390dd6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\eye.svg": {
+    "mtime": 1777724407.7495475,
+    "hash": "7804a5e3865fb6e7af3aea1cffe5e45e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\file-read.svg": {
+    "mtime": 1777724407.7555394,
+    "hash": "7a68cf1209e85dceecf99d2da71d15f1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\file-write.svg": {
+    "mtime": 1777724407.7595603,
+    "hash": "86bad10b57cc0414385df91b9d2e9116"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\file.svg": {
+    "mtime": 1777724407.7625585,
+    "hash": "3b108135214dd6529c6cf97e7f822774"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\folder.svg": {
+    "mtime": 1777724407.7665436,
+    "hash": "af75835b8b2fac702a3191d10147097b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\globe.svg": {
+    "mtime": 1777724407.7685394,
+    "hash": "34b4cfe57109a58154064909441f1a75"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\grid.svg": {
+    "mtime": 1777724407.7705624,
+    "hash": "c88a100e69b6c1c3876a41bed88d8e0a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\hand.svg": {
+    "mtime": 1777724407.773548,
+    "hash": "fac91223a2c070a18bb5686e59b0d982"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\image.svg": {
+    "mtime": 1777724407.7755604,
+    "hash": "088b007d97e686d5c321011fa64cd8bc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\layers.svg": {
+    "mtime": 1777724407.7785366,
+    "hash": "39b408c9ef286fc3cea37b9a636908da"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\lightbulb.svg": {
+    "mtime": 1777724407.7805367,
+    "hash": "96c1ad02bd77693378fc81d954013d58"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\link.svg": {
+    "mtime": 1777724407.7825372,
+    "hash": "b2e89dab2fd1404edfda72f246b9792d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\maximize.svg": {
+    "mtime": 1777724407.7855577,
+    "hash": "ec17fcad3376a1d19de462ed22a576f0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\menu-dots.svg": {
+    "mtime": 1777724407.787539,
+    "hash": "17ee5278662a54f5587ba07664cc94a2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\message-square.svg": {
+    "mtime": 1777724407.7895384,
+    "hash": "182affea0988dbb7c58d4d681791b69d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\minimize.svg": {
+    "mtime": 1777724407.792555,
+    "hash": "edc2affe288bb8ccb11b05233279a949"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\moon.svg": {
+    "mtime": 1777724407.7945566,
+    "hash": "ba470e3d993a3130e597b53aebd0bfb8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\new-chat.svg": {
+    "mtime": 1777724407.7975368,
+    "hash": "3bfed42114231d5a61bb4111544d60e5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\patch.svg": {
+    "mtime": 1777724407.7995622,
+    "hash": "1a8e04491e48d48107efb2fedffba974"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\path-auto.svg": {
+    "mtime": 1777724407.8035429,
+    "hash": "dcf13e030a53b55ec62f2caaed14bb49"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\path-unix.svg": {
+    "mtime": 1777724407.8065577,
+    "hash": "358f885fc2d3c0d24ba2e86d91ef9e32"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\path-windows.svg": {
+    "mtime": 1777724407.8095622,
+    "hash": "b5a6632f3ebeb9655725c2c1162d57ff"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\pencil.svg": {
+    "mtime": 1777724407.8125768,
+    "hash": "fd09267ba8328d6780bec4bad30f42d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\permission-list.svg": {
+    "mtime": 1777724407.8145375,
+    "hash": "a5ed3184ee1abdad258524db234d8b1e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\plus.svg": {
+    "mtime": 1777724407.8175604,
+    "hash": "6b5c57f1c16c39d5336a060ab4468d73"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\question.svg": {
+    "mtime": 1777724407.8205614,
+    "hash": "8aab7a3912de9cb5132e069659009afe"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\redo.svg": {
+    "mtime": 1777724407.8235433,
+    "hash": "b852f89da196f7581f0df7a923e44c79"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\retry.svg": {
+    "mtime": 1777724407.8255708,
+    "hash": "ec17cab7f8c7d0cba241e36a0d40f935"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\return.svg": {
+    "mtime": 1777724407.8285596,
+    "hash": "8fa8e8ab8e6c4877f76c4906ec5f7be9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\search.svg": {
+    "mtime": 1777724407.830541,
+    "hash": "8a94a3dbbe6fd690f848a4ea23291a60"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\send.svg": {
+    "mtime": 1777724407.8335614,
+    "hash": "25afa5c16b58b45608caad2b82b1e82c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\settings.svg": {
+    "mtime": 1777724407.8365588,
+    "hash": "9ad23c1a101af8b93a7fe2a105217bf4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\share.svg": {
+    "mtime": 1777724407.8385594,
+    "hash": "1f3ebad58e2bdac6055be9f3849b8631"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\sidebar.svg": {
+    "mtime": 1777724407.8415618,
+    "hash": "856718726cf09cc7955f9b2c5f38dc1c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\spinner.svg": {
+    "mtime": 1777724407.843542,
+    "hash": "482338d06f01d609d1c7539b19822000"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\stop.svg": {
+    "mtime": 1777724407.8465414,
+    "hash": "65c6feb50c0303157ac2ec5ad32ca5e6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\sun.svg": {
+    "mtime": 1777724407.849562,
+    "hash": "3dfd53ececd0d2773d451ac648009054"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\system.svg": {
+    "mtime": 1777724407.8515623,
+    "hash": "9a6ca09b85a85d69f311235d11539500"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\task.svg": {
+    "mtime": 1777724407.8545692,
+    "hash": "4c8d4aba6f0ebc867a4840a9399b84a2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\teach.svg": {
+    "mtime": 1777724407.8605063,
+    "hash": "7e5b516cddc7f7996a32d1e3ea021b9f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\terminal.svg": {
+    "mtime": 1777724407.8665586,
+    "hash": "d51287ea0cbe5efd4a0d28d9a54d837e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\thinking.svg": {
+    "mtime": 1777724407.8715563,
+    "hash": "9fd7a08c0af5b57711a1b9b8bdd71fad"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\trash.svg": {
+    "mtime": 1777724407.87756,
+    "hash": "1d50428a4a2c5ac888bb92a589bfff53"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\undo.svg": {
+    "mtime": 1777724407.8815577,
+    "hash": "5cdf064c9ab74e8144d4a89a3d96d808"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\users.svg": {
+    "mtime": 1777724407.8845582,
+    "hash": "470e09fadb0fa5b4e3f06e699880b36b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\icons\\wrench.svg": {
+    "mtime": 1777724407.8865385,
+    "hash": "f3db94669647ad5d55a09fbe04822aaa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png": {
+    "mtime": 1777724407.331599,
+    "hash": "91ddfded33dbb3011f0882cda8eedcbd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_background.png": {
+    "mtime": 1777724407.3346071,
+    "hash": "0da85296a428fbd3270304ed2db96119"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png": {
+    "mtime": 1777724407.3365943,
+    "hash": "b531344e49c7a5ee5f635d2dd6df97e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png": {
+    "mtime": 1777724407.3385944,
+    "hash": "e1f114a9372d4444d5c6f37ba9088009"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png": {
+    "mtime": 1777724407.343604,
+    "hash": "c1139357e98714d982a05bdda7ea8831"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png": {
+    "mtime": 1777724407.3466272,
+    "hash": "08253c12a8fa5153e76298e58902a814"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png": {
+    "mtime": 1777724407.3496006,
+    "hash": "429d008d089f1231bf09550730f0c32d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png": {
+    "mtime": 1777724407.351599,
+    "hash": "e3ad138c1bd8498331d77e9c924df02a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png": {
+    "mtime": 1777724407.3565962,
+    "hash": "86ba33bd6c06976181776d2875615f5e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png": {
+    "mtime": 1777724407.3606124,
+    "hash": "a7263f570210278a6f54fda25d5ce1c5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png": {
+    "mtime": 1777724407.363602,
+    "hash": "542dc7e3ebc3708146763b2371be49e5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png": {
+    "mtime": 1777724407.3655984,
+    "hash": "6860705f2a151ba082d54dd0a3c04659"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png": {
+    "mtime": 1777724407.3705983,
+    "hash": "b1bc523e268fb44b451791711326b6d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png": {
+    "mtime": 1777724407.3725944,
+    "hash": "5d857607c5cec07e172946dd83570e41"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png": {
+    "mtime": 1777724407.3755987,
+    "hash": "d491d48b6f11b94c2488a537665dd246"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png": {
+    "mtime": 1777724407.378597,
+    "hash": "f9483e30efb48b3a555939bd6bc352d9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png": {
+    "mtime": 1777724407.3825984,
+    "hash": "4f83600af42c5e1349749d84094b7695"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_background.png": {
+    "mtime": 1777724407.384598,
+    "hash": "49987af3d7fa94bf793706002a7da6a8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png": {
+    "mtime": 1777724407.387595,
+    "hash": "7c2b8a2c5fd0800e41b8af4aab350d98"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png": {
+    "mtime": 1777724407.3905978,
+    "hash": "09fd8cd5ab32da9d9a1775ce0d8b0a86"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\128x128.png": {
+    "mtime": 1777724407.4577637,
+    "hash": "96f6591d5ad39e1f7f0e47afc2e99485"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\128x128@2x.png": {
+    "mtime": 1777724407.4607587,
+    "hash": "c50bab5b2c1a9d0d073872e846924def"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\32x32.png": {
+    "mtime": 1777724407.4627614,
+    "hash": "12c0afcf9b5faaf6b5b2871bc924fb5f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\64x64.png": {
+    "mtime": 1777724407.464767,
+    "hash": "d3a9ce5e715d840777113c0aa104b1ef"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\icon.png": {
+    "mtime": 1777724407.4987626,
+    "hash": "c15b621ddacc7abe20d426f813f2e035"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square107x107Logo.png": {
+    "mtime": 1777724407.467764,
+    "hash": "6cd0cb9836db21743eb38a5c65d46097"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square142x142Logo.png": {
+    "mtime": 1777724407.469764,
+    "hash": "f9b71d077e692fb9c069f53b9454674b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square150x150Logo.png": {
+    "mtime": 1777724407.4727278,
+    "hash": "b38955722ad6c01f8e2f4e0ebf1c550b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square284x284Logo.png": {
+    "mtime": 1777724407.474763,
+    "hash": "e5b3ac55112fbcb4a4bef7c5975d092e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square30x30Logo.png": {
+    "mtime": 1777724407.4767687,
+    "hash": "4857874839af78e4692e7fb927db0c63"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square310x310Logo.png": {
+    "mtime": 1777724407.4797623,
+    "hash": "b25177dabacb727c638250fecf511a7d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square44x44Logo.png": {
+    "mtime": 1777724407.4827585,
+    "hash": "e9c45c71c0238938df212d9fea33cbf9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square71x71Logo.png": {
+    "mtime": 1777724407.485767,
+    "hash": "2558247b6464b666f3b74b33c9b8aea1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square89x89Logo.png": {
+    "mtime": 1777724407.4877658,
+    "hash": "700c776f0da82433ea832efb55750b38"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\StoreLogo.png": {
+    "mtime": 1777724407.4907615,
+    "hash": "9ce508a9c83aa291c4be7b3b96256db3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@1x.png": {
+    "mtime": 1777724407.5110254,
+    "hash": "586f698105afd4bb47d80e0d33a6c8d7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@2x-1.png": {
+    "mtime": 1777724407.5140424,
+    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@2x.png": {
+    "mtime": 1777724407.518027,
+    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@3x.png": {
+    "mtime": 1777724407.5220194,
+    "hash": "64856e680f939b814a279755bb318398"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@1x.png": {
+    "mtime": 1777724407.525022,
+    "hash": "d0ed509e313072e021f378b464e5e7de"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@2x-1.png": {
+    "mtime": 1777724407.528064,
+    "hash": "942e577b2377656a84b0ff37bdce469c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@2x.png": {
+    "mtime": 1777724407.5310597,
+    "hash": "942e577b2377656a84b0ff37bdce469c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@3x.png": {
+    "mtime": 1777724407.5330803,
+    "hash": "2e482f9f679a367f2957daaeaf925d7f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@1x.png": {
+    "mtime": 1777724407.5360806,
+    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@2x-1.png": {
+    "mtime": 1777724407.5380821,
+    "hash": "ac587b7328fd9a9ee6d2e9caeb8e5e09"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@2x.png": {
+    "mtime": 1777724407.540058,
+    "hash": "ac587b7328fd9a9ee6d2e9caeb8e5e09"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@3x.png": {
+    "mtime": 1777724407.5440624,
+    "hash": "d1b8affc618dd926fc595a6660fd9a00"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-512@2x.png": {
+    "mtime": 1777724407.546084,
+    "hash": "0d57edf27757547f8e85f85154c4b7e1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-60x60@2x.png": {
+    "mtime": 1777724407.5490944,
+    "hash": "d1b8affc618dd926fc595a6660fd9a00"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-60x60@3x.png": {
+    "mtime": 1777724407.5520773,
+    "hash": "369dd666a9de63c679625c5ee6b5da57"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-76x76@1x.png": {
+    "mtime": 1777724407.5550816,
+    "hash": "6689e586124db8ac2c0e6ee7eb08e3db"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-76x76@2x.png": {
+    "mtime": 1777724407.5570781,
+    "hash": "006076d98bcb31602578de05d7e645a5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-83.5x83.5@2x.png": {
+    "mtime": 1777724407.5600598,
+    "hash": "7d7f81ce4af62e8c64d1260ef56fbf3d"
+  }
+}
