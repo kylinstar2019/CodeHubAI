@@ -11,6 +11,7 @@ import {
 } from '../../components/Icons'
 import { IconButton } from '../../components/ui'
 import { ModelSelector, type ModelSelectorHandle } from './ModelSelector'
+import { AIToolSelector, type AITool } from './AIToolSelector'
 import { ShareDialog } from './ShareDialog'
 import { messageStore, useMessageStore } from '../../store'
 import { useLayoutStore, layoutStore } from '../../store/layoutStore'
@@ -31,6 +32,8 @@ interface HeaderProps {
   isPaneFullscreen?: boolean
   onTogglePaneFullscreen?: () => void
   modelSelectorRef?: React.RefObject<ModelSelectorHandle | null>
+  selectedTool?: AITool
+  onToolChange?: (tool: AITool) => void
 }
 
 interface SessionTitleControlProps {
@@ -120,6 +123,8 @@ export function Header({
   isPaneFullscreen = false,
   onTogglePaneFullscreen,
   modelSelectorRef,
+  selectedTool = 'opencode',
+  onToolChange,
 }: HeaderProps) {
   const { t } = useTranslation('chat')
   const { sessionId, sessionDirectory, sessionTitle: currentSessionTitle } = useMessageStore()
@@ -209,13 +214,21 @@ export function Header({
         )}
 
         {!isCompact && (
-          <ModelSelector
-            ref={modelSelectorRef}
-            models={models}
-            selectedModelKey={selectedModelKey}
-            onSelect={onModelChange}
-            isLoading={modelsLoading}
-          />
+          <>
+            <ModelSelector
+              ref={modelSelectorRef}
+              models={models}
+              selectedModelKey={selectedModelKey}
+              onSelect={onModelChange}
+              isLoading={modelsLoading}
+            />
+            <div className="w-px h-5 bg-border-200/50 mx-1" />
+            <AIToolSelector
+              selectedTool={selectedTool}
+              onSelect={onToolChange || (() => {})}
+              disabled={!onToolChange}
+            />
+          </>
         )}
 
         {isCompact && <div className="min-w-0">{titleControl}</div>}

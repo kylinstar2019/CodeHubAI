@@ -11,6 +11,7 @@ import { Trans, useTranslation } from 'react-i18next'
 
 import { ChatArea, Header, InputBox, PermissionDialog, QuestionDialog, type ChatAreaHandle } from '.'
 import { type ModelSelectorHandle } from './ModelSelector'
+import { type AITool } from './AIToolSelector'
 import { OutlineIndex } from '../../components/OutlineIndex'
 import { PaneHeader } from './PaneHeader'
 import { PaneDropOverlay, resolveDropZone, type DropZone, type PaneDropOverlayHandle } from './PaneDropOverlay'
@@ -137,6 +138,15 @@ export const ChatPane = memo(function ChatPane({
     handleVariantChange,
     restoreFromMessage,
   } = useModelSelection({ models: visibleModels, sessionId })
+
+  // ============================================
+  // AI Tool Selection
+  // ============================================
+  const [selectedAITool, setSelectedAITool] = useState<AITool>('opencode')
+
+  const handleAIToolChange = useCallback((tool: AITool) => {
+    setSelectedAITool(tool)
+  }, [])
 
   // ============================================
   // Full Auto Hint
@@ -671,6 +681,8 @@ export const ChatPane = memo(function ChatPane({
               isPaneFullscreen={isPaneFullscreen}
               onTogglePaneFullscreen={onTogglePaneFullscreen}
               modelSelectorRef={modelSelectorRef}
+              selectedTool={selectedAITool}
+              onToolChange={handleAIToolChange}
             />
           </div>
         </div>

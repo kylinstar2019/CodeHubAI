@@ -44,6 +44,11 @@
     "pinToTop": "置顶",
     "model": "模型"
   },
+  "aiToolSelector": {
+    "opencode": "OpenCode",
+    "claudeCode": "Claude Code",
+    "codex": "Codex"
+  },
   "retryStatus": {
     "retrying": "重试中（第 {{attempt}} 次）",
     "nextIn": "{{label}} 后重试"

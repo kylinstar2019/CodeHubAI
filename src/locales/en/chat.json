@@ -44,6 +44,11 @@
     "pinToTop": "Pin to top",
     "model": "Model"
   },
+  "aiToolSelector": {
+    "opencode": "OpenCode",
+    "claudeCode": "Claude Code",
+    "codex": "Codex"
+  },
   "retryStatus": {
     "retrying": "Retrying (attempt {{attempt}})",
     "nextIn": "next in {{label}}"
