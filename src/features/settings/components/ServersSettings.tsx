@@ -55,7 +55,7 @@ function ServerItem({
       case 'checking':
         return t('servers.checking')
       case 'online':
-        return `${t('servers.onlineLatency', { latency: health.latency })}${health.version ? ` · OpenCode v${health.version}` : ''}`
+        return `${t('servers.onlineLatency', { latency: health.latency })}${health.version ? ` · CodeHubAI v${health.version}` : ''}`
       case 'unauthorized':
         return t('servers.invalidCredentials')
       case 'offline':
