@@ -143,10 +143,12 @@ export const ChatPane = memo(function ChatPane({
   // AI Tool Selection
   // ============================================
   const [selectedAITool, setSelectedAITool] = useState<AITool>('opencode')
+  void selectedAITool // 在InputBox中使用
 
   const handleAIToolChange = useCallback((tool: AITool) => {
     setSelectedAITool(tool)
   }, [])
+  void handleAIToolChange // 在InputBox中使用
 
   // ============================================
   // Full Auto Hint
@@ -672,17 +674,10 @@ export const ChatPane = memo(function ChatPane({
         <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none">
           <div className="pointer-events-auto">
             <Header
-              models={visibleModels}
-              modelsLoading={modelsLoading}
-              selectedModelKey={selectedModelKey}
-              onModelChange={handleModelChange}
               onOpenSidebar={onOpenSidebar}
               onSplitPane={onSplitPane}
               isPaneFullscreen={isPaneFullscreen}
               onTogglePaneFullscreen={onTogglePaneFullscreen}
-              modelSelectorRef={modelSelectorRef}
-              selectedTool={selectedAITool}
-              onToolChange={handleAIToolChange}
             />
           </div>
         </div>
@@ -765,6 +760,8 @@ export const ChatPane = memo(function ChatPane({
           onModelChange={handleModelChange}
           modelsLoading={modelsLoading}
           modelSelectorRef={modelSelectorRef}
+          selectedTool={selectedAITool}
+          onToolChange={handleAIToolChange}
           rootPath={effectiveDirectory}
           sessionId={routeSessionId}
           revertedText={revertedMessage?.text}

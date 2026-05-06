@@ -9,6 +9,10 @@ interface AIToolSelectorProps {
   selectedTool: AITool
   onSelect: (tool: AITool) => void
   disabled?: boolean
+  /** 弹出方向 */
+  position?: 'bottom' | 'top'
+  /** 约束菜单边界的容器 ref */
+  constrainToRef?: React.RefObject<HTMLElement | null>
 }
 
 const TOOL_OPTIONS: { value: AITool; label: string; description: string }[] = [
@@ -21,6 +25,8 @@ export const AIToolSelector = memo(function AIToolSelector({
   selectedTool,
   onSelect,
   disabled = false,
+  position = 'bottom',
+  constrainToRef,
 }: AIToolSelectorProps) {
   const { t } = useTranslation('chat')
   void t // 暂时 unused，保留以备后续使用
@@ -66,8 +72,9 @@ export const AIToolSelector = memo(function AIToolSelector({
       <DropdownMenu
         triggerRef={triggerRef}
         isOpen={isOpen}
-        position="bottom"
+        position={position}
         align="left"
+        constrainToRef={constrainToRef}
         width="200px"
         minWidth="180px"
         maxWidth="min(200px, calc(100vw - 24px))"

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { ChevronDownIcon, SendIcon, StopIcon, PaperclipIcon, AgentIcon, ThinkingIcon } from '../../../components/Icons'
 import { DropdownMenu, MenuItem, IconButton, AnimatedPresence } from '../../../components/ui'
 import { ModelSelector, type ModelSelectorHandle } from '../ModelSelector'
+import { AIToolSelector, type AITool } from '../AIToolSelector'
 import { useChatViewport } from '../chatViewport'
 import { isTauri, isTauriMobile, extToMime } from '../../../utils/tauri'
 import type { ApiAgent } from '../../../api/client'
@@ -27,7 +28,7 @@ interface InputToolbarProps {
   canSend: boolean
   onSend: () => void
 
-  // Model selection（移动端显示在工具栏）
+  // Model selection（现在固定在底部工具栏）
   models?: ModelInfo[]
   selectedModelKey?: string | null
   onModelChange?: (modelKey: string, model: ModelInfo) => void
@@ -35,6 +36,9 @@ interface InputToolbarProps {
   // 输入框容器 ref，用于约束菜单边界
   inputContainerRef?: React.RefObject<HTMLDivElement | null>
   modelSelectorRef?: React.RefObject<ModelSelectorHandle | null>
+  // AI Tool selection（固定在底部工具栏）
+  selectedTool?: AITool
+  onToolChange?: (tool: AITool) => void
 }
 
 export function InputToolbar({
@@ -57,6 +61,8 @@ export function InputToolbar({
   modelsLoading = false,
   inputContainerRef,
   modelSelectorRef,
+  selectedTool = 'opencode',
+  onToolChange,
 }: InputToolbarProps) {
   const { t } = useTranslation(['chat', 'common'])
   const { presentation } = useChatViewport()
@@ -309,22 +315,8 @@ export function InputToolbar({
     <div className="flex items-center justify-between px-3 pb-3 relative">
       {/* Left side: Model (mobile) + Agent + Variant selectors */}
       <div className={`flex items-center min-w-0 ${isCompact ? 'gap-1' : 'gap-2'}`}>
-        {/* Model Selector — 移动端显示在最左边 */}
-        {isCompact && onModelChange && (
-          <ModelSelector
-            ref={modelSelectorRef}
-            models={models}
-            selectedModelKey={selectedModelKey}
-            onSelect={onModelChange}
-            isLoading={modelsLoading}
-            position="top"
-            trigger="toolbar"
-            constrainToRef={inputContainerRef}
-          />
-        )}
-
-        {/* Agent Selector */}
-        <AnimatedPresence show={selectableAgents.length > 1} className={isCompact ? 'shrink-0' : ''}>
+        {/* Agent Selector - Build/Plan模式选择 */}
+        <AnimatedPresence show={selectableAgents.length > 0} className={isCompact ? 'shrink-0' : ''}>
           <div className="relative">
             <button
               ref={agentTriggerRef}
@@ -450,7 +442,6 @@ export function InputToolbar({
               isOpen={variantMenuOpen}
               position="top"
               align="left"
-              minWidth="auto"
               constrainToRef={inputContainerRef}
             >
               <div
@@ -489,6 +480,33 @@ export function InputToolbar({
             </DropdownMenu>
           </div>
         </AnimatedPresence>
+
+        {/* Divider */}
+        <div className="w-px h-5 bg-border-200/50 mx-1" />
+
+        {/* Model Selector - 永久固定在底部 */}
+        {onModelChange && (
+          <ModelSelector
+            ref={modelSelectorRef}
+            models={models}
+            selectedModelKey={selectedModelKey}
+            onSelect={onModelChange}
+            isLoading={modelsLoading}
+            position="top"
+            trigger="toolbar"
+            constrainToRef={inputContainerRef}
+          />
+        )}
+
+        {/* AI Tool Selector - 永久固定在底部 */}
+        {onToolChange && (
+          <AIToolSelector
+            selectedTool={selectedTool}
+            onSelect={onToolChange}
+            position="top"
+            constrainToRef={inputContainerRef}
+          />
+        )}
       </div>
 
       {/* Action Buttons */}

@@ -12,6 +12,7 @@ import {
 import { SlashCommandMenu, type SlashCommandMenuHandle } from '../slash-command'
 import { InputToolbar } from './input/InputToolbar'
 import type { ModelSelectorHandle } from './ModelSelector'
+import type { AITool } from './AIToolSelector'
 import { InputFooter } from './input/InputFooter'
 import { FloatingActions, CollapsedCapsule } from './input/InputActions'
 import { useMobileCollapse } from './input/useMobileCollapse'
@@ -65,6 +66,9 @@ export interface InputBoxProps {
   onModelChange?: (modelKey: string, model: ModelInfo) => void
   modelsLoading?: boolean
   modelSelectorRef?: React.RefObject<ModelSelectorHandle | null>
+  // AI Tool Selector
+  selectedTool?: AITool
+  onToolChange?: (tool: AITool) => void
   rootPath?: string
   sessionId?: string | null
   // Undo/Redo
@@ -110,6 +114,8 @@ function InputBoxComponent({
   onModelChange,
   modelsLoading = false,
   modelSelectorRef,
+  selectedTool = 'opencode',
+  onToolChange,
   rootPath = '',
   sessionId,
   revertedText,
@@ -1074,6 +1080,8 @@ function InputBoxComponent({
                         modelsLoading={modelsLoading}
                         inputContainerRef={inputContainerRef}
                         modelSelectorRef={modelSelectorRef}
+                        selectedTool={selectedTool}
+                        onToolChange={onToolChange}
                       />
                     </div>
                   </div>

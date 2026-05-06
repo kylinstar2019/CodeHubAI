@@ -10,8 +10,6 @@ import {
   MinimizeIcon,
 } from '../../components/Icons'
 import { IconButton } from '../../components/ui'
-import { ModelSelector, type ModelSelectorHandle } from './ModelSelector'
-import { AIToolSelector, type AITool } from './AIToolSelector'
 import { ShareDialog } from './ShareDialog'
 import { messageStore, useMessageStore } from '../../store'
 import { useLayoutStore, layoutStore } from '../../store/layoutStore'
@@ -20,20 +18,11 @@ import { updateSession } from '../../api'
 import { useDirectory } from '../../contexts/useDirectory'
 import { uiErrorHandler } from '../../utils'
 import { useChatViewport } from './chatViewport'
-import type { ModelInfo } from '../../api'
-
 interface HeaderProps {
-  models: ModelInfo[]
-  modelsLoading: boolean
-  selectedModelKey: string | null
-  onModelChange: (modelKey: string, model: ModelInfo) => void
   onOpenSidebar?: () => void
   onSplitPane?: () => void
   isPaneFullscreen?: boolean
   onTogglePaneFullscreen?: () => void
-  modelSelectorRef?: React.RefObject<ModelSelectorHandle | null>
-  selectedTool?: AITool
-  onToolChange?: (tool: AITool) => void
 }
 
 interface SessionTitleControlProps {
@@ -114,17 +103,10 @@ function SessionTitleControl({
 }
 
 export function Header({
-  models,
-  modelsLoading,
-  selectedModelKey,
-  onModelChange,
   onOpenSidebar,
   onSplitPane,
   isPaneFullscreen = false,
   onTogglePaneFullscreen,
-  modelSelectorRef,
-  selectedTool = 'opencode',
-  onToolChange,
 }: HeaderProps) {
   const { t } = useTranslation('chat')
   const { sessionId, sessionDirectory, sessionTitle: currentSessionTitle } = useMessageStore()
@@ -213,23 +195,7 @@ export function Header({
           </IconButton>
         )}
 
-        {!isCompact && (
-          <>
-            <ModelSelector
-              ref={modelSelectorRef}
-              models={models}
-              selectedModelKey={selectedModelKey}
-              onSelect={onModelChange}
-              isLoading={modelsLoading}
-            />
-            <div className="w-px h-5 bg-border-200/50 mx-1" />
-            <AIToolSelector
-              selectedTool={selectedTool}
-              onSelect={onToolChange || (() => {})}
-              disabled={!onToolChange}
-            />
-          </>
-        )}
+        {/* ModelSelector and AIToolSelector moved to InputToolbar */}
 
         {isCompact && <div className="min-w-0">{titleControl}</div>}
       </div>
