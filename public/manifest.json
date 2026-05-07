@@ -1,6 +1,6 @@
 {
-  "name": "CodeHubAI",
-  "short_name": "CodeHubAI",
+  "name": "AI-Code-IDE",
+  "short_name": "AI-Code-IDE",
   "description": "AI Coding Assistant",
   "start_url": "/",
   "display": "standalone",

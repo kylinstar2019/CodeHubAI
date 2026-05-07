@@ -451,6 +451,10 @@
     "mtime": 1777724408.1235535,
     "hash": "6c79907274bb39b111f526376cb3474c"
   },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\AIToolSelector.tsx": {
+    "mtime": 1778030149.3197227,
+    "hash": "a635e337c5fbebeafa3f5d7d5735b5df"
+  },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ChatArea.test.ts": {
     "mtime": 1777724408.1275666,
     "hash": "7416ea040968c2c7c3b0984d31572d49"
@@ -464,8 +468,8 @@
     "hash": "0d85a52855598b1e550a04aa62f4bad8"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\ChatPane.tsx": {
-    "mtime": 1777724408.1335804,
-    "hash": "1110c18aa134315e7a99b56922eadc11"
+    "mtime": 1777992156.245913,
+    "hash": "a4ed1ba37585758251691685a8922661"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\chatViewport.tsx": {
     "mtime": 1777724408.194557,
@@ -476,8 +480,8 @@
     "hash": "a3096c53033bf624c08cd88c3b0ee6b1"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\Header.tsx": {
-    "mtime": 1777724408.1385589,
-    "hash": "6e3ca812776c42b4b8c444a13ebc19d1"
+    "mtime": 1777990410.8014197,
+    "hash": "db4ee141230ae8133a52b4001c148c16"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\index.ts": {
     "mtime": 1777724408.1975534,
@@ -500,8 +504,8 @@
     "hash": "3abb47ecac2904272cc3729e1e9116f1"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InputBox.tsx": {
-    "mtime": 1777724408.1535623,
-    "hash": "c1c906f141014fd82ac569e1722aa9f3"
+    "mtime": 1777989462.8797424,
+    "hash": "527eac72fae268f7b999ec171a34a8f1"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\InputBoxAttachments.test.tsx": {
     "mtime": 1777724408.1565533,
@@ -568,8 +572,8 @@
     "hash": "db82d590946d1a9fda1eb4f8226a2647"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\InputToolbar.tsx": {
-    "mtime": 1777724408.2075531,
-    "hash": "bb073fcadd5578bd81f9b404161b6646"
+    "mtime": 1778030154.05106,
+    "hash": "29b89aa31224ad7cee7c98217a65a472"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\chat\\input\\inputUtils.ts": {
     "mtime": 1777724408.2125618,
@@ -844,8 +848,8 @@
     "hash": "cc5748c73dbed77b5e7194e494e7f52e"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ServersSettings.tsx": {
-    "mtime": 1777724408.4104953,
-    "hash": "56658f28e13b6da7f4ca0c4ac22ccf83"
+    "mtime": 1777985393.7922823,
+    "hash": "bc17e95e14c082ac669770756437373f"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\features\\settings\\components\\ServiceSettings.tsx": {
     "mtime": 1777724408.4135349,
@@ -1532,8 +1536,8 @@
     "hash": "043b26f3d557a9a1369800f9e13d4cbf"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\index.html": {
-    "mtime": 1777724407.1635988,
-    "hash": "459c44160dedec1c509db44970d80ca7"
+    "mtime": 1777978735.9358013,
+    "hash": "37650420446b427683a4a407eb3deb0a"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\README.md": {
     "mtime": 1777724407.1095872,
@@ -1563,6 +1567,10 @@
     "mtime": 1777724407.121619,
     "hash": "7487e282c777c4a2974aede7a12f3e58"
   },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\codehubai-logo.png": {
+    "mtime": 1777538521.5128376,
+    "hash": "72b07d4a63c7a206734f9f1719f1d4f8"
+  },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\opencode.svg": {
     "mtime": 1777724407.1985943,
     "hash": "41eea4d8ff3c6139495e3555d0221e3f"
@@ -1570,6 +1578,1070 @@
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\vite.svg": {
     "mtime": 1777724407.2015977,
     "hash": "8e3a10e157f75ada21ab742c022d5430"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\angular.svg": {
+    "mtime": 1777978845.099013,
+    "hash": "89b63441bc6d36b19a7cecf254e801c8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\assembly.svg": {
+    "mtime": 1777978845.2367487,
+    "hash": "dc13f3c690e0827d7179c97c9b2e11b9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\astro-config.svg": {
+    "mtime": 1777978845.2525935,
+    "hash": "8f941cd2f4263a21b8ec5431dcf736bf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\astro.svg": {
+    "mtime": 1777978845.2685945,
+    "hash": "5bc6b1cd85846b7c5c0bde54152bb87d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\audio.svg": {
+    "mtime": 1777978845.2844303,
+    "hash": "1353d13905814bb4c7de6fc7157b450e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\babel.svg": {
+    "mtime": 1777978845.3962612,
+    "hash": "402893342ff0b1828e2da4e336915850"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\bun.svg": {
+    "mtime": 1777978845.778825,
+    "hash": "0a09fae1d0f37ae59d90aa5fa18d35ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\c.svg": {
+    "mtime": 1777978845.7865849,
+    "hash": "b419ef5612964775e622bad962aff1e8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\certificate.svg": {
+    "mtime": 1777978845.898919,
+    "hash": "c765a8919ac5fbf64d5edb285a56f44b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\changelog.svg": {
+    "mtime": 1777978845.898919,
+    "hash": "ceb6f9e362d1ad78dfeb6340b0cc51ed"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\clojure.svg": {
+    "mtime": 1777978846.0664864,
+    "hash": "b0c9c63e56c6582dbb2553134b473de4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\cmake.svg": {
+    "mtime": 1777978846.0823915,
+    "hash": "be20565234cf61fbba0a34d0878eee01"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\console.svg": {
+    "mtime": 1777978846.2727425,
+    "hash": "afe65bf6780c7ae4e321c06a037d1217"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\cpp.svg": {
+    "mtime": 1777978846.3850908,
+    "hash": "7b9cc9e9e197c18213c76af8ff97b346"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\csharp.svg": {
+    "mtime": 1777978846.4488118,
+    "hash": "25de464f94bf0597296c2456fa86c5c1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\css-map.svg": {
+    "mtime": 1777978846.4602108,
+    "hash": "bfd32284b25d24aa52e7dc47f2935424"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\css.svg": {
+    "mtime": 1777978846.4761133,
+    "hash": "ebdc0a9047b2afc44ebac846b1bf23f8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\dart.svg": {
+    "mtime": 1777978846.5717244,
+    "hash": "2ee1c85859c63da3747a205a0ca1f10f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\database.svg": {
+    "mtime": 1777978846.5717244,
+    "hash": "0f34e5ec00753e0f30e9d0c23012856b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\deno.svg": {
+    "mtime": 1777978846.6032732,
+    "hash": "c31932ba510d9407fc36e0ebe9c91717"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\docker.svg": {
+    "mtime": 1777978846.6679049,
+    "hash": "5a590dfa0c505089eba934faaedaeed1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\document.svg": {
+    "mtime": 1777978846.6996782,
+    "hash": "3677e4fb2e2889821787ac397464f086"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\elixir.svg": {
+    "mtime": 1777978846.7793481,
+    "hash": "85f983a4e2ddf2a6974c2fc10e233e5d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\erlang.svg": {
+    "mtime": 1777978846.932413,
+    "hash": "9148798e0da83936d65972b72f533378"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\eslint.svg": {
+    "mtime": 1777978846.960203,
+    "hash": "1036721021db6a74ddd63e2059c2299f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\file.svg": {
+    "mtime": 1777978846.996707,
+    "hash": "5696d1b6a35e0ff05f2d168e68be49da"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\firebase.svg": {
+    "mtime": 1777978846.996707,
+    "hash": "ebec0487e96fdf19518635f448cc9133"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-android-open.svg": {
+    "mtime": 1777978847.0285714,
+    "hash": "81a2eefbf6a75912cf979ab6beacd01f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-android.svg": {
+    "mtime": 1777978847.0443172,
+    "hash": "64728ee00fa2fd2420c9f423627cab95"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-api-open.svg": {
+    "mtime": 1777978847.0921218,
+    "hash": "a6f15f064c21a6b42c8cf2e7ae260473"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-api.svg": {
+    "mtime": 1777978847.0921218,
+    "hash": "73ad60cb22bd52df0acea93232a3383c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-buildkite-open.svg": {
+    "mtime": 1777978847.347857,
+    "hash": "a1e97c10f8cd3629e983d2b06af5e951"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-buildkite.svg": {
+    "mtime": 1777978847.347857,
+    "hash": "bd87a479bc16d5fba7cd88e903648f0a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ci-open.svg": {
+    "mtime": 1777978847.3796122,
+    "hash": "f43c64c2b2257002e55fc21ba042ef55"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ci.svg": {
+    "mtime": 1777978847.3796122,
+    "hash": "18dc84b4825f798b1feeddace2f7ad09"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-circleci-open.svg": {
+    "mtime": 1777978847.3796122,
+    "hash": "7d3ad44291259ae44138b6348786bcb9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-circleci.svg": {
+    "mtime": 1777978847.395711,
+    "hash": "ac5d0725ae50be5805a44c4d2eef754e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-components-open.svg": {
+    "mtime": 1777978847.491008,
+    "hash": "bdd7b7189e1ad01e9c6e43a8148ed8d5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-components.svg": {
+    "mtime": 1777978847.491008,
+    "hash": "2684cf01c224bd927eb40c0d81c6bccc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-config-open.svg": {
+    "mtime": 1777978847.491008,
+    "hash": "5b9e2a2a85bfa34d47cb13351636c2d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-config.svg": {
+    "mtime": 1777978847.507038,
+    "hash": "79a5f74da5e603ea743c0fca19290ea0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-container-open.svg": {
+    "mtime": 1777978847.531626,
+    "hash": "0aac94188bd957f9f79151b0e4d8aba6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-container.svg": {
+    "mtime": 1777978847.5473993,
+    "hash": "25c4327dfae80efa56a2579943cbb4f6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-content-open.svg": {
+    "mtime": 1777978847.5473993,
+    "hash": "722b22671719ed753702e7852a2cb39f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-content.svg": {
+    "mtime": 1777978847.5473993,
+    "hash": "6869b7ab637d7594003d10b6b34be2fd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-context-open.svg": {
+    "mtime": 1777978847.5473993,
+    "hash": "0f608fd35d0b3b7c1a4d9950511fff0f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-context.svg": {
+    "mtime": 1777978847.564468,
+    "hash": "c0ddb1dcae57fa87a49d8942c86b80ce"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-controller-open.svg": {
+    "mtime": 1777978847.5851617,
+    "hash": "fc16ade4e007e67a2363b27b1d46ea40"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-controller.svg": {
+    "mtime": 1777978847.5851617,
+    "hash": "58b7403bbe177fe394499ed61e93358c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-core-open.svg": {
+    "mtime": 1777978847.5851617,
+    "hash": "3d5b2c3124a8eec9673eadf975bc2b51"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-core.svg": {
+    "mtime": 1777978847.599084,
+    "hash": "f0bbc71ace05317b3e2f35bb0bedf5ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-css-open.svg": {
+    "mtime": 1777978847.599084,
+    "hash": "484a81503858e897175dc34b37820726"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-css.svg": {
+    "mtime": 1777978847.619107,
+    "hash": "c4c12c28c429b7065617e64b112260a0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-cursor-open.svg": {
+    "mtime": 1777978847.6310463,
+    "hash": "b67bcd088b411fe489080680017e5518"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-cursor.svg": {
+    "mtime": 1777978847.6310463,
+    "hash": "2d3bb67156d8be964cd899e5f0e67dab"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-cypress-open.svg": {
+    "mtime": 1777978847.6470394,
+    "hash": "d46b7ef68fc8555487c070ee3311c0ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-cypress.svg": {
+    "mtime": 1777978847.6470394,
+    "hash": "f96ea667f413165b44a8ccbf0dcaa314"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-database-open.svg": {
+    "mtime": 1777978847.678775,
+    "hash": "754c4230819ef2b66942e3bedfe29de4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-database.svg": {
+    "mtime": 1777978847.678775,
+    "hash": "e8feec7551b0cf240c108e17d10d734a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-desktop-open.svg": {
+    "mtime": 1777978847.710601,
+    "hash": "717dc1a3e5b4b964aa967116dc89f8a5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-desktop.svg": {
+    "mtime": 1777978847.7263274,
+    "hash": "993e60b9eb23150506093a3999a62b9a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-dist-open.svg": {
+    "mtime": 1777978847.7424068,
+    "hash": "751e36aaa450499e281ac192185575d5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-dist.svg": {
+    "mtime": 1777978847.7582421,
+    "hash": "60bc7d0607f30c366f63dfca4d49cd87"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-docker-open.svg": {
+    "mtime": 1777978847.7582421,
+    "hash": "471ba18d7f5cf11e2d660973e984e889"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-docker.svg": {
+    "mtime": 1777978847.7582421,
+    "hash": "ffdb4c0698105ffbd234cab0d033eba0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-docs-open.svg": {
+    "mtime": 1777978847.7742734,
+    "hash": "999af3b1d515944935d7508d784285f2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-docs.svg": {
+    "mtime": 1777978847.7742734,
+    "hash": "7b5c811196d5e0383272f44d8b39bf41"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-drizzle-open.svg": {
+    "mtime": 1777978847.790141,
+    "hash": "1d0bdd95f6db60f8ba7e0b168e8bf2f0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-drizzle.svg": {
+    "mtime": 1777978847.790141,
+    "hash": "87e637db1d4cac2d20b6e16a1f2d43c2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-environment-open.svg": {
+    "mtime": 1777978847.8221772,
+    "hash": "b51eacc65e120739d0eb698606d3d08b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-environment.svg": {
+    "mtime": 1777978847.8379538,
+    "hash": "5d973b8d30283871ffd2f4e974689b38"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-examples-open.svg": {
+    "mtime": 1777978847.8698158,
+    "hash": "722380a2a3a058af5aacf3d839cbd5e7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-examples.svg": {
+    "mtime": 1777978847.8698158,
+    "hash": "6bcd6e0b86d8311c1ec3fcbf8e7c5807"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-firebase-open.svg": {
+    "mtime": 1777978847.933501,
+    "hash": "d7d54b7aee9122ff44da962955e83a52"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-firebase.svg": {
+    "mtime": 1777978847.933501,
+    "hash": "81d6b30d95098c122fb5fa63cf45dbe4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-font-open.svg": {
+    "mtime": 1777978847.9652123,
+    "hash": "0239ec0ed9c49176beccabe26a6d1f48"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-font.svg": {
+    "mtime": 1777978847.9812186,
+    "hash": "2a8a9fa624359eea5a3f865db1b8ee1d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-functions-open.svg": {
+    "mtime": 1777978847.9969575,
+    "hash": "d67a9e318fed37397a6e9a41f3405a04"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-functions.svg": {
+    "mtime": 1777978847.9969575,
+    "hash": "56eb32d8b62ffc082a7dfbbbbaf0e34c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-gh-workflows-open.svg": {
+    "mtime": 1777978848.0288496,
+    "hash": "836e41d87c70c796f67595820a18e366"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-gh-workflows.svg": {
+    "mtime": 1777978848.0449688,
+    "hash": "4e6a2b2577132628365d47f3a3c17b43"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-git-open.svg": {
+    "mtime": 1777978848.0449688,
+    "hash": "fba2373a7c15eb35397fe5c1b60ff6b1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-git.svg": {
+    "mtime": 1777978848.0449688,
+    "hash": "d20a79c7953ca3ecdef8c6093d4c25a2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-github-open.svg": {
+    "mtime": 1777978848.0606883,
+    "hash": "c0cff7bfcb0696f9ab8707896029312b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-github.svg": {
+    "mtime": 1777978848.0606883,
+    "hash": "67edce72fd3e1e388205cc8164ad854f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-gitlab-open.svg": {
+    "mtime": 1777978848.0767486,
+    "hash": "1652fdcd8956c6218033e044ba177243"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-gitlab.svg": {
+    "mtime": 1777978848.0767486,
+    "hash": "c28396d544139b724e17ac943279400e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-helper-open.svg": {
+    "mtime": 1777978848.1406796,
+    "hash": "f4fe774e715417933b82341bf87b8b75"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-helper.svg": {
+    "mtime": 1777978848.1406796,
+    "hash": "1a539f26bd7d9f156c9140ec4e51cbae"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-hook-open.svg": {
+    "mtime": 1777978848.1564586,
+    "hash": "e4819a0b1de82279e37e7aaad04d8542"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-hook.svg": {
+    "mtime": 1777978848.1564586,
+    "hash": "41d6c30cc10f96e2ae63042e7b0f97e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-i18n-open.svg": {
+    "mtime": 1777978848.1725032,
+    "hash": "344e0c638e8101d29d66d31ded67875a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-i18n.svg": {
+    "mtime": 1777978848.1725032,
+    "hash": "5ac2a46491232a2bfdca5cf204417ab9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-images-open.svg": {
+    "mtime": 1777978848.1725032,
+    "hash": "48ef49f0baa6d3cb4aaf4c2c83884c90"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-images.svg": {
+    "mtime": 1777978848.1882176,
+    "hash": "bc7ad938b6cd30f1bb2ce201163a671c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-intellij-open.svg": {
+    "mtime": 1777978848.2199843,
+    "hash": "e388d77cc1d7346e5d834119e0c595ae"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-intellij.svg": {
+    "mtime": 1777978848.2199843,
+    "hash": "82e44cad8d16ba70607eef425b2a4b9b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-interface-open.svg": {
+    "mtime": 1777978848.2360651,
+    "hash": "1a7b1f44d4d2d18e23ab5c95f77c64e4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-interface.svg": {
+    "mtime": 1777978848.2360651,
+    "hash": "462fd4cb252705c2711d57503e6ffcab"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ios-open.svg": {
+    "mtime": 1777978848.251815,
+    "hash": "4da09f506b35f70a368a94a2a265d14f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ios.svg": {
+    "mtime": 1777978848.251815,
+    "hash": "a4ae62c4374363e6662150b143d4858f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-job-open.svg": {
+    "mtime": 1777978848.2835624,
+    "hash": "d4c1157f615256715180591699e1ebbd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-job.svg": {
+    "mtime": 1777978848.2835624,
+    "hash": "195cbb25d85f6610f38365c830aa0d11"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-keys-open.svg": {
+    "mtime": 1777978848.3152878,
+    "hash": "696f1419eb47cee2ac62a22bae1ae7bd"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-keys.svg": {
+    "mtime": 1777978848.3152878,
+    "hash": "e76bfe36b8c06baefb79eda15bde98fe"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-kubernetes-open.svg": {
+    "mtime": 1777978848.3152878,
+    "hash": "b0c806195a2d2453bc07be8caaaa3317"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-kubernetes.svg": {
+    "mtime": 1777978848.3311694,
+    "hash": "62629e75398454357d9c841ad5316968"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-layout-open.svg": {
+    "mtime": 1777978848.3311694,
+    "hash": "de3225ba737448937e09fe6cbe2640f3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-layout.svg": {
+    "mtime": 1777978848.3311694,
+    "hash": "2bed65df0388d250b5c70539e94a3d9c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-less-open.svg": {
+    "mtime": 1777978848.3471558,
+    "hash": "9ab8122df34fd3c77f5a056180d2d68d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-less.svg": {
+    "mtime": 1777978848.3471558,
+    "hash": "a353e1cbfc4b6df63caf399076464e80"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-lib-open.svg": {
+    "mtime": 1777978848.3629177,
+    "hash": "5378410dff96c9d3a77682f95d14398b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-lib.svg": {
+    "mtime": 1777978848.3629177,
+    "hash": "3f4e1e9d18171914762afa3c8759fd7b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-linux-open.svg": {
+    "mtime": 1777978848.3790321,
+    "hash": "7f3687136022bbea1813e94421188a7e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-linux.svg": {
+    "mtime": 1777978848.3790321,
+    "hash": "18a28af9c82df6cb9089717f0f951441"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-log-open.svg": {
+    "mtime": 1777978848.3947828,
+    "hash": "2652d7235873fe7207c8a4ba24393e50"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-log.svg": {
+    "mtime": 1777978848.3947828,
+    "hash": "fd92d34329a69a21d6a9d21a70ba8747"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-macos-open.svg": {
+    "mtime": 1777978848.4264908,
+    "hash": "82d0be115e6aa82b1f4dd91155badecc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-macos.svg": {
+    "mtime": 1777978848.4264908,
+    "hash": "02fc5f17db995f92aaa0f59fe2135e45"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-middleware-open.svg": {
+    "mtime": 1777978848.4744024,
+    "hash": "a6d2882830a86162759afb5df3a76785"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-middleware.svg": {
+    "mtime": 1777978848.4744024,
+    "hash": "b63ae55d9d3945e4733b74675badf01a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-mobile-open.svg": {
+    "mtime": 1777978848.4901462,
+    "hash": "ffc256eabe9833a6c4988ecce35cb06c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-mobile.svg": {
+    "mtime": 1777978848.4901462,
+    "hash": "d0a909c51d8d0060fc8a832068331c6b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-mock-open.svg": {
+    "mtime": 1777978848.4901462,
+    "hash": "a3f81523f457f4a57915b8a956301fd5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-mock.svg": {
+    "mtime": 1777978848.4901462,
+    "hash": "4e64d27763655c6bb179fa317d2a216a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-netlify-open.svg": {
+    "mtime": 1777978848.5228264,
+    "hash": "74e7ada3335f9a9af323cfca209b4a84"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-netlify.svg": {
+    "mtime": 1777978848.5228264,
+    "hash": "1126bc2d65a896323cd85edf5473c2aa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ngrx-store-open.svg": {
+    "mtime": 1777978848.5706172,
+    "hash": "805ee8e59e1caf34ef1c1270be441a8b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-ngrx-store.svg": {
+    "mtime": 1777978848.5706172,
+    "hash": "69ab56d07da408f596a5c4ca967a0a34"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-node-open.svg": {
+    "mtime": 1777978848.5706172,
+    "hash": "4b4a5171ae9eef04196f1839ef7845d4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-node.svg": {
+    "mtime": 1777978848.5863974,
+    "hash": "9b61d5678b48371c42f4befedc298db8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-open.svg": {
+    "mtime": 1777978848.6023328,
+    "hash": "dcc6f15df7ae412b74d436e8c4324192"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-packages-open.svg": {
+    "mtime": 1777978848.6180851,
+    "hash": "20b210b876d87801113d6d5954db7f2e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-packages.svg": {
+    "mtime": 1777978848.6180851,
+    "hash": "54b406fcaf3bd4f565e9706ba8088cb6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-prisma-open.svg": {
+    "mtime": 1777978848.6730566,
+    "hash": "1b0006c9ff0d6250082d043e9f9f40f8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-prisma.svg": {
+    "mtime": 1777978848.6730566,
+    "hash": "a87dde6ece5e60a88a3efee91545e1ff"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-public-open.svg": {
+    "mtime": 1777978848.704891,
+    "hash": "b454f1aa22e53ed79a88326012a42ace"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-public.svg": {
+    "mtime": 1777978848.704891,
+    "hash": "8a4ccdb67404b2f5e33c69d2d7891ce4"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-queue-open.svg": {
+    "mtime": 1777978848.7206576,
+    "hash": "a1ee11bb05a74dd4024f199be6d83995"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-queue.svg": {
+    "mtime": 1777978848.7206576,
+    "hash": "4291ab382745529a287749bce46079cc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-routes-open.svg": {
+    "mtime": 1777978848.8016915,
+    "hash": "0d3a64f44f573964409a50a02b3e1380"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-routes.svg": {
+    "mtime": 1777978848.8016915,
+    "hash": "fdcadaf6aa16574d5bdc3ba96acb9e9c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-sass-open.svg": {
+    "mtime": 1777978848.8334098,
+    "hash": "c8a913f70cde7f516cff135d15da8586"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-sass.svg": {
+    "mtime": 1777978848.8334098,
+    "hash": "5e65ae3029a70c2c2446e6524e330ae0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-scripts-open.svg": {
+    "mtime": 1777978848.8334098,
+    "hash": "cfc560ac135fdfc0c48e237cbc48320c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-scripts.svg": {
+    "mtime": 1777978848.8493917,
+    "hash": "05cf82f6489e2775071ecbe71b6fb76a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-secure-open.svg": {
+    "mtime": 1777978848.8493917,
+    "hash": "ed5556eff8710fa7795c5bba040cec99"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-secure.svg": {
+    "mtime": 1777978848.8560538,
+    "hash": "dbdda8688664dec2812439e076571c95"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-server-open.svg": {
+    "mtime": 1777978848.8560538,
+    "hash": "acc2986c5bb339fca2a7d225a3309875"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-server.svg": {
+    "mtime": 1777978848.8560538,
+    "hash": "dba49d94610bc0a1a3182264c6722094"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-serverless-open.svg": {
+    "mtime": 1777978848.8721673,
+    "hash": "682821782f261ddb185492eae63b685c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-serverless.svg": {
+    "mtime": 1777978848.8721673,
+    "hash": "fa9c17134dce4e76b92e51ccbfbb8d86"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-shared-open.svg": {
+    "mtime": 1777978848.8721673,
+    "hash": "f6795122b1b136452a76e2b9a4952996"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-shared.svg": {
+    "mtime": 1777978848.8721673,
+    "hash": "2495a9b6f8139b89e85b81d20bbc692d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-src-open.svg": {
+    "mtime": 1777978848.888189,
+    "hash": "288e87eaf770b32a67c97230c2bd989b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-src-tauri-open.svg": {
+    "mtime": 1777978848.9039955,
+    "hash": "61ffb39579701529cce007e9d1aee728"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-src-tauri.svg": {
+    "mtime": 1777978848.9039955,
+    "hash": "0d8f4d04b1817385305998c37998e0ac"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-src.svg": {
+    "mtime": 1777978848.9039955,
+    "hash": "30d1f3eec9a9f026b024f0743a153bd0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-store-open.svg": {
+    "mtime": 1777978848.919999,
+    "hash": "dc17a232355085d144ba4e2db5801258"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-store.svg": {
+    "mtime": 1777978848.919999,
+    "hash": "5dedad991dabd10fb74debefcdd7b580"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-storybook-open.svg": {
+    "mtime": 1777978848.919999,
+    "hash": "4e49588185e7be887ca98949831db3d5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-storybook.svg": {
+    "mtime": 1777978848.9357495,
+    "hash": "91b438b7721db7d735ef5b5f0ce8061d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-supabase-open.svg": {
+    "mtime": 1777978848.9357495,
+    "hash": "9dc2719e25bece00c062652f9f9402e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-supabase.svg": {
+    "mtime": 1777978848.9357495,
+    "hash": "8544a6cb7ac8f08bdff07eef9e26203b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-target-open.svg": {
+    "mtime": 1777978848.9518347,
+    "hash": "767f2633f845a42411ba16e4245e585e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-target.svg": {
+    "mtime": 1777978848.9676063,
+    "hash": "b4ee8c77064e1cdb6100c1b50017daef"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-tasks-open.svg": {
+    "mtime": 1777978848.9676063,
+    "hash": "bbbac237d0bb84f3e07065495c1eccaa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-tasks.svg": {
+    "mtime": 1777978848.9676063,
+    "hash": "fbe08db4d64accfaa15a6520246aed20"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-temp-open.svg": {
+    "mtime": 1777978848.981872,
+    "hash": "8790a104466ac4ecda95b1eade8d5198"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-temp.svg": {
+    "mtime": 1777978848.981872,
+    "hash": "acccd24fb9b50d06064316914d3a6df6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-template-open.svg": {
+    "mtime": 1777978848.981872,
+    "hash": "c60c817ae2bd5a89f70ce87567f3798c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-template.svg": {
+    "mtime": 1777978848.981872,
+    "hash": "de1b12d207b22eeaf3d54061ea744086"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-terraform-open.svg": {
+    "mtime": 1777978848.9972014,
+    "hash": "0e4577ee517141a7c2aa941f43e6339f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-terraform.svg": {
+    "mtime": 1777978848.9972014,
+    "hash": "3e1c2c419a36fee8174032ff9d793c4e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-test-open.svg": {
+    "mtime": 1777978848.9972014,
+    "hash": "df1f69d28d3df66e1676bb536e45a527"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-test.svg": {
+    "mtime": 1777978848.9972014,
+    "hash": "503d969ebc90ba106624ac7aa7040161"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-tools-open.svg": {
+    "mtime": 1777978849.013263,
+    "hash": "f1e71ca6034f83af498e81dfbcb017ca"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-tools.svg": {
+    "mtime": 1777978849.013263,
+    "hash": "914a0a8a1161f2c2515b7bb0111cb9bf"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-typescript-open.svg": {
+    "mtime": 1777978849.0296345,
+    "hash": "f30f2b02f5762332b3f1861e82785af1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-typescript.svg": {
+    "mtime": 1777978849.0296345,
+    "hash": "53a1faf4582caf65e50b41239b7122c0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-utils-open.svg": {
+    "mtime": 1777978849.0614734,
+    "hash": "60db341a88f830a97d244c88ecb7e0cc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-utils.svg": {
+    "mtime": 1777978849.0644765,
+    "hash": "e7a26dd17e8d01b72c50b220cc6ef48f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-vercel-open.svg": {
+    "mtime": 1777978849.0644765,
+    "hash": "a1c1e6467b36ecf9d2ab3853be7df187"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-vercel.svg": {
+    "mtime": 1777978849.0644765,
+    "hash": "b956ded293d11fe4d968c248fccb6d80"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-views-open.svg": {
+    "mtime": 1777978849.0806189,
+    "hash": "89c80a8fc274214df94298c9827397c1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-views.svg": {
+    "mtime": 1777978849.0806189,
+    "hash": "47fd464f125fd661f16ffaf0dd0da45d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-vscode-open.svg": {
+    "mtime": 1777978849.0806189,
+    "hash": "7e27c2d78e60586bc36bee8d361d87ba"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-vscode.svg": {
+    "mtime": 1777978849.0806189,
+    "hash": "55391ef8c6c3884b6848ce52e509bbf0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-windows-open.svg": {
+    "mtime": 1777978849.120183,
+    "hash": "56ad05094082b7fce211d4bf79c13519"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder-windows.svg": {
+    "mtime": 1777978849.1224058,
+    "hash": "9682db891c9b5b3703332634cc2a0e92"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\folder.svg": {
+    "mtime": 1777978849.1286798,
+    "hash": "62ed035b6ef798d5cd1dd51787ad7da5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\font.svg": {
+    "mtime": 1777978849.1286798,
+    "hash": "dcc72503936f99c11242fa57c6786d58"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\fsharp.svg": {
+    "mtime": 1777978849.144461,
+    "hash": "028e8ddf9fd77d9905e1fde79477e6b0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\git.svg": {
+    "mtime": 1777978849.16048,
+    "hash": "208c41ba232db5f02170eecc94cb2cef"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\go-mod.svg": {
+    "mtime": 1777978849.16048,
+    "hash": "beaa0800d79bda79dcad8486377e55b0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\go.svg": {
+    "mtime": 1777978849.16048,
+    "hash": "0fd1257349c32bf344249694a02774d2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\gradle.svg": {
+    "mtime": 1777978849.1762602,
+    "hash": "bb5ef4d891f35b332821cf8a641cafc3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\graphql.svg": {
+    "mtime": 1777978849.1762602,
+    "hash": "7bb739ff894e3398ac26f93811f8cefa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\gulp.svg": {
+    "mtime": 1777978849.1922476,
+    "hash": "614ab42a35b2993c45d3278a41c4da83"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\haskell.svg": {
+    "mtime": 1777978849.1922476,
+    "hash": "14973ccaa1bfe8fab48bb12df55a2ec9"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\html.svg": {
+    "mtime": 1777978849.2240636,
+    "hash": "995b2b375bac74b4ba7c5d3223190ccc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\image.svg": {
+    "mtime": 1777978849.2240636,
+    "hash": "eed5d4f998a314f1a4db93eac815890c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\java.svg": {
+    "mtime": 1777978849.2401228,
+    "hash": "fb40db4500009f1dd8617574b261a8e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\javascript-map.svg": {
+    "mtime": 1777978849.2401228,
+    "hash": "34a528ce22468a01be326e5525d47a3d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\javascript.svg": {
+    "mtime": 1777978849.2401228,
+    "hash": "6b5b7930749cf01b6400764334eff838"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\jest.svg": {
+    "mtime": 1777978849.2401228,
+    "hash": "4222608393671c959d1a5498f3772565"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\jsconfig.svg": {
+    "mtime": 1777978849.2561226,
+    "hash": "3bcc3b85b4d5bdf151dd0da6e812cf9a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\json.svg": {
+    "mtime": 1777978849.2561226,
+    "hash": "f63934759754a26959ca1766c5af1e66"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\julia.svg": {
+    "mtime": 1777978849.2561226,
+    "hash": "ff4cca607db79a5031d3620182a38d5b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\key.svg": {
+    "mtime": 1777978849.2561226,
+    "hash": "55c4027796d4aca19c655e33d3eeb37f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\kotlin.svg": {
+    "mtime": 1777978849.2719414,
+    "hash": "1885c4cc36b81e16185c312b0e185d4c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\less.svg": {
+    "mtime": 1777978849.2879348,
+    "hash": "63a67d28c4ff24cd77a74e8c1c56abad"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\license.svg": {
+    "mtime": 1777978849.2879348,
+    "hash": "a9e81d09a97ecd9c858cde8a9b2b4fea"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\lock.svg": {
+    "mtime": 1777978849.303695,
+    "hash": "41d6593b6a552e310f362f7d3521ecea"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\lua.svg": {
+    "mtime": 1777978849.303695,
+    "hash": "a5edce97612bbb204ae2849b27b9fb76"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\makefile.svg": {
+    "mtime": 1777978849.303695,
+    "hash": "b17e928dd60a45f056d76739245acb3e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\markdown.svg": {
+    "mtime": 1777978849.3196678,
+    "hash": "3b10a6810db67a113668fb5f20802c3c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\maven.svg": {
+    "mtime": 1777978849.3196678,
+    "hash": "db267b9448e9149fe42d8f1d5f6c32ec"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\mdx.svg": {
+    "mtime": 1777978849.3196678,
+    "hash": "d23cfb2894c19b2faf8b7816d4b93e50"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\netlify.svg": {
+    "mtime": 1777978849.3832488,
+    "hash": "1e327b1ee0336cf997ede14a6f4127fa"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\next.svg": {
+    "mtime": 1777978849.3832488,
+    "hash": "bd7c57107030baf3236c881d212e86ed"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\nim.svg": {
+    "mtime": 1777978849.399297,
+    "hash": "9a03af5b2ab1bcd341d6246217639cf7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\nodejs.svg": {
+    "mtime": 1777978849.4151106,
+    "hash": "64f7d6cab7329aa66f51f10b375e4a31"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\nuxt.svg": {
+    "mtime": 1777978849.4151106,
+    "hash": "2fff9fc3a2fc5a35de12e20ebeb29790"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\ocaml.svg": {
+    "mtime": 1777978849.4151106,
+    "hash": "0f700955a0abfc11075d738413bc6450"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\pdf.svg": {
+    "mtime": 1777978849.4468906,
+    "hash": "c6574b6fd90440e9f35be16b174aa50e"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\perl.svg": {
+    "mtime": 1777978849.4468906,
+    "hash": "935276e71f8a43c5194feb7a6df857d1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\php.svg": {
+    "mtime": 1777978849.4629993,
+    "hash": "83378934cf120fd0c90d21d4d164eee2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\pnpm.svg": {
+    "mtime": 1777978849.4787931,
+    "hash": "035631d4d1167bc910db3fdff78bb227"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\powershell.svg": {
+    "mtime": 1777978849.4787931,
+    "hash": "ebd71230c32273b1a0848ece13d5ef42"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\prettier.svg": {
+    "mtime": 1777978849.4787931,
+    "hash": "170fb1e57ca60194ec3cf81937cf90a6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\prisma.svg": {
+    "mtime": 1777978849.4787931,
+    "hash": "dc62993876d811627ecd06a3edbd5a72"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\proto.svg": {
+    "mtime": 1777978849.4947858,
+    "hash": "8f26e860f9dd39d07c78026ffc1083f0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\python.svg": {
+    "mtime": 1777978849.5108173,
+    "hash": "4230a734421a5b64a82dcbae8717961f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\r.svg": {
+    "mtime": 1777978849.5108173,
+    "hash": "00fa15c2ec747879c7d8537b7a5f9382"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\react.svg": {
+    "mtime": 1777978849.5269265,
+    "hash": "27638c4c28fe451c22c758f4bd4c2d66"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\react_ts.svg": {
+    "mtime": 1777978849.5269265,
+    "hash": "e623b93419d7837ec3e521acb5920ae6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\readme.svg": {
+    "mtime": 1777978849.5269265,
+    "hash": "41716bec06728964ea1261efa93d8d72"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\rollup.svg": {
+    "mtime": 1777978849.5589604,
+    "hash": "6b64d26e4b1ad754c59e3b7b645f2ed5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\ruby.svg": {
+    "mtime": 1777978849.5747573,
+    "hash": "a339c8b5983971caca8e980a5936f2bb"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\rust.svg": {
+    "mtime": 1777978849.5747573,
+    "hash": "bb657f67666271c7824e6625cf965095"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\sass.svg": {
+    "mtime": 1777978849.5747573,
+    "hash": "1f6149aee3f787f089934a15a09526f7"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\scala.svg": {
+    "mtime": 1777978849.5747573,
+    "hash": "d34e29d8092aa2f447bb11dfff3bd8d5"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\settings.svg": {
+    "mtime": 1777978849.6065538,
+    "hash": "df1b50b6913e211e518b89b966332b4a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\storybook.svg": {
+    "mtime": 1777978849.638562,
+    "hash": "162ffa7a767bf4a37bc9d0c8d2ad0848"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\svelte.svg": {
+    "mtime": 1777978849.6543367,
+    "hash": "4c78c98f163f9e3c63c8b11d5c53d19b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\svg.svg": {
+    "mtime": 1777978849.6543367,
+    "hash": "89258f63ed8185fdd40f9b0c3af57359"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\swift.svg": {
+    "mtime": 1777978849.6704211,
+    "hash": "fa45ca20fae01fdef9ff0561710fe3d8"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\tailwindcss.svg": {
+    "mtime": 1777978849.6862197,
+    "hash": "7929ef2380b1526697d235861ca2fc57"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\toml.svg": {
+    "mtime": 1777978849.7022665,
+    "hash": "0b218be2c22679751b868fce3bf526cc"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\tsconfig.svg": {
+    "mtime": 1777978849.7180543,
+    "hash": "879757775b8be7c94fbba0faa8f9c916"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\turborepo.svg": {
+    "mtime": 1777978849.7180543,
+    "hash": "6caddd74bc69a3216f38a5eaf3b08fac"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\typescript-def.svg": {
+    "mtime": 1777978849.7341633,
+    "hash": "e71dcf132a80390808d8d46cc269b654"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\typescript.svg": {
+    "mtime": 1777978849.7341633,
+    "hash": "1d2ed50f38e57613f50af55c53488971"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\vercel.svg": {
+    "mtime": 1777978849.7502258,
+    "hash": "e1cc93181de2839b25363bb5263ba2ec"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\video.svg": {
+    "mtime": 1777978849.76628,
+    "hash": "9572dece36539ff9f186c0b87190f0ac"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\vite.svg": {
+    "mtime": 1777978849.76628,
+    "hash": "82a6b1c1aa38c7e501bb1a87e11b0d52"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\vitest.svg": {
+    "mtime": 1777978849.76628,
+    "hash": "d81d1e82397f8c0bfb6b3035c2a66f8b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\vue-config.svg": {
+    "mtime": 1777978849.76628,
+    "hash": "526d5b9bb9d597382715f8b86e07b319"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\vue.svg": {
+    "mtime": 1777978849.76628,
+    "hash": "d39971d44add22790c583f2658ab7a7c"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\webpack.svg": {
+    "mtime": 1777978849.7820513,
+    "hash": "7fa3d30ecc9ee5b37692571fd058989f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\xml.svg": {
+    "mtime": 1777978849.7980497,
+    "hash": "894a2d3916ec3064e6e2df0128fd368b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\yaml.svg": {
+    "mtime": 1777978849.8138237,
+    "hash": "fbcf6e68e425136db1d29bf1804f4e59"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\yarn.svg": {
+    "mtime": 1777978849.8138237,
+    "hash": "08ec6da840d193b0fd1e4650b48d8d75"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\zig.svg": {
+    "mtime": 1777978849.8138237,
+    "hash": "83ece4bf1920ac91bff4af3cc46867a2"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\public\\material-icons\\zip.svg": {
+    "mtime": 1777978849.8138237,
+    "hash": "627a8c91ebc09ab8b6bae6264fadc261"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src\\assets\\react.svg": {
     "mtime": 1777724407.8895395,
@@ -1840,215 +2912,287 @@
     "hash": "f3db94669647ad5d55a09fbe04822aaa"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png": {
-    "mtime": 1777724407.331599,
-    "hash": "91ddfded33dbb3011f0882cda8eedcbd"
+    "mtime": 1777983705.6072063,
+    "hash": "957ca86efc96219cb1c29f46e4649a76"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_background.png": {
-    "mtime": 1777724407.3346071,
-    "hash": "0da85296a428fbd3270304ed2db96119"
+    "mtime": 1777983704.556041,
+    "hash": "30d5b58c64237cb23bbb603aaa8ac23a"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png": {
-    "mtime": 1777724407.3365943,
-    "hash": "b531344e49c7a5ee5f635d2dd6df97e0"
+    "mtime": 1777983703.7031035,
+    "hash": "30d5b58c64237cb23bbb603aaa8ac23a"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png": {
-    "mtime": 1777724407.3385944,
-    "hash": "e1f114a9372d4444d5c6f37ba9088009"
+    "mtime": 1777983705.396743,
+    "hash": "bb5544a69bb8d3a9322b8ebf4f956156"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png": {
-    "mtime": 1777724407.343604,
-    "hash": "c1139357e98714d982a05bdda7ea8831"
+    "mtime": 1777983706.0548036,
+    "hash": "29903c4f339db6fa9f109510ca2b6a62"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_background.png": {
-    "mtime": 1777724407.3466272,
-    "hash": "08253c12a8fa5153e76298e58902a814"
+    "mtime": 1777983704.62405,
+    "hash": "466a52545da5d08283ceb52553275878"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png": {
-    "mtime": 1777724407.3496006,
-    "hash": "429d008d089f1231bf09550730f0c32d"
+    "mtime": 1777983703.807673,
+    "hash": "466a52545da5d08283ceb52553275878"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png": {
-    "mtime": 1777724407.351599,
-    "hash": "e3ad138c1bd8498331d77e9c924df02a"
+    "mtime": 1777983705.841705,
+    "hash": "d791816941b47ca42c63441b3cf04dba"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png": {
-    "mtime": 1777724407.3565962,
-    "hash": "86ba33bd6c06976181776d2875615f5e"
+    "mtime": 1777983706.4568071,
+    "hash": "9d348db03db76e4519922778818b9ea0"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_background.png": {
-    "mtime": 1777724407.3606124,
-    "hash": "a7263f570210278a6f54fda25d5ce1c5"
+    "mtime": 1777983704.7526598,
+    "hash": "716c026a5e27e88f01502d0c1b10c21b"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png": {
-    "mtime": 1777724407.363602,
-    "hash": "542dc7e3ebc3708146763b2371be49e5"
+    "mtime": 1777983703.9210205,
+    "hash": "716c026a5e27e88f01502d0c1b10c21b"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png": {
-    "mtime": 1777724407.3655984,
-    "hash": "6860705f2a151ba082d54dd0a3c04659"
+    "mtime": 1777983706.2736652,
+    "hash": "71c3f14495179b7854df7b208548fa64"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png": {
-    "mtime": 1777724407.3705983,
-    "hash": "b1bc523e268fb44b451791711326b6d1"
+    "mtime": 1777983706.8382378,
+    "hash": "9e3f32bd6fec357a4342f2128fd84348"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_background.png": {
-    "mtime": 1777724407.3725944,
-    "hash": "5d857607c5cec07e172946dd83570e41"
+    "mtime": 1777983704.9559062,
+    "hash": "fc6e09dead2fed9dcb5a38f7a172b18b"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png": {
-    "mtime": 1777724407.3755987,
-    "hash": "d491d48b6f11b94c2488a537665dd246"
+    "mtime": 1777983704.1517007,
+    "hash": "fc6e09dead2fed9dcb5a38f7a172b18b"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png": {
-    "mtime": 1777724407.378597,
-    "hash": "f9483e30efb48b3a555939bd6bc352d9"
+    "mtime": 1777983706.663066,
+    "hash": "d1a3b285816b2d798b2f62a4da57256a"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png": {
-    "mtime": 1777724407.3825984,
-    "hash": "4f83600af42c5e1349749d84094b7695"
+    "mtime": 1777983707.2446637,
+    "hash": "e82b83ba00b15a011101919d1470d31c"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_background.png": {
-    "mtime": 1777724407.384598,
-    "hash": "49987af3d7fa94bf793706002a7da6a8"
+    "mtime": 1777983705.2172008,
+    "hash": "3824adfa9c7f2494cfecae5a5e8cdab4"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png": {
-    "mtime": 1777724407.387595,
-    "hash": "7c2b8a2c5fd0800e41b8af4aab350d98"
+    "mtime": 1777983704.4157743,
+    "hash": "3824adfa9c7f2494cfecae5a5e8cdab4"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\gen\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png": {
-    "mtime": 1777724407.3905978,
-    "hash": "09fd8cd5ab32da9d9a1775ce0d8b0a86"
+    "mtime": 1777983707.046312,
+    "hash": "2ebce4538406edbe5a654590f8617477"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\1024x1024.png": {
+    "mtime": 1777539356.7847638,
+    "hash": "eb47cf267892e6c1903d73bb8ddf2fb3"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\120x120.png": {
+    "mtime": 1777539357.0740964,
+    "hash": "119ea2682a0c44cd63ccf23431bac575"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\128x128.png": {
-    "mtime": 1777724407.4577637,
-    "hash": "96f6591d5ad39e1f7f0e47afc2e99485"
+    "mtime": 1777983700.329322,
+    "hash": "3c15a9d288230dec479e190a39ca7e55"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\128x128@2x.png": {
-    "mtime": 1777724407.4607587,
-    "hash": "c50bab5b2c1a9d0d073872e846924def"
+    "mtime": 1777983700.4824927,
+    "hash": "19ffc697bdb2343fbce63c4f0179ef9b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\144x144.png": {
+    "mtime": 1777539356.2500427,
+    "hash": "328b138fb049d8d136abc8f20633b498"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\152x152.png": {
+    "mtime": 1777539356.8110452,
+    "hash": "7764b5ae3712ac1532e3fb96e0e90614"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\167x167.png": {
+    "mtime": 1777539356.845435,
+    "hash": "11aa05221d9a071ac2ba974d5f28237d"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\180x180.png": {
+    "mtime": 1777539356.9026964,
+    "hash": "6a18cfc1918f0e3457acedf1d2604f2a"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\192x192.png": {
+    "mtime": 1777539356.2897334,
+    "hash": "f3cec0a44e107f585c1c76068ba52126"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\20x20.png": {
+    "mtime": 1777539356.8199275,
+    "hash": "b577ecb772c08cf0ed556d14b0ca457b"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\29x29.png": {
+    "mtime": 1777539356.8526075,
+    "hash": "bce9a1cd8012f0f358578f5c213141d8"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\32x32.png": {
-    "mtime": 1777724407.4627614,
-    "hash": "12c0afcf9b5faaf6b5b2871bc924fb5f"
+    "mtime": 1777983700.1376927,
+    "hash": "5c6fa1adf4fb1dbd86bf4e4e7206aa63"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\40x40.png": {
+    "mtime": 1777539356.9238844,
+    "hash": "5b8e8d51c46fc9ef6ffea93aa6498db1"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\58x58.png": {
+    "mtime": 1777539356.9529963,
+    "hash": "9339444a3661738168bbc93f2a02eb72"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\60x60.png": {
+    "mtime": 1777539356.9374511,
+    "hash": "f875c036b04ec96cb7b8b5a0b241710f"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\64x64.png": {
-    "mtime": 1777724407.464767,
-    "hash": "d3a9ce5e715d840777113c0aa104b1ef"
+    "mtime": 1777983700.2294748,
+    "hash": "90aaed28245ab23eadac356ba4e0925f"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\72x72.png": {
+    "mtime": 1777539356.1116915,
+    "hash": "aa16026ef111cf00494311d8e7adf215"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\76x76.png": {
+    "mtime": 1777539356.795908,
+    "hash": "8d92604144de1d30827f824e213255f6"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\80x80.png": {
+    "mtime": 1777539356.972743,
+    "hash": "a4a0587326ebccb5336fd003fb23bb92"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\87x87.png": {
+    "mtime": 1777539356.9632049,
+    "hash": "24e5da6e541659df5dd3481b96dcc655"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\96x96.png": {
+    "mtime": 1777539356.2354527,
+    "hash": "d4037b5f6db3e935c485281264ae86c4"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\icon.png": {
-    "mtime": 1777724407.4987626,
-    "hash": "c15b621ddacc7abe20d426f813f2e035"
+    "mtime": 1777983700.7954426,
+    "hash": "23bf49a79e84fc335c2c7db1903992e0"
+  },
+  "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\logo.png": {
+    "mtime": 1777538521.5128376,
+    "hash": "72b07d4a63c7a206734f9f1719f1d4f8"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square107x107Logo.png": {
-    "mtime": 1777724407.467764,
-    "hash": "6cd0cb9836db21743eb38a5c65d46097"
+    "mtime": 1777983696.2157586,
+    "hash": "16b1a3c26161df70ddfb2c4f2a5ea302"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square142x142Logo.png": {
-    "mtime": 1777724407.469764,
-    "hash": "f9b71d077e692fb9c069f53b9454674b"
+    "mtime": 1777983696.3295162,
+    "hash": "c9cfc43037224633cb3ee7f9f5f4c148"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square150x150Logo.png": {
-    "mtime": 1777724407.4727278,
-    "hash": "b38955722ad6c01f8e2f4e0ebf1c550b"
+    "mtime": 1777983696.4202425,
+    "hash": "1b0def243a7cd4bfe2878baaec57e6f5"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square284x284Logo.png": {
-    "mtime": 1777724407.474763,
-    "hash": "e5b3ac55112fbcb4a4bef7c5975d092e"
+    "mtime": 1777983696.576919,
+    "hash": "789d5301dd5a82c5705462b6d3c294c4"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square30x30Logo.png": {
-    "mtime": 1777724407.4767687,
-    "hash": "4857874839af78e4692e7fb927db0c63"
+    "mtime": 1777983695.8109534,
+    "hash": "ffed6262c7c6cfad482355f0aceeb710"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square310x310Logo.png": {
-    "mtime": 1777724407.4797623,
-    "hash": "b25177dabacb727c638250fecf511a7d"
+    "mtime": 1777983696.763146,
+    "hash": "295cbc62e9789d095d9195acce23b1a5"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square44x44Logo.png": {
-    "mtime": 1777724407.4827585,
-    "hash": "e9c45c71c0238938df212d9fea33cbf9"
+    "mtime": 1777983695.931787,
+    "hash": "41d944ece136c34170c785db21de8dc7"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square71x71Logo.png": {
-    "mtime": 1777724407.485767,
-    "hash": "2558247b6464b666f3b74b33c9b8aea1"
+    "mtime": 1777983696.0206373,
+    "hash": "e31e33d5d35043a50241d08f96f31b9d"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\Square89x89Logo.png": {
-    "mtime": 1777724407.4877658,
-    "hash": "700c776f0da82433ea832efb55750b38"
+    "mtime": 1777983696.1228714,
+    "hash": "6536875d513db64fbfe93f6bb1e95c14"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\StoreLogo.png": {
-    "mtime": 1777724407.4907615,
-    "hash": "9ce508a9c83aa291c4be7b3b96256db3"
+    "mtime": 1777983695.6935117,
+    "hash": "c70371f5ac71c5d08f0f4f8c7ced47e6"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@1x.png": {
-    "mtime": 1777724407.5110254,
-    "hash": "586f698105afd4bb47d80e0d33a6c8d7"
+    "mtime": 1777983701.010712,
+    "hash": "5934330da1987573e372778dc34da1ed"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@2x-1.png": {
-    "mtime": 1777724407.5140424,
-    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+    "mtime": 1777983700.9173489,
+    "hash": "acc1e21a07c8aee5d4bb6b59ae93b038"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@2x.png": {
-    "mtime": 1777724407.518027,
-    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+    "mtime": 1777983701.1314547,
+    "hash": "acc1e21a07c8aee5d4bb6b59ae93b038"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-20x20@3x.png": {
-    "mtime": 1777724407.5220194,
-    "hash": "64856e680f939b814a279755bb318398"
+    "mtime": 1777983701.254889,
+    "hash": "69cd3049096167b5dcd782db48624700"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@1x.png": {
-    "mtime": 1777724407.525022,
-    "hash": "d0ed509e313072e021f378b464e5e7de"
+    "mtime": 1777983701.4299986,
+    "hash": "55413b1fc54e4350506c46058f1af378"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@2x-1.png": {
-    "mtime": 1777724407.528064,
-    "hash": "942e577b2377656a84b0ff37bdce469c"
+    "mtime": 1777983701.3446457,
+    "hash": "80b50fb9bfecf42b0492144deb3b5441"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@2x.png": {
-    "mtime": 1777724407.5310597,
-    "hash": "942e577b2377656a84b0ff37bdce469c"
+    "mtime": 1777983701.5519457,
+    "hash": "80b50fb9bfecf42b0492144deb3b5441"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-29x29@3x.png": {
-    "mtime": 1777724407.5330803,
-    "hash": "2e482f9f679a367f2957daaeaf925d7f"
+    "mtime": 1777983701.6618693,
+    "hash": "663bb97393c3be8bcbbd9d8051978483"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@1x.png": {
-    "mtime": 1777724407.5360806,
-    "hash": "ca1da91733e0a54f1731bf550e9c6742"
+    "mtime": 1777983701.8363757,
+    "hash": "acc1e21a07c8aee5d4bb6b59ae93b038"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@2x-1.png": {
-    "mtime": 1777724407.5380821,
-    "hash": "ac587b7328fd9a9ee6d2e9caeb8e5e09"
+    "mtime": 1777983701.7482846,
+    "hash": "544b0b4a9f196070622251bb19b0d6f6"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@2x.png": {
-    "mtime": 1777724407.540058,
-    "hash": "ac587b7328fd9a9ee6d2e9caeb8e5e09"
+    "mtime": 1777983701.9634838,
+    "hash": "544b0b4a9f196070622251bb19b0d6f6"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-40x40@3x.png": {
-    "mtime": 1777724407.5440624,
-    "hash": "d1b8affc618dd926fc595a6660fd9a00"
+    "mtime": 1777983702.048353,
+    "hash": "f27e72bd340ad7a4203e7a81e23eb9da"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-512@2x.png": {
-    "mtime": 1777724407.546084,
-    "hash": "0d57edf27757547f8e85f85154c4b7e1"
+    "mtime": 1777983703.6108742,
+    "hash": "5926e0f44a8bd21a9f026f2cdf5c1ff2"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-60x60@2x.png": {
-    "mtime": 1777724407.5490944,
-    "hash": "d1b8affc618dd926fc595a6660fd9a00"
+    "mtime": 1777983702.141079,
+    "hash": "f27e72bd340ad7a4203e7a81e23eb9da"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-60x60@3x.png": {
-    "mtime": 1777724407.5520773,
-    "hash": "369dd666a9de63c679625c5ee6b5da57"
+    "mtime": 1777983702.2660167,
+    "hash": "8e439e832a785d27e21df9b458e356d3"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-76x76@1x.png": {
-    "mtime": 1777724407.5550816,
-    "hash": "6689e586124db8ac2c0e6ee7eb08e3db"
+    "mtime": 1777983702.356307,
+    "hash": "db1368a3e9a11790afc1d3e3a11d8891"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-76x76@2x.png": {
-    "mtime": 1777724407.5570781,
-    "hash": "006076d98bcb31602578de05d7e645a5"
+    "mtime": 1777983702.4658756,
+    "hash": "c2cc865c2c21d2acc5e7a204644f2043"
   },
   "F:\\AiAutoCode\\A4-finished-Item\\AI-code-IDE\\CodeHubAI\\src-tauri\\icons\\ios\\AppIcon-83.5x83.5@2x.png": {
-    "mtime": 1777724407.5600598,
-    "hash": "7d7f81ce4af62e8c64d1260ef56fbf3d"
+    "mtime": 1777983702.5718138,
+    "hash": "1600eacb24c921d3ac00aff7eea85888"
   }
 }

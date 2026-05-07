@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ChevronDownIcon, SendIcon, StopIcon, PaperclipIcon, AgentIcon, ThinkingIcon } from '../../../components/Icons'
+import { ChevronDownIcon, SendIcon, StopIcon, PaperclipIcon, AgentIcon } from '../../../components/Icons'
+  // ThinkingIcon - 暂时禁用，Variant Selector 注释掉
 import { DropdownMenu, MenuItem, IconButton, AnimatedPresence } from '../../../components/ui'
 import { ModelSelector, type ModelSelectorHandle } from '../ModelSelector'
 import { AIToolSelector, type AITool } from '../AIToolSelector'
@@ -45,9 +46,9 @@ export function InputToolbar({
   agents,
   selectedAgent,
   onAgentChange,
-  variants = [],
-  selectedVariant,
-  onVariantChange,
+  // variants = [], // 暂时禁用
+  // selectedVariant, // 暂时禁用
+  // onVariantChange, // 暂时禁用
   fileCapabilities,
   onFilesSelected,
   isStreaming,
@@ -108,18 +109,18 @@ export function InputToolbar({
   }, [caps.image, caps.pdf, caps.audio, caps.video])
   // State for menus
   const [agentMenuOpen, setAgentMenuOpen] = useState(false)
-  const [variantMenuOpen, setVariantMenuOpen] = useState(false)
+  // const [variantMenuOpen, setVariantMenuOpen] = useState(false) // 暂时禁用
 
   // Refs
   const agentTriggerRef = useRef<HTMLButtonElement>(null)
   const agentMenuRef = useRef<HTMLDivElement>(null)
-  const variantTriggerRef = useRef<HTMLButtonElement>(null)
-  const variantMenuRef = useRef<HTMLDivElement>(null)
+  // const variantTriggerRef = useRef<HTMLButtonElement>(null) // 暂时禁用
+  // const variantMenuRef = useRef<HTMLDivElement>(null) // 暂时禁用
   const fileInputRef = useRef<HTMLInputElement>(null)
   const agentMenuFocusRef = useRef<'selected' | 'first' | 'last'>('selected')
-  const variantMenuFocusRef = useRef<'selected' | 'first' | 'last'>('selected')
+  // const variantMenuFocusRef = useRef<'selected' | 'first' | 'last'>('selected') // 暂时禁用
   const agentMenuId = 'input-toolbar-agent-menu'
-  const variantMenuId = 'input-toolbar-variant-menu'
+  // const variantMenuId = 'input-toolbar-variant-menu' // 暂时禁用
 
   const focusComposerInput = useCallback(() => {
     const input = inputContainerRef?.current?.querySelector<HTMLElement>(
@@ -277,20 +278,20 @@ export function InputToolbar({
           agentTriggerRef.current?.focus()
         }
       }
-      if (
-        variantMenuOpen &&
-        !variantMenuRef.current?.contains(e.target as Node) &&
-        !variantTriggerRef.current?.contains(e.target as Node)
-      ) {
-        setVariantMenuOpen(false)
-        if (!isFocusableElement(e.target)) {
-          variantTriggerRef.current?.focus()
-        }
-      }
+      // if (
+      //   variantMenuOpen &&
+      //   !variantMenuRef.current?.contains(e.target as Node) &&
+      //   !variantTriggerRef.current?.contains(e.target as Node)
+      // ) {
+      //   setVariantMenuOpen(false)
+      //   if (!isFocusableElement(e.target)) {
+      //     variantTriggerRef.current?.focus()
+      //   }
+      // }
     }
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [agentMenuOpen, variantMenuOpen, isFocusableElement])
+  }, [agentMenuOpen, /* variantMenuOpen, */ isFocusableElement])
 
   useEffect(() => {
     if (!agentMenuOpen) return
@@ -300,13 +301,13 @@ export function InputToolbar({
     return () => clearTimeout(timerId)
   }, [agentMenuOpen, focusMenuItem])
 
-  useEffect(() => {
-    if (!variantMenuOpen) return
-    const timerId = window.setTimeout(() => {
-      focusMenuItem(variantMenuRef.current, variantMenuFocusRef.current)
-    }, 0)
-    return () => clearTimeout(timerId)
-  }, [variantMenuOpen, focusMenuItem])
+  // useEffect(() => {
+  //   if (!variantMenuOpen) return
+  //   const timerId = window.setTimeout(() => {
+  //     focusMenuItem(variantMenuRef.current, variantMenuFocusRef.current)
+  //   }, 0)
+  //   return () => clearTimeout(timerId)
+  // }, [variantMenuOpen, focusMenuItem])
 
   const selectableAgents = agents.filter(a => a.mode !== 'subagent' && !a.hidden)
   const currentAgent = agents.find(a => a.name === selectedAgent)
@@ -395,7 +396,8 @@ export function InputToolbar({
           </div>
         </AnimatedPresence>
 
-        {/* Variant Selector */}
+        {/* Variant Selector - 暂时禁用，后端不支持 */}
+        {/*
         <AnimatedPresence show={variants.length > 0} className={isCompact ? 'shrink-0' : ''}>
           <div className="relative">
             <button
@@ -423,8 +425,7 @@ export function InputToolbar({
                   : t('inputToolbar.default')
               }
             >
-              {/* 紧凑信息流隐藏 ThinkingIcon */}
-              <span className={`text-text-400 shrink-0 ${isCompact ? 'hidden' : ''}`}>
+              <span className={'text-text-400 shrink-0' + (isCompact ? ' hidden' : '')}>
                 <ThinkingIcon />
               </span>
               <span className="text-[length:var(--fs-sm)] text-text-300 truncate">
@@ -432,7 +433,7 @@ export function InputToolbar({
                   ? selectedVariant.charAt(0).toUpperCase() + selectedVariant.slice(1)
                   : t('inputToolbar.default')}
               </span>
-              <span className={`text-text-400 shrink-0 ${isCompact ? 'hidden' : ''}`}>
+              <span className={'text-text-400 shrink-0' + (isCompact ? ' hidden' : '')}>
                 <ChevronDownIcon />
               </span>
             </button>
@@ -480,6 +481,7 @@ export function InputToolbar({
             </DropdownMenu>
           </div>
         </AnimatedPresence>
+        */}
 
         {/* Divider */}
         <div className="w-px h-5 bg-border-200/50 mx-1" />

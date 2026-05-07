@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "CodeHubAI",
+  "productName": "AI-Code-IDE",
   "version": "0.5.20",
-  "identifier": "com.codehubai.app",
+  "identifier": "com.aicode.ide",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -14,8 +14,8 @@
     "windows": [
       {
         "label": "main",
-        "create": false,
-        "title": "CodeHubAI",
+        "create": true,
+        "title": "AI-Code-IDE",
         "width": 800,
         "height": 600,
         "titleBarStyle": "Overlay",

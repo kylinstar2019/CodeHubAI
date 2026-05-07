@@ -124,9 +124,9 @@ export function Header({
   const isCompact = presentation.isCompact
 
   useEffect(() => {
-    document.title = currentSessionTitle ? `${currentSessionTitle} - CodeHubAI` : 'CodeHubAI'
+    document.title = currentSessionTitle ? `${currentSessionTitle} - AI-Code-IDE` : 'AI-Code-IDE'
     return () => {
-      document.title = 'CodeHubAI'
+      document.title = 'AI-Code-IDE'
     }
   }, [currentSessionTitle])
 
